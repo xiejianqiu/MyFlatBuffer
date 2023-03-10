@@ -1,0 +1,15 @@
+namespace Shark;
+table FB_ItemCompoundType {
+	ID:int = 0;
+	Name:string;
+	Page:int = -1;
+	FirstPage:int = -1;
+	SecondPage:int = -1;
+	MenPai:int = -1;
+	CompoundIDList:[int];
+}
+table FB_ItemCompoundTypeContainer {
+	items:[FB_ItemCompoundType];
+}
+root_type FB_ItemCompoundTypeContainer;
+file_identifier "swdt";

@@ -1,0 +1,16 @@
+namespace Shark;
+table FB_MarryGiftInfo {
+	ID:int = 0;
+	GoldType:int = 0;
+	GoldNum:int = 0;
+	ItemFastId:int = 0;
+	ItemFastNum:int = 0;
+	ItemSignId:int = 0;
+	ItemSignNum:int = 0;
+	EffectiveDays:int = 0;
+}
+table FB_MarryGiftInfoContainer {
+	items:[FB_MarryGiftInfo];
+}
+root_type FB_MarryGiftInfoContainer;
+file_identifier "swdt";

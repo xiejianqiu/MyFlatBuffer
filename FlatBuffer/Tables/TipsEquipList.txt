@@ -1,0 +1,10 @@
+namespace Shark;
+table FB_TipsEquipList {
+	Id:int = 0;
+	UseParamList:[int];
+}
+table FB_TipsEquipListContainer {
+	items:[FB_TipsEquipList];
+}
+root_type FB_TipsEquipListContainer;
+file_identifier "swdt";

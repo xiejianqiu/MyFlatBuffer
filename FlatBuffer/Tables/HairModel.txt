@@ -1,0 +1,14 @@
+namespace Shark;
+table FB_HairModel {
+	Id:int = 0;
+	Name:string;
+	ResPath:string;
+	Scale:float = 0;
+	ModelType:int = -1;
+	DeyColorList:[int];
+}
+table FB_HairModelContainer {
+	items:[FB_HairModel];
+}
+root_type FB_HairModelContainer;
+file_identifier "swdt";

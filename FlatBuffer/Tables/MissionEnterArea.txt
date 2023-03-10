@@ -1,0 +1,16 @@
+namespace Shark;
+table FB_MissionEnterArea {
+	Id:int = 0;
+	TargetSceneID:int = -1;
+	TargetAreaId:int = -1;
+	TargetPosX:float = -1;
+	TargetPosY:float = 0;
+	TargetPosRadius:int = 0;
+	EffectID:int = -1;
+	TargetPosZ:float = 0;
+}
+table FB_MissionEnterAreaContainer {
+	items:[FB_MissionEnterArea];
+}
+root_type FB_MissionEnterAreaContainer;
+file_identifier "swdt";

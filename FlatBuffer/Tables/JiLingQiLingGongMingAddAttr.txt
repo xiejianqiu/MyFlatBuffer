@@ -1,0 +1,14 @@
+namespace Shark;
+table FB_JiLingQiLingGongMingAddAttr {
+	Id:int = 0;
+	QiLingType:int = 1;
+	QiLingLevel:int = 1;
+	GongMingLevel:int = 1;
+	AttrIDList:[int];
+	AttrValueList:[int];
+}
+table FB_JiLingQiLingGongMingAddAttrContainer {
+	items:[FB_JiLingQiLingGongMingAddAttr];
+}
+root_type FB_JiLingQiLingGongMingAddAttrContainer;
+file_identifier "swdt";

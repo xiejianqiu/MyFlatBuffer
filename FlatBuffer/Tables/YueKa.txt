@@ -1,0 +1,12 @@
+namespace Shark;
+table FB_YueKa {
+	ID:int = 0;
+	Name:string;
+	MoneyNum:int = 0;
+	StrId:int = -1;
+}
+table FB_YueKaContainer {
+	items:[FB_YueKa];
+}
+root_type FB_YueKaContainer;
+file_identifier "swdt";

@@ -1,0 +1,10 @@
+namespace Shark;
+table FB_StrDictionary {
+	Id:int = 0;
+	StrDictionary:string;
+}
+table FB_StrDictionaryContainer {
+	items:[FB_StrDictionary];
+}
+root_type FB_StrDictionaryContainer;
+file_identifier "swdt";

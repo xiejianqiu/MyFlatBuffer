@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_PetBattleSkill {
+	Id:int = 0;
+	Name:string;
+	PassiveSkillId:int = -1;
+	ItemId:int = -1;
+	ItemCount:int = -1;
+}
+table FB_PetBattleSkillContainer {
+	items:[FB_PetBattleSkill];
+}
+root_type FB_PetBattleSkillContainer;
+file_identifier "swdt";

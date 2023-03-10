@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_LuckyRollMission {
+	ID:int = 0;
+	ScoreLimit:int = -1;
+	DicId:int = -1;
+}
+table FB_LuckyRollMissionContainer {
+	items:[FB_LuckyRollMission];
+}
+root_type FB_LuckyRollMissionContainer;
+file_identifier "swdt";

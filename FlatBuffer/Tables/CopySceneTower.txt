@@ -1,0 +1,27 @@
+namespace Shark;
+table FB_CopySceneTower {
+	Id:int = 0;
+	TowerName:string;
+	Name:string;
+	RankTowerName:string;
+	DescStrDictID:int = -1;
+	StageClearDrop:int = -1;
+	StageClearRuneExp:int = -1;
+	MosterFakeObjId:int = -1;
+	MonsterIDList:[int];
+	MonsterPosXList:[int];
+	MonsterPosZList:[int];
+	MonsterRotationList:[float];
+	RecommendPower:int = -1;
+	IsUnlockRune:bool = false;
+	LevelLimit:int = -1;
+	TowerNumString:string;
+	RewardItemIDList:[int];
+	RewardItemCountList:[int];
+	RewardJobIDList:[int];
+}
+table FB_CopySceneTowerContainer {
+	items:[FB_CopySceneTower];
+}
+root_type FB_CopySceneTowerContainer;
+file_identifier "swdt";

@@ -1,0 +1,15 @@
+namespace Shark;
+table FB_gonggao {
+	ID:int = 0;
+	Name:string;
+	RightTitle:string;
+	Content:string;
+	SignatureName:string;
+	SignatureDate:string;
+	SignatureVisible:bool = true;
+}
+table FB_gonggaoContainer {
+	items:[FB_gonggao];
+}
+root_type FB_gonggaoContainer;
+file_identifier "swdt";

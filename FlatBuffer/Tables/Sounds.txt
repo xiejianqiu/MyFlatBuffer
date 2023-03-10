@@ -1,0 +1,20 @@
+namespace Shark;
+table FB_Sounds {
+	Id:int = 0;
+	FullPathName:string;
+	PanLevel:float = 1;
+	Volume:float = 1;
+	MinDistance:float = 0;
+	IsLoop:bool = true;
+	Delay:float = 0;
+	FadeInTime:float = -1;
+	FadeOutTime:float = -1;
+	NextSoundId:int = -1;
+	WaitTime:int = 0;
+	IsSceneBGM:bool = false;
+}
+table FB_SoundsContainer {
+	items:[FB_Sounds];
+}
+root_type FB_SoundsContainer;
+file_identifier "swdt";

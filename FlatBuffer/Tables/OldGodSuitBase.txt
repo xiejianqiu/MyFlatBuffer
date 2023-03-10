@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_OldGodSuitBase {
+	ID:int = 0;
+	Name:string;
+	TagName:string;
+	GodId:int = 0;
+	SuitIDList:[int];
+}
+table FB_OldGodSuitBaseContainer {
+	items:[FB_OldGodSuitBase];
+}
+root_type FB_OldGodSuitBaseContainer;
+file_identifier "swdt";

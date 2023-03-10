@@ -1,0 +1,42 @@
+namespace Shark;
+table FB_EquipAttr {
+	Id:int = 0;
+	JieLvl:int = 0;
+	ModelId:int = -1;
+	EffectId:int = -1;
+	Component:int = 0;
+	Attribute0ID:int = -1;
+	Attribute0Value:int = -1;
+	Attribute1ID:int = -1;
+	Attribute1Value:int = -1;
+	Attribute2ID:int = -1;
+	Attribute2Value:int = -1;
+	Attribute3ID:int = -1;
+	Attribute3Value:int = -1;
+	Attribute4ID:int = -1;
+	Attribute4Value:int = -1;
+	Attribute5ID:int = -1;
+	Attribute5Value:int = -1;
+	RMBAttribute:int = -1;
+	BroadcastRate:int = -1;
+	LevelRequest:int = -1;
+	StarCount:int = -1;
+	ShenDuanCount:int = -1;
+	TipsStrId:int = -1;
+	IsShenZhuang:bool = false;
+	FenJieCount:int = -1;
+	PassiveSkillIdList:[int];
+	PassiveSkillDesList:[int];
+	BaseAttrPercent:int = -1;
+	SpecialAttrPercent:int = -1;
+	IsXuanJiEquip:bool = false;
+	XuanJiChangeJob:int = -1;
+	CanRongLian:bool = false;
+	XuanJiAttrIdList:[int];
+	XuanJiAttrValueList:[int];
+}
+table FB_EquipAttrContainer {
+	items:[FB_EquipAttr];
+}
+root_type FB_EquipAttrContainer;
+file_identifier "swdt";

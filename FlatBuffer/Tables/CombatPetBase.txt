@@ -1,0 +1,21 @@
+namespace Shark;
+table FB_CombatPetBase {
+	ID:int = 0;
+	Totaljifen:int = -1;
+	MopUpLockId:int = -1;
+	TotalStage:int = -1;
+	FlushTime:int = -1;
+	CopySceneId:int = -1;
+	DropBox:int = -1;
+	LowItemIDList:[int];
+	LowItemCountList:[int];
+	HighItemIDList:[int];
+	HighItemCountList:[int];
+	BossType:int = -1;
+	MinLvl:int = -1;
+}
+table FB_CombatPetBaseContainer {
+	items:[FB_CombatPetBase];
+}
+root_type FB_CombatPetBaseContainer;
+file_identifier "swdt";

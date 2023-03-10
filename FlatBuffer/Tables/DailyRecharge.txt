@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_DailyRecharge {
+	ID:int = 0;
+	ScoreLimit:int = -1;
+	Type:int = -1;
+}
+table FB_DailyRechargeContainer {
+	items:[FB_DailyRecharge];
+}
+root_type FB_DailyRechargeContainer;
+file_identifier "swdt";

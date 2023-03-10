@@ -1,0 +1,20 @@
+namespace Shark;
+table FB_JiLingWuHunNingHun {
+	Id:int = 0;
+	AttrId:int = 0;
+	AttrValue:int = 0;
+	DefaultVaule:int = 0;
+	CostType:int = -1;
+	CostValue:int = -1;
+	RealityCostType:int = -1;
+	MinUnLockRate:int = 0;
+	MaxUnLockRate:int = 0;
+	UnLockRate:int = 0;
+	MinAddValueList:[int];
+	MaxAddValueList:[int];
+}
+table FB_JiLingWuHunNingHunContainer {
+	items:[FB_JiLingWuHunNingHun];
+}
+root_type FB_JiLingWuHunNingHunContainer;
+file_identifier "swdt";

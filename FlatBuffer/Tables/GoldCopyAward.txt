@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_GoldCopyAward {
+	ID:int = 0;
+	DicId:int = -1;
+	ItemNum:int = -1;
+}
+table FB_GoldCopyAwardContainer {
+	items:[FB_GoldCopyAward];
+}
+root_type FB_GoldCopyAwardContainer;
+file_identifier "swdt";

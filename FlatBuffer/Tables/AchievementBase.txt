@@ -1,0 +1,25 @@
+namespace Shark;
+table FB_AchievementBase {
+	ID:int = 0;
+	Name:string;
+	StrDictID:int = -1;
+	Icon:string;
+	Type:int = -1;
+	GoalNum:long = -1;
+	ParamList:[long];
+	ParamTypeList:[int];
+	BonusTypeList:[int];
+	BonusIDList:[int];
+	BonusNumList:[int];
+	AchievementPoint:int = -1;
+	ClassID:int = -1;
+	SubClassID:int = -1;
+	ShowAtClient:bool = false;
+	IsSendSystemShout:bool = false;
+	ShowNearList:bool = false;
+}
+table FB_AchievementBaseContainer {
+	items:[FB_AchievementBase];
+}
+root_type FB_AchievementBaseContainer;
+file_identifier "swdt";

@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_XingYuTicketBonus {
+	ID:int = 0;
+	Limit:int = -1;
+	MissionDesc:string;
+	RewardList:[int];
+	NumList:[int];
+}
+table FB_XingYuTicketBonusContainer {
+	items:[FB_XingYuTicketBonus];
+}
+root_type FB_XingYuTicketBonusContainer;
+file_identifier "swdt";

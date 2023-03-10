@@ -1,0 +1,22 @@
+namespace Shark;
+table FB_RankBase {
+	ID:int = 0;
+	Name:string;
+	LogicType:int = 0;
+	GroupCount:int = 1;
+	RefreshType:int = 1;
+	RefreshTime:int = 1;
+	BounsTarget:int = 0;
+	BounsType:int = 1;
+	BounsTime:int = 1;
+	BounsMailID:int = -1;
+	ShowNum:int = 1;
+	ShowType:int = -1;
+	IsSaveDB:bool = false;
+	IsOutCopySceneRank:bool = false;
+}
+table FB_RankBaseContainer {
+	items:[FB_RankBase];
+}
+root_type FB_RankBaseContainer;
+file_identifier "swdt";

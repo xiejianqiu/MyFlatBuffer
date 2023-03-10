@@ -1,0 +1,19 @@
+namespace Shark;
+table FB_PlayerLevelAttr {
+	Id:int = 0;
+	RoleID:string;
+	level:int = 0;
+	MaxHP:int = 0;
+	PAttack:int = 0;
+	MAttack:int = 0;
+	PMDefense:int = 0;
+	Hit:int = 0;
+	Dodge:int = 0;
+	Critical:int = 0;
+	MaxVitality:int = -1;
+}
+table FB_PlayerLevelAttrContainer {
+	items:[FB_PlayerLevelAttr];
+}
+root_type FB_PlayerLevelAttrContainer;
+file_identifier "swdt";

@@ -1,0 +1,17 @@
+namespace Shark;
+table FB_MissionRoundLevel {
+	Id:int = 0;
+	BindMoney:long = -1;
+	Exp:long = -1;
+	BossItemCount:int = -1;
+	ItemId:int = -1;
+	ItemCount:int = -1;
+	ShiliShopCount:int = -1;
+	YuanShenExp:long = -1;
+	PlayerLv:int = -1;
+}
+table FB_MissionRoundLevelContainer {
+	items:[FB_MissionRoundLevel];
+}
+root_type FB_MissionRoundLevelContainer;
+file_identifier "swdt";

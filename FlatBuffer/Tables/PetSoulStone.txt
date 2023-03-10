@@ -1,0 +1,15 @@
+namespace Shark;
+table FB_PetSoulStone {
+	Id:int = 0;
+	Type:int = -1;
+	Level:int = -1;
+	ItemID:int = -1;
+	UnlockLimit:int = -1;
+	AttrIDList:[int];
+	AttrList:[int];
+}
+table FB_PetSoulStoneContainer {
+	items:[FB_PetSoulStone];
+}
+root_type FB_PetSoulStoneContainer;
+file_identifier "swdt";

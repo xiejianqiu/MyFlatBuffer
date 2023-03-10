@@ -1,0 +1,16 @@
+namespace Shark;
+table FB_XingYuPaiHang {
+	ID:int = 0;
+	Type:int = -1;
+	RewardList:[int];
+	ParamList:[int];
+	Rate:int = -1;
+	RankMin:int = -1;
+	RankMax:int = -1;
+	MailId:int = -1;
+}
+table FB_XingYuPaiHangContainer {
+	items:[FB_XingYuPaiHang];
+}
+root_type FB_XingYuPaiHangContainer;
+file_identifier "swdt";

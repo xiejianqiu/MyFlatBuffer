@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_EquipExhibition {
+	Id:int = 0;
+	OwnProrobability:int = -1;
+	MenPaiList:[int];
+}
+table FB_EquipExhibitionContainer {
+	items:[FB_EquipExhibition];
+}
+root_type FB_EquipExhibitionContainer;
+file_identifier "swdt";

@@ -1,0 +1,15 @@
+namespace Shark;
+table FB_XianYuZhiYiLevelUp {
+	ID:int = 0;
+	CostMoneyType:int = -1;
+	CostMoneyNum:int = -1;
+	CostCardScore:int = -1;
+	AttrIdList:[int];
+	AttrValueList:[int];
+	AttrAddition:int = -1;
+}
+table FB_XianYuZhiYiLevelUpContainer {
+	items:[FB_XianYuZhiYiLevelUp];
+}
+root_type FB_XianYuZhiYiLevelUpContainer;
+file_identifier "swdt";

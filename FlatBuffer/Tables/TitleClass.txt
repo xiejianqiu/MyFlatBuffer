@@ -1,0 +1,12 @@
+namespace Shark;
+table FB_TitleClass {
+	ID:int = 0;
+	Name:string;
+	TitleNum:int = -1;
+	TitleIDList:[int];
+}
+table FB_TitleClassContainer {
+	items:[FB_TitleClass];
+}
+root_type FB_TitleClassContainer;
+file_identifier "swdt";

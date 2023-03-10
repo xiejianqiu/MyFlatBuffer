@@ -1,0 +1,12 @@
+namespace Shark;
+table FB_Preload {
+	Id:int = 0;
+	Path:string;
+	MenPaiId:int = -1;
+	IsNewborn:bool = false;
+}
+table FB_PreloadContainer {
+	items:[FB_Preload];
+}
+root_type FB_PreloadContainer;
+file_identifier "swdt";

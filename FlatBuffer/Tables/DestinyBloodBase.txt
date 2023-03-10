@@ -1,0 +1,15 @@
+namespace Shark;
+table FB_DestinyBloodBase {
+	ID:int = 0;
+	Name:string;
+	LimitBloodId:int = -1;
+	LimitLevel:int = -1;
+	PassiveSkillList:[int];
+	ImpactList:[int];
+	BloodPossessedId:int = -1;
+}
+table FB_DestinyBloodBaseContainer {
+	items:[FB_DestinyBloodBase];
+}
+root_type FB_DestinyBloodBaseContainer;
+file_identifier "swdt";

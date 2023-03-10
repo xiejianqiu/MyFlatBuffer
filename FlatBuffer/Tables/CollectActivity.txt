@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_CollectActivity {
+	ID:int = 0;
+	DropDescID:int = -1;
+	ShowItemIDList:[int];
+	ShowItemNumList:[int];
+	SumItem:int = -1;
+}
+table FB_CollectActivityContainer {
+	items:[FB_CollectActivity];
+}
+root_type FB_CollectActivityContainer;
+file_identifier "swdt";

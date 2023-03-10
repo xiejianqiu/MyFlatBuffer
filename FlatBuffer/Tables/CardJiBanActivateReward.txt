@@ -1,0 +1,12 @@
+namespace Shark;
+table FB_CardJiBanActivateReward {
+	Id:int = 0;
+	ActivateLimitNum:int = -1;
+	RewardItemIdList:[int];
+	RewardItemNumList:[int];
+}
+table FB_CardJiBanActivateRewardContainer {
+	items:[FB_CardJiBanActivateReward];
+}
+root_type FB_CardJiBanActivateRewardContainer;
+file_identifier "swdt";

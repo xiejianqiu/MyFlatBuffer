@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_PlayerSkinPart {
+	ID:int = 0;
+	Name:string;
+	DefaultColor:int = -1;
+	CustomColorID:int = -1;
+	RecommendColorIDList:[int];
+}
+table FB_PlayerSkinPartContainer {
+	items:[FB_PlayerSkinPart];
+}
+root_type FB_PlayerSkinPartContainer;
+file_identifier "swdt";

@@ -1,0 +1,21 @@
+namespace Shark;
+table FB_XingYunMission {
+	MissionID:int = 0;
+	MissionDesc:int = 0;
+	MissionType:int = -1;
+	MissionTargetNum:int = -1;
+	RewardID:int = -1;
+	RewardNum:int = -1;
+	LevelLimitType:int = -1;
+	MinLevelLimit:int = -1;
+	MaxLevelLimit:int = -1;
+	RankLimit:int = -1;
+	Weights:int = -1;
+	ActivityBaseId:int = -1;
+	EventType:int = -1;
+}
+table FB_XingYunMissionContainer {
+	items:[FB_XingYunMission];
+}
+root_type FB_XingYunMissionContainer;
+file_identifier "swdt";

@@ -1,0 +1,14 @@
+namespace Shark;
+table FB_StoryAnimation {
+	Id:int = 0;
+	IsCanSkip:bool = true;
+	Delay:float = 0;
+	IsReplay:bool = true;
+	IsOccupationDiff:bool = false;
+	IsEndBlood:bool = false;
+}
+table FB_StoryAnimationContainer {
+	items:[FB_StoryAnimation];
+}
+root_type FB_StoryAnimationContainer;
+file_identifier "swdt";

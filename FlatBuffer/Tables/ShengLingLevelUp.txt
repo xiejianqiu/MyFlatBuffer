@@ -1,0 +1,16 @@
+namespace Shark;
+table FB_ShengLingLevelUp {
+	Id:int = 0;
+	ItemId:int = -1;
+	ItemCount:int = -1;
+	EffectIndex:int = -1;
+	AttrIdList:[int];
+	AttrValueList:[int];
+	PassiveSkillList:[int];
+	IsActiveList:[int];
+}
+table FB_ShengLingLevelUpContainer {
+	items:[FB_ShengLingLevelUp];
+}
+root_type FB_ShengLingLevelUpContainer;
+file_identifier "swdt";

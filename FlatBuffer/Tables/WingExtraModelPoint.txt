@@ -1,0 +1,18 @@
+namespace Shark;
+table FB_WingExtraModelPoint {
+	ID:int = 0;
+	MountModel:string;
+	BindPoint:string;
+	PosX:float = 0;
+	PosY:float = 0;
+	PosZ:float = 0;
+	RotaX:float = 0;
+	RotaY:float = 0;
+	RotaZ:float = 0;
+	Scale:float = 0;
+}
+table FB_WingExtraModelPointContainer {
+	items:[FB_WingExtraModelPoint];
+}
+root_type FB_WingExtraModelPointContainer;
+file_identifier "swdt";

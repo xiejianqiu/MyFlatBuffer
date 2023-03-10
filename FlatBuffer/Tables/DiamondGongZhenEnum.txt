@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_DiamondGongZhenEnum {
+	Id:int = 0;
+	ConditionCuilianLv:int = -1;
+	Rate:int = -1;
+}
+table FB_DiamondGongZhenEnumContainer {
+	items:[FB_DiamondGongZhenEnum];
+}
+root_type FB_DiamondGongZhenEnumContainer;
+file_identifier "swdt";

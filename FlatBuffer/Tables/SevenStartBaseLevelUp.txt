@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_SevenStartBaseLevelUp {
+	Id:int = 0;
+	CostItemId:int = -1;
+	CostItemCount:int = -1;
+	AttrIdList:[int];
+	AttrValueList:[int];
+}
+table FB_SevenStartBaseLevelUpContainer {
+	items:[FB_SevenStartBaseLevelUp];
+}
+root_type FB_SevenStartBaseLevelUpContainer;
+file_identifier "swdt";

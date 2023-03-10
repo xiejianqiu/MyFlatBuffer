@@ -1,0 +1,31 @@
+namespace Shark;
+table FB_Impact {
+	ImpactID:int = 0;
+	Name:string;
+	DescribeID:int = 0;
+	InDatabase:bool = false;
+	ElapseOffline:bool = false;
+	Duration:int = 0;
+	SortId:int = 0;
+	ShowType:int = 0;
+	MaxOverlayCount:int = 0;
+	IsNeedNoticeClient:bool = false;
+	BuffIcon:string;
+	BuffType:int = 0;
+	IsLimitSkill:bool = false;
+	threat:int = 0;
+	LogicID:int = 0;
+	EffectId:int = 0;
+	KeepEffect:bool = false;
+	MutexcollectionId:int = 0;
+	Mutexpriority:int = 0;
+	ParamValue_List:[int];
+	CanSynchronization:bool = false;
+	RefreshID:int = 0;
+	RemoveType:int = 0;
+}
+table FB_ImpactContainer {
+	items:[FB_Impact];
+}
+root_type FB_ImpactContainer;
+file_identifier "swdt";

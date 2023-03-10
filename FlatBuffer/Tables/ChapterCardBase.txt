@@ -1,0 +1,17 @@
+namespace Shark;
+table FB_ChapterCardBase {
+	ID:int = 0;
+	CardName:string;
+	CardDesc:string;
+	UIModelID:int = -1;
+	InitQuality:int = -1;
+	ChapterID:int = -1;
+	FragmentItemID:int = -1;
+	ActiveNeedCount:int = -1;
+	FakeObjID:int = -1;
+}
+table FB_ChapterCardBaseContainer {
+	items:[FB_ChapterCardBase];
+}
+root_type FB_ChapterCardBaseContainer;
+file_identifier "swdt";

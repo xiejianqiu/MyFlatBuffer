@@ -1,0 +1,10 @@
+namespace Shark;
+table FB_OperateResultTips {
+	Id:int = 0;
+	Tips:string;
+}
+table FB_OperateResultTipsContainer {
+	items:[FB_OperateResultTips];
+}
+root_type FB_OperateResultTipsContainer;
+file_identifier "swdt";

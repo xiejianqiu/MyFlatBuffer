@@ -1,0 +1,19 @@
+namespace Shark;
+table FB_CharWing {
+	Id:int = 0;
+	MountModel:string;
+	BindPoint:string;
+	AnimPath:string;
+	FakeObjID:int = 0;
+	Dummy:string;
+	ScaleX:float = 0;
+	ScaleY:float = 0;
+	ScaleZ:float = 0;
+	UIModel:int = -1;
+	EffectWingScale:float = 0;
+}
+table FB_CharWingContainer {
+	items:[FB_CharWing];
+}
+root_type FB_CharWingContainer;
+file_identifier "swdt";

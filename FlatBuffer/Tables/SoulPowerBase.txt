@@ -1,0 +1,12 @@
+namespace Shark;
+table FB_SoulPowerBase {
+	Id:int = 0;
+	Name:string;
+	UnlockItemId:int = 0;
+	UnlockParam:int = 0;
+}
+table FB_SoulPowerBaseContainer {
+	items:[FB_SoulPowerBase];
+}
+root_type FB_SoulPowerBaseContainer;
+file_identifier "swdt";

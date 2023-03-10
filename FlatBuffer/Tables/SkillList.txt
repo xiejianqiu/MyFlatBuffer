@@ -1,0 +1,14 @@
+namespace Shark;
+table FB_SkillList {
+	Id:int = 0;
+	PassiveSkillID:int = -1;
+	GetPathName:string;
+	Introduce:string;
+	PathItemName:string;
+	IsAddMenPai:bool = false;
+}
+table FB_SkillListContainer {
+	items:[FB_SkillList];
+}
+root_type FB_SkillListContainer;
+file_identifier "swdt";

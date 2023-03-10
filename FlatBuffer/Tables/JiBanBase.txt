@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_JiBanBase {
+	ID:int = 0;
+	Name:string;
+	Tips:string;
+	InitQuality:int = -1;
+	CardIDList:[int];
+}
+table FB_JiBanBaseContainer {
+	items:[FB_JiBanBase];
+}
+root_type FB_JiBanBaseContainer;
+file_identifier "swdt";

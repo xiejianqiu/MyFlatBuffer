@@ -1,0 +1,10 @@
+namespace Shark;
+table FB_WeekPlan {
+	Id:int = 0;
+	TimeList:[int];
+}
+table FB_WeekPlanContainer {
+	items:[FB_WeekPlan];
+}
+root_type FB_WeekPlanContainer;
+file_identifier "swdt";

@@ -1,0 +1,10 @@
+namespace Shark;
+table FB_Relation {
+	Id:int = 0;
+	Relation_List:[int];
+}
+table FB_RelationContainer {
+	items:[FB_Relation];
+}
+root_type FB_RelationContainer;
+file_identifier "swdt";

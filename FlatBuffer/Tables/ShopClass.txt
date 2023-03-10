@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_ShopClass {
+	Id:int = 0;
+	Name:string;
+	TypeIDList:[int];
+}
+table FB_ShopClassContainer {
+	items:[FB_ShopClass];
+}
+root_type FB_ShopClassContainer;
+file_identifier "swdt";

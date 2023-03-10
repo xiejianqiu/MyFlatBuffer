@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_AnimationCurve {
+	Id:int = 0;
+	TimeList:[int];
+	SpeedXList:[float];
+	SpeedYList:[float];
+	SpeedZList:[float];
+}
+table FB_AnimationCurveContainer {
+	items:[FB_AnimationCurve];
+}
+root_type FB_AnimationCurveContainer;
+file_identifier "swdt";

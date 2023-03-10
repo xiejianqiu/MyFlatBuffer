@@ -1,0 +1,20 @@
+namespace Shark;
+table FB_GuildFormationBase {
+	Id:int = 0;
+	AttrType:int = -1;
+	PersonAttr:int = -1;
+	TeamAttr:int = -1;
+	GuildAttr:int = -1;
+	TeamBuffID:int = -1;
+	GuildBuffID:int = -1;
+	CostTypeList:[int];
+	CostMoneyList:[int];
+	DictID:int = -1;
+	CurrID:int = -1;
+	NextDictID:int = -1;
+}
+table FB_GuildFormationBaseContainer {
+	items:[FB_GuildFormationBase];
+}
+root_type FB_GuildFormationBaseContainer;
+file_identifier "swdt";

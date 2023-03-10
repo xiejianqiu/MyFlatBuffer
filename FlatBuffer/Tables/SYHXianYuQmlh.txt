@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_SYHXianYuQmlh {
+	ID:int = 0;
+	ScoreLimit:int = -1;
+	DicId:int = -1;
+}
+table FB_SYHXianYuQmlhContainer {
+	items:[FB_SYHXianYuQmlh];
+}
+root_type FB_SYHXianYuQmlhContainer;
+file_identifier "swdt";

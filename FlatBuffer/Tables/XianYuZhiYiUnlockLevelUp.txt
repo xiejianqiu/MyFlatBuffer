@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_XianYuZhiYiUnlockLevelUp {
+	ID:int = 0;
+	UnlockItemId:int = -1;
+	UnlockItemNum:int = -1;
+	AttrId:int = -1;
+	AttrValue:int = -1;
+}
+table FB_XianYuZhiYiUnlockLevelUpContainer {
+	items:[FB_XianYuZhiYiUnlockLevelUp];
+}
+root_type FB_XianYuZhiYiUnlockLevelUpContainer;
+file_identifier "swdt";

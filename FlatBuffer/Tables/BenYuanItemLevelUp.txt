@@ -1,0 +1,14 @@
+namespace Shark;
+table FB_BenYuanItemLevelUp {
+	Id:int = 0;
+	Exp:int = 0;
+	ItemId:int = 0;
+	ItemCount:int = 0;
+	AttrIdList:[int];
+	AttrValueList:[int];
+}
+table FB_BenYuanItemLevelUpContainer {
+	items:[FB_BenYuanItemLevelUp];
+}
+root_type FB_BenYuanItemLevelUpContainer;
+file_identifier "swdt";

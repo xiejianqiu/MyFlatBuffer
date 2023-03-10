@@ -1,0 +1,19 @@
+namespace Shark;
+table FB_ActWanGuConfig {
+	ID:int = 0;
+	PropUnlockCost:int = -1;
+	BaoXiangId:int = -1;
+	PropRewardId:int = -1;
+	PropRewardMaxId:int = -1;
+	PropLevelCostItemId:int = -1;
+	NameID:int = -1;
+	SprTitle:string;
+	DesID:int = -1;
+	PropCostNum:int = -1;
+	PropAddExp:int = -1;
+}
+table FB_ActWanGuConfigContainer {
+	items:[FB_ActWanGuConfig];
+}
+root_type FB_ActWanGuConfigContainer;
+file_identifier "swdt";

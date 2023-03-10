@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_OptionType {
+	Id:int = 0;
+	Name:string;
+	OptionList:[int];
+}
+table FB_OptionTypeContainer {
+	items:[FB_OptionType];
+}
+root_type FB_OptionTypeContainer;
+file_identifier "swdt";

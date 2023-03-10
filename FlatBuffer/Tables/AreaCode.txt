@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_AreaCode {
+	Id:int = 0;
+	Name:string;
+	FrontNumber:int = -1;
+}
+table FB_AreaCodeContainer {
+	items:[FB_AreaCode];
+}
+root_type FB_AreaCodeContainer;
+file_identifier "swdt";

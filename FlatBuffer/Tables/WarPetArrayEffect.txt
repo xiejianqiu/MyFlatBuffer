@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_WarPetArrayEffect {
+	Id:int = 0;
+	Name:string;
+	PassiveSkillList:[int];
+}
+table FB_WarPetArrayEffectContainer {
+	items:[FB_WarPetArrayEffect];
+}
+root_type FB_WarPetArrayEffectContainer;
+file_identifier "swdt";

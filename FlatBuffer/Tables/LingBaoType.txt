@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_LingBaoType {
+	Id:int = 0;
+	Name:string;
+	BgSpriteName:string;
+}
+table FB_LingBaoTypeContainer {
+	items:[FB_LingBaoType];
+}
+root_type FB_LingBaoTypeContainer;
+file_identifier "swdt";

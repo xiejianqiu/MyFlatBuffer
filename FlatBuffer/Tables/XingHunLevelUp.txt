@@ -1,0 +1,15 @@
+namespace Shark;
+table FB_XingHunLevelUp {
+	ID:int = 0;
+	EXP:int = -1;
+	Step:int = -1;
+	Icon:string;
+	SubLevel:int = -1;
+	AttrIdList:[int];
+	AttrValueList:[int];
+}
+table FB_XingHunLevelUpContainer {
+	items:[FB_XingHunLevelUp];
+}
+root_type FB_XingHunLevelUpContainer;
+file_identifier "swdt";

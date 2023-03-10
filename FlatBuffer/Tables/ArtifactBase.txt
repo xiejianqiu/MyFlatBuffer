@@ -1,0 +1,35 @@
+namespace Shark;
+table FB_ArtifactBase {
+	Id:int = 0;
+	Name:string;
+	NameSprite:string;
+	Title:string;
+	SubTitle:string;
+	DescId:int = -1;
+	Getpath:string;
+	GetpathName:string;
+	FakeobjID:int = -1;
+	Icon:string;
+	Class:int = -1;
+	Index:int = -1;
+	PassiveSkillList:[int];
+	MissionID:int = -1;
+	CopySceneID:int = -1;
+	LevelLimit:int = -1;
+	AttributeLessId:int = -1;
+	SceneGroupPointId:int = -1;
+	Scale:float = 0;
+	RotateY:float = 0;
+	OffsetY:float = 0;
+	SystemBroadCastId:int = -1;
+	LevelAddPassiveSkillList:[int];
+	LevelConditionList:[int];
+	DropBoxId:int = -1;
+	LevelUpType:int = -1;
+	GetExp:long = 0;
+}
+table FB_ArtifactBaseContainer {
+	items:[FB_ArtifactBase];
+}
+root_type FB_ArtifactBaseContainer;
+file_identifier "swdt";

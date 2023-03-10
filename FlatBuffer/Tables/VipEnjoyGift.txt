@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_VipEnjoyGift {
+	ID:int = 0;
+	OriginalCost:int = -1;
+	RealCost:int = -1;
+	EnjoyGiftIDList:[int];
+	EnjoyGiftNumList:[int];
+}
+table FB_VipEnjoyGiftContainer {
+	items:[FB_VipEnjoyGift];
+}
+root_type FB_VipEnjoyGiftContainer;
+file_identifier "swdt";

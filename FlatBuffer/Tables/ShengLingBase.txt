@@ -1,0 +1,15 @@
+namespace Shark;
+table FB_ShengLingBase {
+	Id:int = 0;
+	Name:string;
+	Icon:string;
+	UnlockLevel:int = -1;
+	ItemId:int = -1;
+	ItemCount:int = -1;
+	SpecialLevelList:[int];
+}
+table FB_ShengLingBaseContainer {
+	items:[FB_ShengLingBase];
+}
+root_type FB_ShengLingBaseContainer;
+file_identifier "swdt";

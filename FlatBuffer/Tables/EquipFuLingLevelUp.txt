@@ -1,0 +1,16 @@
+namespace Shark;
+table FB_EquipFuLingLevelUp {
+	ID:int = 0;
+	Step:int = -1;
+	ShowLevel:int = -1;
+	UnLockType:int = -1;
+	UnlockId:int = -1;
+	MoneyType:int = -1;
+	MoneyNum:int = 0;
+	AttrValue:int = -1;
+}
+table FB_EquipFuLingLevelUpContainer {
+	items:[FB_EquipFuLingLevelUp];
+}
+root_type FB_EquipFuLingLevelUpContainer;
+file_identifier "swdt";

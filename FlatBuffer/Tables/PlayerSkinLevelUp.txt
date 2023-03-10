@@ -1,0 +1,12 @@
+namespace Shark;
+table FB_PlayerSkinLevelUp {
+	ID:int = 0;
+	Exp:int = -1;
+	AttrIdList:[int];
+	AttrValueList:[int];
+}
+table FB_PlayerSkinLevelUpContainer {
+	items:[FB_PlayerSkinLevelUp];
+}
+root_type FB_PlayerSkinLevelUpContainer;
+file_identifier "swdt";

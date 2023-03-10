@@ -1,0 +1,26 @@
+namespace Shark;
+table FB_RuneAttr {
+	ID:int = 0;
+	LevelupType:int = -1;
+	JieupType:int = -1;
+	Exp:int = -1;
+	AttrIDList:[int];
+	AttrValueList:[int];
+	AttrValueIncList:[int];
+	AttrValueJieIncList:[int];
+	UnLockTowerId:int = -1;
+	UnlockTowID:int = -1;
+	RuneType:int = -1;
+	RuneComBatBaseValue:int = -1;
+	RuneLevelCombatValue:int = -1;
+	RuneJieCombatValue:int = -1;
+	RuneSkillBaseValue:int = -1;
+	RuneSkillLevelValue:int = -1;
+	RuneSkillJieValue:int = -1;
+	PassiveSkillID:int = -1;
+}
+table FB_RuneAttrContainer {
+	items:[FB_RuneAttr];
+}
+root_type FB_RuneAttrContainer;
+file_identifier "swdt";

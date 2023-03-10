@@ -1,0 +1,12 @@
+namespace Shark;
+table FB_HunJiangShangZhen {
+	ID:int = 0;
+	UnLockType:int = -1;
+	UnLockParamList:[int];
+	ShangZhenAttrmultiple:float = 0;
+}
+table FB_HunJiangShangZhenContainer {
+	items:[FB_HunJiangShangZhen];
+}
+root_type FB_HunJiangShangZhenContainer;
+file_identifier "swdt";

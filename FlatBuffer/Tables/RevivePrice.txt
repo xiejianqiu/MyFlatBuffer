@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_RevivePrice {
+	ID:int = 0;
+	AdvanceLimit:int = -1;
+	PriceRangeList:[int];
+	PriceTypeList:[int];
+	PriceList:[int];
+}
+table FB_RevivePriceContainer {
+	items:[FB_RevivePrice];
+}
+root_type FB_RevivePriceContainer;
+file_identifier "swdt";

@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_MissionPuzzle {
+	Id:int = 0;
+	PuzzleID:string;
+	RightList:[string];
+}
+table FB_MissionPuzzleContainer {
+	items:[FB_MissionPuzzle];
+}
+root_type FB_MissionPuzzleContainer;
+file_identifier "swdt";

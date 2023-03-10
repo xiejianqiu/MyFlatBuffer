@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_JiLingAttrPercentLevelUp {
+	Id:int = 0;
+	CostItemId:int = -1;
+	CostItemNum:int = -1;
+	AttrId:int = -1;
+	AddAttrPercent:int = 0;
+}
+table FB_JiLingAttrPercentLevelUpContainer {
+	items:[FB_JiLingAttrPercentLevelUp];
+}
+root_type FB_JiLingAttrPercentLevelUpContainer;
+file_identifier "swdt";

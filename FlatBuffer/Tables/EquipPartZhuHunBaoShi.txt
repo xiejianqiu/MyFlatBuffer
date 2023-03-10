@@ -1,0 +1,24 @@
+namespace Shark;
+table FB_EquipPartZhuHunBaoShi {
+	Id:int = 0;
+	ItemId:int = 0;
+	ItemCount:int = 0;
+	IsStep:bool = false;
+	AttrIdList:[int];
+	AttrValueList:[int];
+	LevelUpRate:int = 0;
+	ClientLevelUpRate:int = 0;
+	FailLevel:int = 0;
+	MoneyType:int = 0;
+	MoneyCost:int = 0;
+	PassiveSkillId:int = 0;
+	NextSkillStrId:int = 0;
+	UnlockSkill:int = 0;
+	SkillLevel:int = 0;
+	StarNeed:int = 0;
+}
+table FB_EquipPartZhuHunBaoShiContainer {
+	items:[FB_EquipPartZhuHunBaoShi];
+}
+root_type FB_EquipPartZhuHunBaoShiContainer;
+file_identifier "swdt";

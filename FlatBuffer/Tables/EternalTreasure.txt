@@ -1,0 +1,18 @@
+namespace Shark;
+table FB_EternalTreasure {
+	ID:int = 0;
+	Score:int = 0;
+	Parm:int = -1;
+	MDID:int = -1;
+	DicId:int = -1;
+	ShowItemId:int = -1;
+	Name:string;
+	ActivityId:int = -1;
+	FuntionOpenID:int = -1;
+	UIID:int = -1;
+}
+table FB_EternalTreasureContainer {
+	items:[FB_EternalTreasure];
+}
+root_type FB_EternalTreasureContainer;
+file_identifier "swdt";

@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_ShenWangZhanJiaCsShop {
+	ID:int = 0;
+	ItemList:[int];
+	PriceList:[int];
+	CcurPriceList:[int];
+	MoneyTypeList:[int];
+}
+table FB_ShenWangZhanJiaCsShopContainer {
+	items:[FB_ShenWangZhanJiaCsShop];
+}
+root_type FB_ShenWangZhanJiaCsShopContainer;
+file_identifier "swdt";

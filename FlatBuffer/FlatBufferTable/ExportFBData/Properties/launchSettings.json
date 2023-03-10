@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ExportFBData": {
+      "commandName": "Project",
+      "commandLineArgs": "TxtRoot F:\\dlc9_20220704_webgl\\Tables BinaryRoot F:\\dlc9_20220704_webgl\\TMP_Text"
+    }
+  }
+}

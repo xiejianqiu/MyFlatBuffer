@@ -1,0 +1,22 @@
+namespace Shark;
+table FB_ChatLimit {
+	Id:int = 0;
+	Name:string;
+	LevelLimit:int = -1;
+	TimeLimit:int = -1;
+	ItemLimit:int = -1;
+	UseItemNumber:int = -1;
+	VitalityLimit:int = -1;
+	ReplaceItemId:int = -1;
+	ReplaceItemCount:int = -1;
+	FontColor:string;
+	HighVolLimit:int = 0;
+	MaxSpeechDuration:float = 0;
+	VIPLevel:int = -1;
+	VIPTimeLimit:int = -1;
+}
+table FB_ChatLimitContainer {
+	items:[FB_ChatLimit];
+}
+root_type FB_ChatLimitContainer;
+file_identifier "swdt";

@@ -1,0 +1,12 @@
+namespace Shark;
+table FB_StarWishRewardShow {
+	ModelTypeId:int = 0;
+	ItemIDList:[int];
+	ItemNumList:[int];
+	paramSec:int = -1;
+}
+table FB_StarWishRewardShowContainer {
+	items:[FB_StarWishRewardShow];
+}
+root_type FB_StarWishRewardShowContainer;
+file_identifier "swdt";

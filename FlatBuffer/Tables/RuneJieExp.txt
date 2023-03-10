@@ -1,0 +1,10 @@
+namespace Shark;
+table FB_RuneJieExp {
+	ID:int = 0;
+	ItemNum:int = -1;
+}
+table FB_RuneJieExpContainer {
+	items:[FB_RuneJieExp];
+}
+root_type FB_RuneJieExpContainer;
+file_identifier "swdt";

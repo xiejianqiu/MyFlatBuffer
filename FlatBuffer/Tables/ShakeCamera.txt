@@ -1,0 +1,16 @@
+namespace Shark;
+table FB_ShakeCamera {
+	Id:int = 0;
+	ShakeCount:int = 10;
+	ShakeInterval:float = 0;
+	ShakePower:float = 0;
+	ShakeMode:int = 1;
+	ReduceFactor:float = 0;
+	Delay:float = 0;
+	HpShakeRate:int = 0;
+}
+table FB_ShakeCameraContainer {
+	items:[FB_ShakeCamera];
+}
+root_type FB_ShakeCameraContainer;
+file_identifier "swdt";

@@ -1,0 +1,12 @@
+namespace Shark;
+table FB_EquipSlotResonance {
+	ID:int = 0;
+	MinLevel:int = -1;
+	AttrIDList:[int];
+	AttrValueList:[int];
+}
+table FB_EquipSlotResonanceContainer {
+	items:[FB_EquipSlotResonance];
+}
+root_type FB_EquipSlotResonanceContainer;
+file_identifier "swdt";

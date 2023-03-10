@@ -1,0 +1,17 @@
+namespace Shark;
+table FB_OccupationBase {
+	ID:int = 0;
+	MenPaiName:string;
+	RoleBaseId:int = -1;
+	SkillList:[int];
+	StarSoulSkillId:int = -1;
+	DefaultModel:int = -1;
+	FemaleModel:int = -1;
+	DefaultWeapon:int = -1;
+	HghtAdjstNmbrd:float = 0;
+}
+table FB_OccupationBaseContainer {
+	items:[FB_OccupationBase];
+}
+root_type FB_OccupationBaseContainer;
+file_identifier "swdt";

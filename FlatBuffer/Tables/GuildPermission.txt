@@ -1,0 +1,12 @@
+namespace Shark;
+table FB_GuildPermission {
+	Id:int = 0;
+	Name:string;
+	PermissionList:[bool];
+	DividendRate:float = 0;
+}
+table FB_GuildPermissionContainer {
+	items:[FB_GuildPermission];
+}
+root_type FB_GuildPermissionContainer;
+file_identifier "swdt";

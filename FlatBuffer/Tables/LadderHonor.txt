@@ -1,0 +1,14 @@
+namespace Shark;
+table FB_LadderHonor {
+	ID:int = 0;
+	HonorNeed:int = 0;
+	BangYuan:int = 0;
+	BangYin:int = 0;
+	IdItemList:[int];
+	CountItemList:[int];
+}
+table FB_LadderHonorContainer {
+	items:[FB_LadderHonor];
+}
+root_type FB_LadderHonorContainer;
+file_identifier "swdt";

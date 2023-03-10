@@ -1,0 +1,14 @@
+namespace Shark;
+table FB_DestinyTemperRate {
+	Id:int = 0;
+	RandomRateList:[int];
+	ExtraRandomRateList:[int];
+	IncreaseRateList:[int];
+	MinAddValueList:[int];
+	MaxAddValueList:[int];
+}
+table FB_DestinyTemperRateContainer {
+	items:[FB_DestinyTemperRate];
+}
+root_type FB_DestinyTemperRateContainer;
+file_identifier "swdt";

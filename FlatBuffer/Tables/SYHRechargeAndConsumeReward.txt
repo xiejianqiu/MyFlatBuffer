@@ -1,0 +1,18 @@
+namespace Shark;
+table FB_SYHRechargeAndConsumeReward {
+	ID:int = 0;
+	AwardIndex:int = 0;
+	LevelLimit:int = 0;
+	Param:int = -1;
+	BaseId:int = -1;
+	Count:int = -1;
+	GoldList:[int];
+	NameStrId:int = -1;
+	DescStrId:int = -1;
+	GoldStrId:int = -1;
+}
+table FB_SYHRechargeAndConsumeRewardContainer {
+	items:[FB_SYHRechargeAndConsumeReward];
+}
+root_type FB_SYHRechargeAndConsumeRewardContainer;
+file_identifier "swdt";

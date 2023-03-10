@@ -1,0 +1,10 @@
+namespace Shark;
+table FB_PugongCut {
+	Id:int = 0;
+	StepTimeList:[float];
+}
+table FB_PugongCutContainer {
+	items:[FB_PugongCut];
+}
+root_type FB_PugongCutContainer;
+file_identifier "swdt";

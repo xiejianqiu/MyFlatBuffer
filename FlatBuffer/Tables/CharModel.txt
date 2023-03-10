@@ -1,0 +1,28 @@
+namespace Shark;
+table FB_CharModel {
+	Id:int = 0;
+	Name:string;
+	Title:string;
+	ResPath:string;
+	AnimPath:string;
+	HeadPic:string;
+	ModelRadius:float = 0;
+	ModelHeight:float = 0;
+	HeadInfoHeight:float = 0;
+	DamageInfoHeight:float = 0;
+	Scale:float = 0;
+	ModelType:int = -1;
+	DeyColorList:[int];
+	FresnelPower:float = -1;
+	FresnelSize:float = -1;
+	FakeObjId:int = -1;
+	CamZDis:float = -1;
+	CamYDis:float = -1;
+	CamYRota:float = -1;
+	CharAnimEffectIdList:[int];
+}
+table FB_CharModelContainer {
+	items:[FB_CharModel];
+}
+root_type FB_CharModelContainer;
+file_identifier "swdt";

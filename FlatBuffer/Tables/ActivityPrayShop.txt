@@ -1,0 +1,15 @@
+namespace Shark;
+table FB_ActivityPrayShop {
+	Id:int = 0;
+	TriggerId:int = -1;
+	WorldLvMin:int = -1;
+	WorldLvMax:int = -1;
+	ChangeItemList:[int];
+	CostNumList:[int];
+	LimitList:[int];
+}
+table FB_ActivityPrayShopContainer {
+	items:[FB_ActivityPrayShop];
+}
+root_type FB_ActivityPrayShopContainer;
+file_identifier "swdt";

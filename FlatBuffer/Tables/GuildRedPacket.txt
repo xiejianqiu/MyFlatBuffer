@@ -1,0 +1,16 @@
+namespace Shark;
+table FB_GuildRedPacket {
+	ID:int = 0;
+	FirstName:string;
+	AccumulatedName:string;
+	FirstNotice:int = -1;
+	AccumulatedNotice:int = -1;
+	AccomplishList:[int];
+	AwardList:[int];
+	CountLimit:int = -1;
+}
+table FB_GuildRedPacketContainer {
+	items:[FB_GuildRedPacket];
+}
+root_type FB_GuildRedPacketContainer;
+file_identifier "swdt";

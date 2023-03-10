@@ -1,0 +1,21 @@
+namespace Shark;
+table FB_KneadFaceOfTatto {
+	Id:int = 0;
+	MenPai:int = -1;
+	Sex:int = 1;
+	TattoResPath:string;
+	TattoOffX:float = -1;
+	TattoOffY:float = -1;
+	TattoXLimitMin:float = -1;
+	TattoXLimitMax:float = -1;
+	TattoYLimitMin:float = -1;
+	TattoYLimitMax:float = -1;
+	TattoScaleX:float = -1;
+	TattoScaleY:float = -1;
+	TattoIcon:string;
+}
+table FB_KneadFaceOfTattoContainer {
+	items:[FB_KneadFaceOfTatto];
+}
+root_type FB_KneadFaceOfTattoContainer;
+file_identifier "swdt";

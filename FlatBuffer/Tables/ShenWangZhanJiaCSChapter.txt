@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_ShenWangZhanJiaCSChapter {
+	Id:int = 0;
+	ChapterStr:string;
+	ChapterName:string;
+	ChapterType:string;
+	ItemListList:[int];
+}
+table FB_ShenWangZhanJiaCSChapterContainer {
+	items:[FB_ShenWangZhanJiaCSChapter];
+}
+root_type FB_ShenWangZhanJiaCSChapterContainer;
+file_identifier "swdt";

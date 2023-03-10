@@ -1,0 +1,17 @@
+namespace Shark;
+table FB_CharSoul {
+	Id:int = 0;
+	Name:string;
+	CharModelId:int = -1;
+	AttackAnimaId:int = -1;
+	Interval:float = 0;
+	AppearEffectId:int = 0;
+	DisappearEffectId:int = 0;
+	UIModel:int = -1;
+	PaoPaoHeight:float = 0;
+}
+table FB_CharSoulContainer {
+	items:[FB_CharSoul];
+}
+root_type FB_CharSoulContainer;
+file_identifier "swdt";

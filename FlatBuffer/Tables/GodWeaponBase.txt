@@ -1,0 +1,18 @@
+namespace Shark;
+table FB_GodWeaponBase {
+	ID:int = 0;
+	Desc:string;
+	Name:string;
+	ItemIDList:[int];
+	ItemExpList:[int];
+	FakeobjID:int = -1;
+	PassiveSkillIdList:[int];
+	UnlockLevelList:[int];
+	Icon:string;
+	Order:int = 0;
+}
+table FB_GodWeaponBaseContainer {
+	items:[FB_GodWeaponBase];
+}
+root_type FB_GodWeaponBaseContainer;
+file_identifier "swdt";

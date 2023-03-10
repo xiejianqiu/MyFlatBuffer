@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_SkillDelay {
+	Id:int = 0;
+	StartTimeList:[int];
+	EndTimeList:[int];
+}
+table FB_SkillDelayContainer {
+	items:[FB_SkillDelay];
+}
+root_type FB_SkillDelayContainer;
+file_identifier "swdt";

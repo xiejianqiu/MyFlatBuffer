@@ -1,0 +1,10 @@
+namespace Shark;
+table FB_LevelSealAddExpRate {
+	ID:int = 0;
+	EpxAttr:int = -1;
+}
+table FB_LevelSealAddExpRateContainer {
+	items:[FB_LevelSealAddExpRate];
+}
+root_type FB_LevelSealAddExpRateContainer;
+file_identifier "swdt";

@@ -1,0 +1,20 @@
+namespace Shark;
+table FB_SYHTianXingBaoGe {
+	ID:int = 0;
+	JianBaoCountList:[int];
+	VipLimit:int = -1;
+	VipCoefficientList:[int];
+	AddNum:int = -1;
+	HighDropBoxId:int = 0;
+	LowDropBoxId:int = 0;
+	ThreeDropBox:int = 0;
+	LevelLimit:int = 0;
+	Param:int = -1;
+	ItemIdList:[int];
+	ItemNumList:[int];
+}
+table FB_SYHTianXingBaoGeContainer {
+	items:[FB_SYHTianXingBaoGe];
+}
+root_type FB_SYHTianXingBaoGeContainer;
+file_identifier "swdt";

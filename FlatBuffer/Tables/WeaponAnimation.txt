@@ -1,0 +1,12 @@
+namespace Shark;
+table FB_WeaponAnimation {
+	AnimID:int = 0;
+	AnimCount:int = 1;
+	AnimNameList:[string];
+	AnimTimeList:[int];
+}
+table FB_WeaponAnimationContainer {
+	items:[FB_WeaponAnimation];
+}
+root_type FB_WeaponAnimationContainer;
+file_identifier "swdt";

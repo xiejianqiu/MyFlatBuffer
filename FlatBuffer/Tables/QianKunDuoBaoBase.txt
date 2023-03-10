@@ -1,0 +1,19 @@
+namespace Shark;
+table FB_QianKunDuoBaoBase {
+	ID:int = 0;
+	ActStartTime:int = -1;
+	ActIntegralEndTime:int = -1;
+	ActEndTime:int = -1;
+	LimitLevel:int = -1;
+	Integral:int = -1;
+	HisRecordMaxNum:int = -1;
+	RewItemListList:[int];
+	RewItemNumList:[int];
+	WeightList:[int];
+	MenPai:int = -1;
+}
+table FB_QianKunDuoBaoBaseContainer {
+	items:[FB_QianKunDuoBaoBase];
+}
+root_type FB_QianKunDuoBaoBaseContainer;
+file_identifier "swdt";

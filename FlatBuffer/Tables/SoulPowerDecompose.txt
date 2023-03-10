@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_SoulPowerDecompose {
+	Id:int = 0;
+	MoneyType:int = -1;
+	MoneyCost:int = -1;
+}
+table FB_SoulPowerDecomposeContainer {
+	items:[FB_SoulPowerDecompose];
+}
+root_type FB_SoulPowerDecomposeContainer;
+file_identifier "swdt";

@@ -1,0 +1,12 @@
+namespace Shark;
+table FB_ShouHuangXiSkill {
+	Id:int = 0;
+	UnlockType:int = -1;
+	UnlockParam:int = -1;
+	PassiveSkillId:int = -1;
+}
+table FB_ShouHuangXiSkillContainer {
+	items:[FB_ShouHuangXiSkill];
+}
+root_type FB_ShouHuangXiSkillContainer;
+file_identifier "swdt";

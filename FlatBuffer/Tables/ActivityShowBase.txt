@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_ActivityShowBase {
+	ID:int = 0;
+	Name:string;
+	UnLockLevel:int = -1;
+	EffectIDList:[int];
+	FakeObjShowId:int = -1;
+}
+table FB_ActivityShowBaseContainer {
+	items:[FB_ActivityShowBase];
+}
+root_type FB_ActivityShowBaseContainer;
+file_identifier "swdt";

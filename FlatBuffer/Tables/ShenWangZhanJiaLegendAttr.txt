@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_ShenWangZhanJiaLegendAttr {
+	ID:int = 0;
+	AttrIdList:[int];
+	AttrValueList:[int];
+}
+table FB_ShenWangZhanJiaLegendAttrContainer {
+	items:[FB_ShenWangZhanJiaLegendAttr];
+}
+root_type FB_ShenWangZhanJiaLegendAttrContainer;
+file_identifier "swdt";

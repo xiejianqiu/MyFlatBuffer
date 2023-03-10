@@ -1,0 +1,10 @@
+namespace Shark;
+table FB_JuHunLevelUp {
+	ID:int = 0;
+	QualityList:[int];
+}
+table FB_JuHunLevelUpContainer {
+	items:[FB_JuHunLevelUp];
+}
+root_type FB_JuHunLevelUpContainer;
+file_identifier "swdt";

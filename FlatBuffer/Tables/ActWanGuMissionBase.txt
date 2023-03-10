@@ -1,0 +1,17 @@
+namespace Shark;
+table FB_ActWanGuMissionBase {
+	ID:int = 0;
+	StrDictID:int = -1;
+	GoalNum:long = -1;
+	BonusIDList:[int];
+	BonusNumList:[int];
+	RewardPoint:int = -1;
+	ClassID:int = -1;
+	SubClassID:int = -1;
+	ActWanGuId:int = -1;
+}
+table FB_ActWanGuMissionBaseContainer {
+	items:[FB_ActWanGuMissionBase];
+}
+root_type FB_ActWanGuMissionBaseContainer;
+file_identifier "swdt";

@@ -1,0 +1,16 @@
+namespace Shark;
+table FB_MingGeBase {
+	ID:int = 0;
+	Name:string;
+	AttrIdList:[int];
+	AttrValueList:[int];
+	NeedItemId:int = -1;
+	NeedItemCount:int = -1;
+	NeedMoneyType:int = -1;
+	NeedMoneyCount:int = -1;
+}
+table FB_MingGeBaseContainer {
+	items:[FB_MingGeBase];
+}
+root_type FB_MingGeBaseContainer;
+file_identifier "swdt";

@@ -1,0 +1,20 @@
+namespace Shark;
+table FB_LingGangStepBase {
+	Id:int = 0;
+	Star:int = 1;
+	Step:int = 1;
+	Exp:int = -1;
+	UnLockLevel:int = -1;
+	UnLockItem:int = -1;
+	UnLockItemNum:int = -1;
+	AttrIdList:[int];
+	AttrValueList:[int];
+	FakeObjId:int = -1;
+	EffectId:int = -1;
+	JianKeEffectId:int = -1;
+}
+table FB_LingGangStepBaseContainer {
+	items:[FB_LingGangStepBase];
+}
+root_type FB_LingGangStepBaseContainer;
+file_identifier "swdt";

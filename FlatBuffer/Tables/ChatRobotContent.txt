@@ -1,0 +1,19 @@
+namespace Shark;
+table FB_ChatRobotContent {
+	Id:int = 0;
+	Name:string;
+	MenPai:int = -1;
+	Sex:int = -1;
+	Level:int = -1;
+	Vip:int = -1;
+	ChatContent:string;
+	ChatDistance:int = -1;
+	ChatGroupID:int = -1;
+	HeadPeiShiID:int = -1;
+	ChatPeiShiID:int = -1;
+}
+table FB_ChatRobotContentContainer {
+	items:[FB_ChatRobotContent];
+}
+root_type FB_ChatRobotContentContainer;
+file_identifier "swdt";

@@ -1,0 +1,18 @@
+namespace Shark;
+table FB_CharmLoveRankRewardBase {
+	ID:int = 0;
+	GoalList:[int];
+	Label:string;
+	RewardByJobList:[int];
+	RewardByJobNameList:[string];
+	RewardList:[int];
+	RewardNumList:[int];
+	RewardNameList:[string];
+	IsBind:bool = false;
+	ActivityType:int = -1;
+}
+table FB_CharmLoveRankRewardBaseContainer {
+	items:[FB_CharmLoveRankRewardBase];
+}
+root_type FB_CharmLoveRankRewardBaseContainer;
+file_identifier "swdt";

@@ -1,0 +1,15 @@
+namespace Shark;
+table FB_ShenWangZhanJiaPaintingReward {
+	ID:int = 0;
+	Exp:int = -1;
+	RewardType:int = -1;
+	ItemId:int = -1;
+	ItemNum:int = -1;
+	PayItemIdList:[int];
+	PayItemNunList:[int];
+}
+table FB_ShenWangZhanJiaPaintingRewardContainer {
+	items:[FB_ShenWangZhanJiaPaintingReward];
+}
+root_type FB_ShenWangZhanJiaPaintingRewardContainer;
+file_identifier "swdt";

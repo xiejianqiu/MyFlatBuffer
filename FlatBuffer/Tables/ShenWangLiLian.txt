@@ -1,0 +1,16 @@
+namespace Shark;
+table FB_ShenWangLiLian {
+	ID:int = 0;
+	DicStrId:int = -1;
+	GoalType:int = -1;
+	GoalNum:int = -1;
+	RewaredId:int = -1;
+	RewaredNum:int = -1;
+	RewardItemId:int = -1;
+	ItemIdList:[int];
+}
+table FB_ShenWangLiLianContainer {
+	items:[FB_ShenWangLiLian];
+}
+root_type FB_ShenWangLiLianContainer;
+file_identifier "swdt";

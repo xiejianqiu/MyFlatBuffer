@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_JiLingDestinyLevelUp {
+	Id:int = 0;
+	CostType:int = -1;
+	CostValue:int = -1;
+	AttrIDList:[int];
+	AttrValueList:[int];
+}
+table FB_JiLingDestinyLevelUpContainer {
+	items:[FB_JiLingDestinyLevelUp];
+}
+root_type FB_JiLingDestinyLevelUpContainer;
+file_identifier "swdt";

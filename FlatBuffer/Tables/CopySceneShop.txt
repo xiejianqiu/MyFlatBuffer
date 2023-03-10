@@ -1,0 +1,17 @@
+namespace Shark;
+table FB_CopySceneShop {
+	ID:int = 0;
+	AwardItemId:int = -1;
+	ConsumNum:int = -1;
+	ConsumItemId:int = -1;
+	LevelLimit:int = 0;
+	Score:int = 0;
+	Component:int = -1;
+	JieLvl:int = -1;
+	IsBind:bool = true;
+}
+table FB_CopySceneShopContainer {
+	items:[FB_CopySceneShop];
+}
+root_type FB_CopySceneShopContainer;
+file_identifier "swdt";

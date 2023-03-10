@@ -1,0 +1,16 @@
+namespace Shark;
+table FB_MissionKillMonster {
+	Index:int = 0;
+	MonsterName:string;
+	MonsterDataIDList:[int];
+	MonsterCountList:[int];
+	IsTeamKill:bool = false;
+	HelpWeakReward:int = -1;
+	HelpWeakRewardMax:int = -1;
+	TargetFlag:int = -1;
+}
+table FB_MissionKillMonsterContainer {
+	items:[FB_MissionKillMonster];
+}
+root_type FB_MissionKillMonsterContainer;
+file_identifier "swdt";

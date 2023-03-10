@@ -1,0 +1,14 @@
+namespace Shark;
+table FB_MissionLimit {
+	Id:int = 0;
+	LowLevel:int = -1;
+	PreMission:int = -1;
+	ItemNeed:int = -1;
+	ItemCount:int = -1;
+	IsLoop:bool = false;
+}
+table FB_MissionLimitContainer {
+	items:[FB_MissionLimit];
+}
+root_type FB_MissionLimitContainer;
+file_identifier "swdt";

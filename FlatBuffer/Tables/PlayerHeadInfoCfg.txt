@@ -1,0 +1,10 @@
+namespace Shark;
+table FB_PlayerHeadInfoCfg {
+	Id:int = 0;
+	Height:int = -1;
+}
+table FB_PlayerHeadInfoCfgContainer {
+	items:[FB_PlayerHeadInfoCfg];
+}
+root_type FB_PlayerHeadInfoCfgContainer;
+file_identifier "swdt";

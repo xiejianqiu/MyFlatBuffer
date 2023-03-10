@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_ShengLingSkill {
+	ID:int = 0;
+	PassiveSkillId:int = -1;
+	SkillLevel:int = -1;
+	LockDesc:string;
+	LevelUpDesc:string;
+}
+table FB_ShengLingSkillContainer {
+	items:[FB_ShengLingSkill];
+}
+root_type FB_ShengLingSkillContainer;
+file_identifier "swdt";

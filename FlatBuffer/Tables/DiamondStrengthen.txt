@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_DiamondStrengthen {
+	ID:int = 0;
+	AttrIdList:[int];
+	AttrNumList:[int];
+	NeedItemId:int = -1;
+	NeedItemNum:int = -1;
+}
+table FB_DiamondStrengthenContainer {
+	items:[FB_DiamondStrengthen];
+}
+root_type FB_DiamondStrengthenContainer;
+file_identifier "swdt";

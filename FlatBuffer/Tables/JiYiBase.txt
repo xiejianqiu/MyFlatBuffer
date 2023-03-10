@@ -1,0 +1,15 @@
+namespace Shark;
+table FB_JiYiBase {
+	ID:int = 0;
+	Name:string;
+	Time:int = -1;
+	QuestCount:int = -1;
+	LimitFinger:int = -1;
+	Reward:int = -1;
+	RewardNumber:int = -1;
+}
+table FB_JiYiBaseContainer {
+	items:[FB_JiYiBase];
+}
+root_type FB_JiYiBaseContainer;
+file_identifier "swdt";

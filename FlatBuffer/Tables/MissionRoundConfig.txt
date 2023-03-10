@@ -1,0 +1,33 @@
+namespace Shark;
+table FB_MissionRoundConfig {
+	Id:int = 0;
+	Type:int = 0;
+	Rounds:int = -1;
+	Sessions:int = -1;
+	DoubleExp:int = -1;
+	CooldownType:int = -1;
+	ReceiveType:int = -1;
+	ReceiveID:int = -1;
+	Prefix:int = -1;
+	RoundDesc:int = -1;
+	RoundTitle:int = -1;
+	RoundTitleInBoard:int = -1;
+	ShowItemIDList:[int];
+	GetMissionCostType:int = -1;
+	GetMissionCost:int = -1;
+	Name:string;
+	GiveupDictID:int = -1;
+	ExpireType:int = 1;
+	ExpireTime:int = 1;
+	IsAutoContinus:bool = false;
+	EndDesc:int = -1;
+	ScriptId:int = -1;
+	VipNeed:int = -1;
+	LevelLimit:int = -1;
+	LevelDict:int = -1;
+}
+table FB_MissionRoundConfigContainer {
+	items:[FB_MissionRoundConfig];
+}
+root_type FB_MissionRoundConfigContainer;
+file_identifier "swdt";

@@ -1,0 +1,12 @@
+namespace Shark;
+table FB_DestinySkill {
+	ID:int = 0;
+	PassiveSkillId:int = -1;
+	IsShowOnUI:bool = false;
+	UnLockLevel:int = -1;
+}
+table FB_DestinySkillContainer {
+	items:[FB_DestinySkill];
+}
+root_type FB_DestinySkillContainer;
+file_identifier "swdt";

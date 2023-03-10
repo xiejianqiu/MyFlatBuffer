@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_LevelSealBase {
+	ID:int = 0;
+	LevelLimit:int = -1;
+	Duration:int = -1;
+	HighCopySceneId:int = -1;
+	LowCopySceneId:int = -1;
+}
+table FB_LevelSealBaseContainer {
+	items:[FB_LevelSealBase];
+}
+root_type FB_LevelSealBaseContainer;
+file_identifier "swdt";

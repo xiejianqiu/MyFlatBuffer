@@ -1,0 +1,17 @@
+namespace Shark;
+table FB_CSQXuanSNpc {
+	Id:int = 0;
+	Name:string;
+	SceneID:int = 0;
+	DataID:int = 0;
+	PosX:float = 0;
+	PosY:float = 0;
+	PosZ:float = 0;
+	FaceDirection:float = 0;
+	GroupID:int = 0;
+}
+table FB_CSQXuanSNpcContainer {
+	items:[FB_CSQXuanSNpc];
+}
+root_type FB_CSQXuanSNpcContainer;
+file_identifier "swdt";

@@ -1,0 +1,25 @@
+namespace Shark;
+table FB_TitleBase {
+	ID:int = 0;
+	Type:int = 0;
+	Name:string;
+	IsShowAfterGetting:bool = false;
+	IsVip:bool = false;
+	AtlasId:int = 0;
+	EffectName:string;
+	Icon:string;
+	Link:int = 0;
+	DeadLine:string;
+	DurationTime:int = 0;
+	DescribeStrID:int = -1;
+	GetWayStrID:int = -1;
+	Quality:int = -1;
+	TitleClassID:int = -1;
+	OwnAttrIDList:[int];
+	OwnAttrValueList:[int];
+}
+table FB_TitleBaseContainer {
+	items:[FB_TitleBase];
+}
+root_type FB_TitleBaseContainer;
+file_identifier "swdt";

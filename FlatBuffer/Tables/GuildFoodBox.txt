@@ -1,0 +1,12 @@
+namespace Shark;
+table FB_GuildFoodBox {
+	Id:int = 0;
+	Foods:int = -1;
+	ExpBonus:int = -1;
+	MoneyBonus:int = -1;
+}
+table FB_GuildFoodBoxContainer {
+	items:[FB_GuildFoodBox];
+}
+root_type FB_GuildFoodBoxContainer;
+file_identifier "swdt";

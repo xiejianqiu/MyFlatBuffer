@@ -1,0 +1,14 @@
+namespace Shark;
+table FB_ChangeJob6ItemBase {
+	Id:int = 0;
+	Name:string;
+	AttrIdList:[int];
+	AttrValueList:[int];
+	ItemId:int = -1;
+	ItemCount:int = -1;
+}
+table FB_ChangeJob6ItemBaseContainer {
+	items:[FB_ChangeJob6ItemBase];
+}
+root_type FB_ChangeJob6ItemBaseContainer;
+file_identifier "swdt";

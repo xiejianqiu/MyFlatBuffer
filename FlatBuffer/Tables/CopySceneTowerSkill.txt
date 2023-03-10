@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_CopySceneTowerSkill {
+	Id:int = 0;
+	KZSkillIdList:[int];
+	HLSkillIdList:[int];
+	CKSkillIdList:[int];
+	YJSkillIdList:[int];
+}
+table FB_CopySceneTowerSkillContainer {
+	items:[FB_CopySceneTowerSkill];
+}
+root_type FB_CopySceneTowerSkillContainer;
+file_identifier "swdt";

@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_JiBanAttrLevelUp {
+	ID:int = 0;
+	JiBanID:string;
+	Quality:int = -1;
+	AttrTypeList:[int];
+	AttrValueList:[int];
+}
+table FB_JiBanAttrLevelUpContainer {
+	items:[FB_JiBanAttrLevelUp];
+}
+root_type FB_JiBanAttrLevelUpContainer;
+file_identifier "swdt";

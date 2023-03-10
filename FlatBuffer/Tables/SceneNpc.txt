@@ -1,0 +1,19 @@
+namespace Shark;
+table FB_SceneNpc {
+	Id:int = 0;
+	Name:string;
+	SceneID:int = 0;
+	DataID:int = 0;
+	PosX:float = 0;
+	PosZ:float = 0;
+	FaceDirection:float = 0;
+	GroupID:int = 0;
+	MutexID:int = 0;
+	PatrolId:int = 0;
+	PosY:float = 0;
+}
+table FB_SceneNpcContainer {
+	items:[FB_SceneNpc];
+}
+root_type FB_SceneNpcContainer;
+file_identifier "swdt";

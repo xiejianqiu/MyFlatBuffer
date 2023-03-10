@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_CSEvalueReward {
+	Id:int = 0;
+	ItemIDList:[int];
+	DropIDList:[int];
+	kExpIDList:[int];
+	ExpRewardId:int = -1;
+}
+table FB_CSEvalueRewardContainer {
+	items:[FB_CSEvalueReward];
+}
+root_type FB_CSEvalueRewardContainer;
+file_identifier "swdt";

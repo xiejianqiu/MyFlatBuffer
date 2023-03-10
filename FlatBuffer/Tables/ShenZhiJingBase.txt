@@ -1,0 +1,14 @@
+namespace Shark;
+table FB_ShenZhiJingBase {
+	ID:int = 0;
+	Name:string;
+	Icon:string;
+	GrowLineType:int = -1;
+	Position:int = -1;
+	MaxLevel:int = -1;
+}
+table FB_ShenZhiJingBaseContainer {
+	items:[FB_ShenZhiJingBase];
+}
+root_type FB_ShenZhiJingBaseContainer;
+file_identifier "swdt";

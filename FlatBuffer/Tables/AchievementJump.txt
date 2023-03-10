@@ -1,0 +1,10 @@
+namespace Shark;
+table FB_AchievementJump {
+	ID:int = 0;
+	GetPathBaseId:int = -1;
+}
+table FB_AchievementJumpContainer {
+	items:[FB_AchievementJump];
+}
+root_type FB_AchievementJumpContainer;
+file_identifier "swdt";

@@ -1,0 +1,18 @@
+namespace Shark;
+table FB_WarPetCompound {
+	Id:int = 0;
+	Name:string;
+	Quality:int = 0;
+	ItemCount:int = 0;
+	DroBoxId:int = 0;
+	DroBoxIdSecond:int = 0;
+	SkillTabTipStrId:int = 0;
+	TianFuTabTipStrId:int = 0;
+	SkillSubTabStrId:int = 0;
+	TianFuSubTabStrId:int = 0;
+}
+table FB_WarPetCompoundContainer {
+	items:[FB_WarPetCompound];
+}
+root_type FB_WarPetCompoundContainer;
+file_identifier "swdt";

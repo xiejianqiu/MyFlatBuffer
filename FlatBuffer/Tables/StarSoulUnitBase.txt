@@ -1,0 +1,38 @@
+namespace Shark;
+table FB_StarSoulUnitBase {
+	ID:int = 0;
+	Name:string;
+	NameIcon:string;
+	RaceIcon:string;
+	ItemIcon:string;
+	FakeObjId:int = -1;
+	FuncOpenFakeObjId:int = -1;
+	CharSoulId:int = -1;
+	UnLockAttr:int = -1;
+	UnLockModel:int = -1;
+	MaxLevel:int = -1;
+	UnLockType:int = -1;
+	UnLockParamList:[int];
+	Quality:int = -1;
+	SkillList:[int];
+	ExtSkillList:[int];
+	ItemIdList:[int];
+	DescStrId:int = -1;
+	unlockDescStrId:int = -1;
+	CanDecompose:bool = false;
+	RankFakeObjID:int = -1;
+	Race:int = -1;
+	ShopItemId:int = -1;
+	JuHunItemId:int = -1;
+	JuHunItemCount:int = -1;
+	DropBoxItemId:int = -1;
+	GetItemNum:int = -1;
+	JuHunJiXu:int = -1;
+	GetPathStrId:int = -1;
+	GetPathId:int = -1;
+}
+table FB_StarSoulUnitBaseContainer {
+	items:[FB_StarSoulUnitBase];
+}
+root_type FB_StarSoulUnitBaseContainer;
+file_identifier "swdt";

@@ -1,0 +1,23 @@
+namespace Shark;
+table FB_OldGodItemBase {
+	Id:int = 0;
+	Name:string;
+	Icon:string;
+	GodId:int = -1;
+	Component:int = 0;
+	Quality:int = 0;
+	StarCount:int = -1;
+	DecomposeCount:int = 0;
+	PassiveSkillId:int = 0;
+	BaseAttrIdList:[int];
+	BaseAttrValueList:[int];
+	GetPathID:int = -1;
+	ItemDesc:string;
+	DropModel:string;
+	SystemRemind:int = -1;
+}
+table FB_OldGodItemBaseContainer {
+	items:[FB_OldGodItemBase];
+}
+root_type FB_OldGodItemBaseContainer;
+file_identifier "swdt";

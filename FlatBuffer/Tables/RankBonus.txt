@@ -1,0 +1,10 @@
+namespace Shark;
+table FB_RankBonus {
+	ID:int = 0;
+	RankList:[int];
+}
+table FB_RankBonusContainer {
+	items:[FB_RankBonus];
+}
+root_type FB_RankBonusContainer;
+file_identifier "swdt";

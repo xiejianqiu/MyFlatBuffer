@@ -1,0 +1,23 @@
+namespace Shark;
+table FB_JuLingCSbase {
+	ID:int = 0;
+	CSName:string;
+	TotalExp:long = 0;
+	Totaljifen:int = -1;
+	MopUpLockId:int = -1;
+	BossType:int = -1;
+	TotalStage:int = -1;
+	FlushTime:int = -1;
+	CopySceneId:int = -1;
+	TowerName:string;
+	FuLingId:int = -1;
+	LimitDesc:string;
+	TimeLimit:int = -1;
+	RankDesc:string;
+	UIModelId:int = -1;
+}
+table FB_JuLingCSbaseContainer {
+	items:[FB_JuLingCSbase];
+}
+root_type FB_JuLingCSbaseContainer;
+file_identifier "swdt";

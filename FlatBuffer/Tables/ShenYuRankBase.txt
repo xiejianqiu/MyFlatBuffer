@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_ShenYuRankBase {
+	ID:int = 0;
+	Name:string;
+	TitleList:[string];
+	ShowNum:int = 1;
+	RankPage:int = 1;
+}
+table FB_ShenYuRankBaseContainer {
+	items:[FB_ShenYuRankBase];
+}
+root_type FB_ShenYuRankBaseContainer;
+file_identifier "swdt";

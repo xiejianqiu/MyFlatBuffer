@@ -1,0 +1,15 @@
+namespace Shark;
+table FB_HunJiangSkillValue {
+	ID:int = 0;
+	Name:string;
+	Quality:int = -1;
+	RaceRequired:int = -1;
+	PassiveSkillId:int = -1;
+	RateOne:int = -1;
+	RateTwo:int = -1;
+}
+table FB_HunJiangSkillValueContainer {
+	items:[FB_HunJiangSkillValue];
+}
+root_type FB_HunJiangSkillValueContainer;
+file_identifier "swdt";

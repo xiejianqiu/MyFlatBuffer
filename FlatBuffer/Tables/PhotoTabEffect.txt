@@ -1,0 +1,12 @@
+namespace Shark;
+table FB_PhotoTabEffect {
+	ID:int = 0;
+	Name:string;
+	Type:int = -1;
+	PhotoEffectIdList:[int];
+}
+table FB_PhotoTabEffectContainer {
+	items:[FB_PhotoTabEffect];
+}
+root_type FB_PhotoTabEffectContainer;
+file_identifier "swdt";

@@ -1,0 +1,18 @@
+namespace Shark;
+table FB_SYHNiuDanJi {
+	ID:int = 0;
+	HighDropBoxId:int = 0;
+	LowDropBoxId:int = 0;
+	ThreeDropBox:int = 0;
+	MagicNum:int = 0;
+	MaxTime:int = -1;
+	Param:int = -1;
+	Seq:int = -1;
+	ItemIdList:[int];
+	ItemNumList:[int];
+}
+table FB_SYHNiuDanJiContainer {
+	items:[FB_SYHNiuDanJi];
+}
+root_type FB_SYHNiuDanJiContainer;
+file_identifier "swdt";

@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_JieSoulStone {
+	Id:int = 0;
+	Level:int = -1;
+	ItemID:int = -1;
+	AttrIDList:[int];
+	AttrList:[int];
+}
+table FB_JieSoulStoneContainer {
+	items:[FB_JieSoulStone];
+}
+root_type FB_JieSoulStoneContainer;
+file_identifier "swdt";

@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_JiLingQiLingBase {
+	Id:int = 0;
+	Name:string;
+	MaxStep:int = 1;
+}
+table FB_JiLingQiLingBaseContainer {
+	items:[FB_JiLingQiLingBase];
+}
+root_type FB_JiLingQiLingBaseContainer;
+file_identifier "swdt";

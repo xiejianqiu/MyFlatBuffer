@@ -1,0 +1,18 @@
+namespace Shark;
+table FB_DiamondBase {
+	Id:int = 0;
+	SetType:int = -1;
+	MountType:int = -1;
+	DiamondLevel:int = -1;
+	AttributeIDList:[int];
+	AttributeValueList:[int];
+	StrID:int = -1;
+	Compound:int = -1;
+	MoneyConsume:int = -1;
+	IsOpen:bool = false;
+}
+table FB_DiamondBaseContainer {
+	items:[FB_DiamondBase];
+}
+root_type FB_DiamondBaseContainer;
+file_identifier "swdt";

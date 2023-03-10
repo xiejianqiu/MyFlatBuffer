@@ -1,0 +1,15 @@
+namespace Shark;
+table FB_JuBaoPenTreasure {
+	Id:int = 0;
+	Group:int = -1;
+	Draw:int = -1;
+	Recharge:int = -1;
+	Cost:int = -1;
+	TimesList:[int];
+	WeightList:[int];
+}
+table FB_JuBaoPenTreasureContainer {
+	items:[FB_JuBaoPenTreasure];
+}
+root_type FB_JuBaoPenTreasureContainer;
+file_identifier "swdt";

@@ -1,0 +1,21 @@
+namespace Shark;
+table FB_DamageBoardType {
+	DamageBoardTypeID:int = 0;
+	OriginX:float = 0;
+	OriginY:float = 0;
+	FadeStartTime:float = 0;
+	FadeDurationTime:float = 0;
+	TextColor:string;
+	OutlineColor:string;
+	TextSize:float = 0;
+	MaxNum:int = 10;
+	AnimaName:string;
+	GradientTop:string;
+	GradientBottom:string;
+	NeedShow:bool = false;
+}
+table FB_DamageBoardTypeContainer {
+	items:[FB_DamageBoardType];
+}
+root_type FB_DamageBoardTypeContainer;
+file_identifier "swdt";

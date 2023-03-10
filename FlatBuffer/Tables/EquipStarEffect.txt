@@ -1,0 +1,18 @@
+namespace Shark;
+table FB_EquipStarEffect {
+	ID:int = 0;
+	EffectPathList:[string];
+	StarCount:int = 0;
+	MountPoint:string;
+	ExclusionId:int = 0;
+	LightColorList:[string];
+	LightPowerList:[float];
+	RimbColorList:[string];
+	RimbPowerList:[float];
+	RimbWidthList:[float];
+}
+table FB_EquipStarEffectContainer {
+	items:[FB_EquipStarEffect];
+}
+root_type FB_EquipStarEffectContainer;
+file_identifier "swdt";

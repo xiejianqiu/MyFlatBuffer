@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_SpokesmanReward {
+	ID:int = 0;
+	strDesc:string;
+	DropID:int = -1;
+}
+table FB_SpokesmanRewardContainer {
+	items:[FB_SpokesmanReward];
+}
+root_type FB_SpokesmanRewardContainer;
+file_identifier "swdt";

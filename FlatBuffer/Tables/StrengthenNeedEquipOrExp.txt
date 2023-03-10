@@ -1,0 +1,19 @@
+namespace Shark;
+table FB_StrengthenNeedEquipOrExp {
+	ID:int = 0;
+	Name:string;
+	Icon:int = -1;
+	Type:int = -1;
+	StrID:int = -1;
+	UIID:int = -1;
+	ActivityID:int = -1;
+	Param:int = -1;
+	EventID:int = -1;
+	FuncBaseID:int = -1;
+	SortId:int = -1;
+}
+table FB_StrengthenNeedEquipOrExpContainer {
+	items:[FB_StrengthenNeedEquipOrExp];
+}
+root_type FB_StrengthenNeedEquipOrExpContainer;
+file_identifier "swdt";

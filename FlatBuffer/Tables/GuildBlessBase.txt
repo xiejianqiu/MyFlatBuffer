@@ -1,0 +1,12 @@
+namespace Shark;
+table FB_GuildBlessBase {
+	ID:int = 0;
+	DictID:int = -1;
+	RewardIDList:[int];
+	RewardNumList:[int];
+}
+table FB_GuildBlessBaseContainer {
+	items:[FB_GuildBlessBase];
+}
+root_type FB_GuildBlessBaseContainer;
+file_identifier "swdt";

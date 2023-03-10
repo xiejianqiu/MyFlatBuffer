@@ -1,0 +1,10 @@
+namespace Shark;
+table FB_MondayLuckDrawBase {
+	ID:int = 0;
+	ItemList:[int];
+}
+table FB_MondayLuckDrawBaseContainer {
+	items:[FB_MondayLuckDrawBase];
+}
+root_type FB_MondayLuckDrawBaseContainer;
+file_identifier "swdt";

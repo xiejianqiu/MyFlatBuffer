@@ -1,0 +1,12 @@
+namespace Shark;
+table FB_EquipTips {
+	Id:int = 0;
+	AttrValueList:[int];
+	DiamondSet:int = -1;
+	DiamondVIPSet:int = -1;
+}
+table FB_EquipTipsContainer {
+	items:[FB_EquipTips];
+}
+root_type FB_EquipTipsContainer;
+file_identifier "swdt";

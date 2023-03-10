@@ -1,0 +1,29 @@
+namespace Shark;
+table FB_UIInfo {
+	Id:int = 0;
+	Name:string;
+	Path:string;
+	Type:int = -1;
+	GroupName:string;
+	IsMainAsset:bool = false;
+	DestroyOnUnload:bool = true;
+	Layer:int = -1;
+	BlurBg:bool = false;
+	AnimationType:int = -1;
+	IsShowJuHua:bool = false;
+	NoShowSceneId:int = -1;
+	DiamondTabCount:int = -1;
+	DiamondTabDefaultSpriteList:[string];
+	DiamondTabSelectSpriteList:[string];
+	DimondTabLabelList:[string];
+	DimondTabFunctionIdList:[int];
+	CommonTitleTextList:[string];
+	MoreInfoTitleIdList:[int];
+	MoreInfoContentIdList:[int];
+	bFullPanel:bool = false;
+}
+table FB_UIInfoContainer {
+	items:[FB_UIInfo];
+}
+root_type FB_UIInfoContainer;
+file_identifier "swdt";

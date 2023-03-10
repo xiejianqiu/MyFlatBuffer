@@ -1,0 +1,16 @@
+namespace Shark;
+table FB_SYHXianYuShengHuiBase {
+	ID:int = 0;
+	ActivityName:string;
+	StartWordLevelMd:int = -1;
+	StartIndexMD:int = -1;
+	StartId:int = -1;
+	EndId:int = -1;
+	DicId:int = -1;
+	TimeInfo:string;
+}
+table FB_SYHXianYuShengHuiBaseContainer {
+	items:[FB_SYHXianYuShengHuiBase];
+}
+root_type FB_SYHXianYuShengHuiBaseContainer;
+file_identifier "swdt";

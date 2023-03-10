@@ -1,0 +1,24 @@
+namespace Shark;
+table FB_Animation {
+	AnimID:int = 0;
+	AinmName:string;
+	Layer:int = 0;
+	WrapMode:int = 1;
+	ShakeId:int = -1;
+	TransitTime:float = 0;
+	IsCanBreak:bool = false;
+	StartEffectList:[int];
+	IsCallEnd:bool = true;
+	NextAnimId:int = -1;
+	SoundID:int = -1;
+	IdCameraAnimCurve:int = -1;
+	CloseUpShot:int = -1;
+	WeaponTransformationId:int = -1;
+	UISpecialHideId:int = -1;
+	SkillCamAnimId:int = -1;
+}
+table FB_AnimationContainer {
+	items:[FB_Animation];
+}
+root_type FB_AnimationContainer;
+file_identifier "swdt";

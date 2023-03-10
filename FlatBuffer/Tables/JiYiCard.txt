@@ -1,0 +1,12 @@
+namespace Shark;
+table FB_JiYiCard {
+	Id:int = 0;
+	Round:int = 0;
+	IconNum:int = 0;
+	IconList:[string];
+}
+table FB_JiYiCardContainer {
+	items:[FB_JiYiCard];
+}
+root_type FB_JiYiCardContainer;
+file_identifier "swdt";

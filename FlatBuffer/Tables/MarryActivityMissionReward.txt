@@ -1,0 +1,15 @@
+namespace Shark;
+table FB_MarryActivityMissionReward {
+	ID:int = 0;
+	ScoreLimit:int = -1;
+	Level:int = -1;
+	DicId:int = -1;
+	BonusIndex:int = -1;
+	RewardType:int = -1;
+	ActivityType:int = -1;
+}
+table FB_MarryActivityMissionRewardContainer {
+	items:[FB_MarryActivityMissionReward];
+}
+root_type FB_MarryActivityMissionRewardContainer;
+file_identifier "swdt";

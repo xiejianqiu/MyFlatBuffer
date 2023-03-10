@@ -1,0 +1,21 @@
+namespace Shark;
+table FB_EquipPartZhuHun {
+	Id:int = 0;
+	ItemId:int = 0;
+	ItemCount:int = 0;
+	IsStep:bool = false;
+	AttrId:int = 0;
+	AttrValue:int = 0;
+	LevelUpRate:int = 0;
+	ClientLevelUpRate:int = 0;
+	FailLevel:int = 0;
+	MoneyType:int = 0;
+	MoneyCost:int = 0;
+	PassiveSkillId:int = 0;
+	StarNeed:int = 0;
+}
+table FB_EquipPartZhuHunContainer {
+	items:[FB_EquipPartZhuHun];
+}
+root_type FB_EquipPartZhuHunContainer;
+file_identifier "swdt";

@@ -1,0 +1,16 @@
+namespace Shark;
+table FB_ShouHuBase {
+	ID:int = 0;
+	RenewNeedYuanBao:int = -1;
+	RenewNeedBindYuanBao:int = -1;
+	RenewPanelIcon:string;
+	CharModelId:int = -1;
+	EffectId:int = -1;
+	FakeObjId:int = -1;
+	FakeObjRenewId:int = -1;
+}
+table FB_ShouHuBaseContainer {
+	items:[FB_ShouHuBase];
+}
+root_type FB_ShouHuBaseContainer;
+file_identifier "swdt";

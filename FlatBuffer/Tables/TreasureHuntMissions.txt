@@ -1,0 +1,20 @@
+namespace Shark;
+table FB_TreasureHuntMissions {
+	ID:int = 0;
+	Name:string;
+	StrId:int = -1;
+	WorldLvMin:int = -1;
+	WorldLvMax:int = -1;
+	LogicType:int = -1;
+	RewardItem:int = 0;
+	RewardCount:int = 0;
+	TypeParam:int = 0;
+	FunctionId:int = -1;
+	UIInfoId:int = -1;
+	Param:int = -1;
+}
+table FB_TreasureHuntMissionsContainer {
+	items:[FB_TreasureHuntMissions];
+}
+root_type FB_TreasureHuntMissionsContainer;
+file_identifier "swdt";

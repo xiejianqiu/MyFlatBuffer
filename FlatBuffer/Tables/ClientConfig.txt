@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_ClientConfig {
+	Id:int = 0;
+	Param:int = -1;
+	StringParam:string;
+}
+table FB_ClientConfigContainer {
+	items:[FB_ClientConfig];
+}
+root_type FB_ClientConfigContainer;
+file_identifier "swdt";

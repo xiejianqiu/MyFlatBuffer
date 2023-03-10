@@ -1,0 +1,17 @@
+namespace Shark;
+table FB_MissionCollectItem {
+	Index:int = 0;
+	SceneId:int = -1;
+	GroupPointID:int = -1;
+	GroupPointCount:int = 0;
+	RandomPosID:int = -1;
+	MonsterID:int = -1;
+	ItemID:int = -1;
+	IsTeamCollect:bool = false;
+	SkillId:int = -1;
+}
+table FB_MissionCollectItemContainer {
+	items:[FB_MissionCollectItem];
+}
+root_type FB_MissionCollectItemContainer;
+file_identifier "swdt";

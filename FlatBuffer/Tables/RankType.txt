@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_RankType {
+	ID:int = 0;
+	Name:string;
+	RankIDList:[int];
+}
+table FB_RankTypeContainer {
+	items:[FB_RankType];
+}
+root_type FB_RankTypeContainer;
+file_identifier "swdt";

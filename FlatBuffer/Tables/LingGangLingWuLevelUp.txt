@@ -1,0 +1,12 @@
+namespace Shark;
+table FB_LingGangLingWuLevelUp {
+	Id:int = 0;
+	CostPoint:int = 0;
+	AttrIdList:[int];
+	AttrValueList:[int];
+}
+table FB_LingGangLingWuLevelUpContainer {
+	items:[FB_LingGangLingWuLevelUp];
+}
+root_type FB_LingGangLingWuLevelUpContainer;
+file_identifier "swdt";

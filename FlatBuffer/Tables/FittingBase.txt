@@ -1,0 +1,21 @@
+namespace Shark;
+table FB_FittingBase {
+	Id:int = 0;
+	Name:string;
+	Type:int = -1;
+	TypeID:int = -1;
+	Unlock:int = -1;
+	UnlockParam:int = -1;
+	ItemID:int = -1;
+	Distance:float = 0;
+	Down:float = 0;
+	Xangle:float = 0;
+	Yangle:float = 0;
+	DescId:int = 0;
+	SortId:int = -1;
+}
+table FB_FittingBaseContainer {
+	items:[FB_FittingBase];
+}
+root_type FB_FittingBaseContainer;
+file_identifier "swdt";

@@ -1,0 +1,20 @@
+namespace Shark;
+table FB_XingHunItemBase {
+	Id:int = 0;
+	Name:string;
+	Icon:string;
+	GetPathId:int = -1;
+	Quality:int = 0;
+	Component:int = 0;
+	Exp:int = 0;
+	MaxLevel:int = 0;
+	AttrIdList:[int];
+	AttrValueList:[int];
+	DoubleCost:int = 0;
+	DropModle:string;
+}
+table FB_XingHunItemBaseContainer {
+	items:[FB_XingHunItemBase];
+}
+root_type FB_XingHunItemBaseContainer;
+file_identifier "swdt";

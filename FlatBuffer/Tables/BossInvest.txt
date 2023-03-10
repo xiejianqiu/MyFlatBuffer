@@ -1,0 +1,14 @@
+namespace Shark;
+table FB_BossInvest {
+	ID:int = 0;
+	Name:string;
+	MoneyNum:int = 0;
+	StrId:int = -1;
+	AchievementBaseId:int = -1;
+	ExtraReward:int = -1;
+}
+table FB_BossInvestContainer {
+	items:[FB_BossInvest];
+}
+root_type FB_BossInvestContainer;
+file_identifier "swdt";

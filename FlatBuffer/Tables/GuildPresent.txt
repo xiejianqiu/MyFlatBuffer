@@ -1,0 +1,16 @@
+namespace Shark;
+table FB_GuildPresent {
+	ID:int = 0;
+	Name:string;
+	IconPath:string;
+	JobLimit:int = -1;
+	AttrID:int = -1;
+	ItemIDList:[int];
+	RewardMoneyTypeList:[int];
+	RewardMoneyList:[int];
+}
+table FB_GuildPresentContainer {
+	items:[FB_GuildPresent];
+}
+root_type FB_GuildPresentContainer;
+file_identifier "swdt";

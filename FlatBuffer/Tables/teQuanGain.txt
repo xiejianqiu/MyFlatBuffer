@@ -1,0 +1,14 @@
+namespace Shark;
+table FB_teQuanGain {
+	Id:int = 0;
+	Name:string;
+	teQuanIdList:[int];
+	cd:int = -1;
+	related:int = -1;
+	advanceRmbIdList:[int];
+}
+table FB_teQuanGainContainer {
+	items:[FB_teQuanGain];
+}
+root_type FB_teQuanGainContainer;
+file_identifier "swdt";

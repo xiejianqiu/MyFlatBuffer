@@ -1,0 +1,20 @@
+namespace Shark;
+table FB_TreasureShow {
+	Id:int = 0;
+	TreasureType:int = 0;
+	LevelMin:int = -1;
+	LevelMax:int = -1;
+	RateShowTitle:int = -1;
+	RateShowDesc:int = -1;
+	FreeDrop:int = -1;
+	MdId:int = -1;
+	DropId:int = -1;
+	Big:string;
+	ShowItemIDList:[int];
+	ItemNumList:[int];
+}
+table FB_TreasureShowContainer {
+	items:[FB_TreasureShow];
+}
+root_type FB_TreasureShowContainer;
+file_identifier "swdt";

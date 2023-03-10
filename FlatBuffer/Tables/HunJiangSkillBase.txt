@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_HunJiangSkillBase {
+	ID:int = 0;
+	SkillBaseId:int = -1;
+	BookDesc:string;
+}
+table FB_HunJiangSkillBaseContainer {
+	items:[FB_HunJiangSkillBase];
+}
+root_type FB_HunJiangSkillBaseContainer;
+file_identifier "swdt";

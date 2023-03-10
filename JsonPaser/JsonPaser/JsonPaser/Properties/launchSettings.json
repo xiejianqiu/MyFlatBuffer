@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "JsonPaser": {
+      "commandName": "Project",
+      "commandLineArgs": "FBProviderTT F:\\dlc9_20220704_webgl\\Tools\\JsonPaser\\JsonPaser\\JsonPaser\\FBProvider.txt FBInitTT F:\\dlc9_20220704_webgl\\Tools\\JsonPaser\\JsonPaser\\JsonPaser\\FBBinaryExport.txt jsonPath F:\\dlc9_20220704_webgl\\FlatBuffer\\TableStructure.txt fbSavePath F:\\MyUnityDemo\\dt_tables csSavePath F:\\dlc9_20220704_webgl\\FlatBuffer\\FlatBufferTable\\FlatBufferTable\\FlatBuffer hotfixPath F:\\dlc9_20220704_webgl\\shengwang\\hotfix\\hotfix\\iLScript GenCls  true GenFB false"
+    }
+  }
+}

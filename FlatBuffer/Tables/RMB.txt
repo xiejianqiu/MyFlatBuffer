@@ -1,0 +1,49 @@
+namespace Shark;
+table FB_RMB {
+	ID:int = 0;
+	Name:string;
+	PriceSDK:int = -1;
+	Price:int = -1;
+	PriceUS:float = 0;
+	CostTianYu:int = -1;
+	PlatformProductId:string;
+	AOSProductId:string;
+	AOS9SProductId:string;
+	WEBProductId:string;
+	Icon:string;
+	ShopId:int = -1;
+	RefreshType:int = -1;
+	LimitValue:int = -1;
+	LastGiftId:int = -1;
+	MDId:int = -1;
+	Mark:int = -1;
+	MailId:int = -1;
+	OnSaleTime:long = -1;
+	OffSaleTime:long = -1;
+	ShowVipLimit:int = -1;
+	ShowLevelLimit:int = -1;
+	BuyVipLimit:int = -1;
+	BuyLevelLimit:int = -1;
+	ShowVipLimitMax:int = -1;
+	ShowLevelLimitMax:int = -1;
+	OldMoney:int = -1;
+	RealValue:int = -1;
+	YuanBao:int = -1;
+	TianYu:int = -1;
+	MoneyTypeList:[int];
+	BindYuanBaoList:[int];
+	MenPaiItemIdList:[int];
+	MenPaiItemCount:int = -1;
+	ItemIdList:[int];
+	ItemCountList:[int];
+	ItemYuanBaoId:int = -1;
+	ItemYuanBaoCount:int = -1;
+	OpenServiceDayAct:int = -1;
+	EndServiceDayAct:int = -1;
+	TaiGuYiBaoId:int = -1;
+}
+table FB_RMBContainer {
+	items:[FB_RMB];
+}
+root_type FB_RMBContainer;
+file_identifier "swdt";

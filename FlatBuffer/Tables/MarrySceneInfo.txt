@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_MarrySceneInfo {
+	ID:int = 0;
+	StartTime:int = 0;
+	EndTime:int = 0;
+}
+table FB_MarrySceneInfoContainer {
+	items:[FB_MarrySceneInfo];
+}
+root_type FB_MarrySceneInfoContainer;
+file_identifier "swdt";

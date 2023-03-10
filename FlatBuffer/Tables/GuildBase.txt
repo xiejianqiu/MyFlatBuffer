@@ -1,0 +1,30 @@
+namespace Shark;
+table FB_GuildBase {
+	Id:int = 0;
+	GuildMoneyMax:int = -1;
+	UpKeepMoney:int = -1;
+	HighUpKeepMoney:int = -1;
+	HighUpKeepLimit:int = -1;
+	Dividend:int = -1;
+	RoleNumList:[int];
+	RoleMax:int = -1;
+	TeamMax:int = -1;
+	CostType:int = -1;
+	CostMoney:int = -1;
+	NeedMoney:int = -1;
+	PaybackMoney:int = -1;
+	RobberAwardMoney:int = -1;
+	RobberAwardDividend:int = -1;
+	RobberPunishment:int = -1;
+	GuildBattleWinCapital:int = -1;
+	GuildBattleLoseCapital:int = -1;
+	GuildDefenceWinAward:int = -1;
+	GuildDefenceLosePunishment:int = -1;
+	GuildBossCapital:int = -1;
+	GuildBossContribution:int = -1;
+}
+table FB_GuildBaseContainer {
+	items:[FB_GuildBase];
+}
+root_type FB_GuildBaseContainer;
+file_identifier "swdt";

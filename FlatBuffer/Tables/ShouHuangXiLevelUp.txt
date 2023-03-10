@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_ShouHuangXiLevelUp {
+	Id:int = 0;
+	CostItemId:int = -1;
+	CostItemCount:int = -1;
+	AttrIdList:[int];
+	AttrValueList:[int];
+}
+table FB_ShouHuangXiLevelUpContainer {
+	items:[FB_ShouHuangXiLevelUp];
+}
+root_type FB_ShouHuangXiLevelUpContainer;
+file_identifier "swdt";

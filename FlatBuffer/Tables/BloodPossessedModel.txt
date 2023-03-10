@@ -1,0 +1,21 @@
+namespace Shark;
+table FB_BloodPossessedModel {
+	ID:int = 0;
+	CharModelID:int = -1;
+	EffectID:int = -1;
+	SkillIDList:[int];
+	AnimID:int = -1;
+	EndEffectID:int = -1;
+	CameraOffsetX:float = 0;
+	CameraOffsetY:float = 0;
+	CameraOffsetZ:float = 0;
+	CameraRotateX:float = 0;
+	CameraRotateY:float = 0;
+	CameraRotateZ:float = 0;
+	CameraDistance:float = 0;
+}
+table FB_BloodPossessedModelContainer {
+	items:[FB_BloodPossessedModel];
+}
+root_type FB_BloodPossessedModelContainer;
+file_identifier "swdt";

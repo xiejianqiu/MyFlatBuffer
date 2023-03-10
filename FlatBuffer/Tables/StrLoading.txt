@@ -1,0 +1,18 @@
+namespace Shark;
+table FB_StrLoading {
+	ID:int = 0;
+	Text:string;
+	SceneID:int = -1;
+	Weight:int = -1;
+	LvlMin:int = -1;
+	LvlMax:int = -1;
+	AdvanceMin:int = -1;
+	AdvanceMax:int = -1;
+	VIPMin:int = -1;
+	VIPMax:int = -1;
+}
+table FB_StrLoadingContainer {
+	items:[FB_StrLoading];
+}
+root_type FB_StrLoadingContainer;
+file_identifier "swdt";

@@ -1,0 +1,12 @@
+namespace Shark;
+table FB_LevelSealAttr {
+	ID:int = 0;
+	Exp:long = -1;
+	AttrIdList:[int];
+	AttrValueList:[int];
+}
+table FB_LevelSealAttrContainer {
+	items:[FB_LevelSealAttr];
+}
+root_type FB_LevelSealAttrContainer;
+file_identifier "swdt";

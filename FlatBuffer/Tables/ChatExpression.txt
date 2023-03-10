@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_ChatExpression {
+	Id:int = 0;
+	Name:string;
+	Icon:string;
+	Frames:int = -1;
+	Class:int = -1;
+}
+table FB_ChatExpressionContainer {
+	items:[FB_ChatExpression];
+}
+root_type FB_ChatExpressionContainer;
+file_identifier "swdt";

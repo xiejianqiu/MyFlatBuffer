@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_ActZhuTianBaoLun {
+	Id:int = 0;
+	Type:int = -1;
+	RewardNum:int = -1;
+	Weight:int = -1;
+	LuckyTrigger:bool = false;
+}
+table FB_ActZhuTianBaoLunContainer {
+	items:[FB_ActZhuTianBaoLun];
+}
+root_type FB_ActZhuTianBaoLunContainer;
+file_identifier "swdt";

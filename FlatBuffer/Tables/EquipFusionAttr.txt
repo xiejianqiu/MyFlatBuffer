@@ -1,0 +1,15 @@
+namespace Shark;
+table FB_EquipFusionAttr {
+	ID:int = 0;
+	CostItemId:int = -1;
+	CostItemNum:int = -1;
+	AttrIdList:[int];
+	AttrValueList:[int];
+	SuitAttrIdList:[int];
+	SuitAttrValueList:[int];
+}
+table FB_EquipFusionAttrContainer {
+	items:[FB_EquipFusionAttr];
+}
+root_type FB_EquipFusionAttrContainer;
+file_identifier "swdt";

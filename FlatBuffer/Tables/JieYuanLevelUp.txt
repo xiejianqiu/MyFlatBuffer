@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_JieYuanLevelUp {
+	Id:int = 0;
+	ExpByTime:int = 0;
+	ExpNeed:int = 0;
+	AttrIdList:[int];
+	AttrValueList:[int];
+}
+table FB_JieYuanLevelUpContainer {
+	items:[FB_JieYuanLevelUp];
+}
+root_type FB_JieYuanLevelUpContainer;
+file_identifier "swdt";

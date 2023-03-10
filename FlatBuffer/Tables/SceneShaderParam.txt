@@ -1,0 +1,31 @@
+namespace Shark;
+table FB_SceneShaderParam {
+	ID:int = 0;
+	FirstDiffusePower:float = -1;
+	SecondDiffusePower:float = -1;
+	FirstFinalPower:float = -1;
+	SecondFinalPower:float = -1;
+	FirstShadowFactor:float = -1;
+	SecondShadowFactor:float = -1;
+	FogStart:float = -1;
+	FogEnd:float = -1;
+	FogHightPower:float = -1;
+	FakeLightDirX:float = -1;
+	FakeLightDirY:float = -1;
+	FakeLightDirZ:float = -1;
+	Ambient:int = -1;
+	FogLowLimit:float = -1;
+	FogPowerLimit:float = -1;
+	IsWeather:bool = true;
+	PBRAmbientColorDay:int = -1;
+	PBRLightColorDay:int = -1;
+	PBRBackLightColorDay:int = -1;
+	PBRAmbientColorNight:int = -1;
+	PBRLightColorNight:int = -1;
+	PBRBackLightColorNight:int = -1;
+}
+table FB_SceneShaderParamContainer {
+	items:[FB_SceneShaderParam];
+}
+root_type FB_SceneShaderParamContainer;
+file_identifier "swdt";

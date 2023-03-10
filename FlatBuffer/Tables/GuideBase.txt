@@ -1,0 +1,44 @@
+namespace Shark;
+table FB_GuideBase {
+	Id:int = 0;
+	NextID:int = -1;
+	UIName:string;
+	BgAlpha:float = 0;
+	IsShowArrow:int = -1;
+	ArrowPosX:int = -1;
+	ArrowPosY:int = -1;
+	ArrowRotate:int = -1;
+	ArrowMirror:bool = false;
+	IsShowDialog:bool = false;
+	DialogMirror:bool = false;
+	DialogPosX:int = -1;
+	DialogPosY:int = -1;
+	FakeObjectID:int = -1;
+	FakeMirror:bool = false;
+	FakePosX:int = -1;
+	FakePosY:int = -1;
+	MissionHelpMsg:string;
+	TextID:int = -1;
+	SoundID:int = -1;
+	CanSkip:bool = true;
+	LiveTime:int = -1;
+	FinishOnSkip:bool = true;
+	IsInfoGuide:bool = false;
+	UIType:int = -1;
+	ParamList:[string];
+	MaskOffX:int = -1;
+	MaskOffY:int = -1;
+	MaskOffWidth:int = -1;
+	MaskOffHeight:int = -1;
+	FinishGuide:bool = false;
+	NeedRetry:bool = false;
+	ShowMask:bool = false;
+	MaskPlayTween:bool = false;
+	MaskMaxScale:int = -1;
+	MaskChangeTime:float = -1;
+}
+table FB_GuideBaseContainer {
+	items:[FB_GuideBase];
+}
+root_type FB_GuideBaseContainer;
+file_identifier "swdt";

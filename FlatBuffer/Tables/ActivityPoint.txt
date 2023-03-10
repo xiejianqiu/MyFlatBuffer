@@ -1,0 +1,15 @@
+namespace Shark;
+table FB_ActivityPoint {
+	ID:int = 0;
+	RewardPoint:int = -1;
+	Icon:string;
+	RewardID:int = -1;
+	RewardCount:int = -1;
+	MinLevel:int = -1;
+	MaxLevel:int = -1;
+}
+table FB_ActivityPointContainer {
+	items:[FB_ActivityPoint];
+}
+root_type FB_ActivityPointContainer;
+file_identifier "swdt";

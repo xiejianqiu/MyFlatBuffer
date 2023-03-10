@@ -1,0 +1,16 @@
+namespace Shark;
+table FB_ChangeJob8ComprehendUp {
+	Id:int = 0;
+	PartName:string;
+	ComprehendPos:int = -1;
+	ActiveProgressNum:int = -1;
+	CostItemId:int = -1;
+	CostItemNum:int = -1;
+	AttrIdList:[int];
+	AttrValueList:[int];
+}
+table FB_ChangeJob8ComprehendUpContainer {
+	items:[FB_ChangeJob8ComprehendUp];
+}
+root_type FB_ChangeJob8ComprehendUpContainer;
+file_identifier "swdt";

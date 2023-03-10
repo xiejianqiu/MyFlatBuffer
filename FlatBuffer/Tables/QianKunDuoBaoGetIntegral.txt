@@ -1,0 +1,12 @@
+namespace Shark;
+table FB_QianKunDuoBaoGetIntegral {
+	ID:int = 0;
+	DoubleCount:int = -1;
+	DescStr:string;
+	TuiJian:int = -1;
+}
+table FB_QianKunDuoBaoGetIntegralContainer {
+	items:[FB_QianKunDuoBaoGetIntegral];
+}
+root_type FB_QianKunDuoBaoGetIntegralContainer;
+file_identifier "swdt";

@@ -1,0 +1,15 @@
+namespace Shark;
+table FB_ShenWangZhanJiaCsReward {
+	ID:int = 0;
+	RankNum:string;
+	SeasonId:int = -1;
+	RankMin:int = -1;
+	RankMax:int = -1;
+	ItemIdList:[int];
+	ItemNumList:[int];
+}
+table FB_ShenWangZhanJiaCsRewardContainer {
+	items:[FB_ShenWangZhanJiaCsReward];
+}
+root_type FB_ShenWangZhanJiaCsRewardContainer;
+file_identifier "swdt";

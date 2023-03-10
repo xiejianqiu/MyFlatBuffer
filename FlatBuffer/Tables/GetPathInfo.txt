@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_GetPathInfo {
+	Id:int = 0;
+	GetPathInfoIDList:[int];
+	NoPathID:int = -1;
+}
+table FB_GetPathInfoContainer {
+	items:[FB_GetPathInfo];
+}
+root_type FB_GetPathInfoContainer;
+file_identifier "swdt";

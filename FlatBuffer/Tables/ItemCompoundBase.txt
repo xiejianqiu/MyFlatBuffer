@@ -1,0 +1,22 @@
+namespace Shark;
+table FB_ItemCompoundBase {
+	ID:int = 0;
+	Name:string;
+	Type:int = -1;
+	RequireIDList:[int];
+	RequireNumList:[int];
+	CompoundID:int = -1;
+	CompoundNum:int = -1;
+	Rate:int = -1;
+	CostType:int = -1;
+	CostValue:int = -1;
+	LevelVisible:int = -1;
+	StrIdManual:int = -1;
+	WuHunCostType:int = -1;
+	WuHunCostValue:int = -1;
+}
+table FB_ItemCompoundBaseContainer {
+	items:[FB_ItemCompoundBase];
+}
+root_type FB_ItemCompoundBaseContainer;
+file_identifier "swdt";

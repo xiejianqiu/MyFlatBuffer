@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_PackageUnlock {
+	ID:int = 0;
+	RequireType:int = -1;
+	RequireValue:int = -1;
+	ItemID:int = -1;
+	ItemNum:int = -1;
+}
+table FB_PackageUnlockContainer {
+	items:[FB_PackageUnlock];
+}
+root_type FB_PackageUnlockContainer;
+file_identifier "swdt";

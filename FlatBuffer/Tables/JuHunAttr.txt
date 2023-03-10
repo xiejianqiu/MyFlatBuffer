@@ -1,0 +1,18 @@
+namespace Shark;
+table FB_JuHunAttr {
+	ID:int = 0;
+	LevelupType:int = -1;
+	Exp:int = -1;
+	Type:int = -1;
+	MaxLevel:int = -1;
+	AttrIDList:[int];
+	AttrValueList:[int];
+	AttrValueIncList:[int];
+	AttrValueIncRangeList:[float];
+	IconSpriteName:string;
+}
+table FB_JuHunAttrContainer {
+	items:[FB_JuHunAttr];
+}
+root_type FB_JuHunAttrContainer;
+file_identifier "swdt";

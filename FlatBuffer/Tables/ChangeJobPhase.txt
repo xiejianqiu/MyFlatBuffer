@@ -1,0 +1,16 @@
+namespace Shark;
+table FB_ChangeJobPhase {
+	ID:int = 0;
+	Name:string;
+	DictID:string;
+	EndMissionID:int = -1;
+	ItemID:int = -1;
+	AttrIDList:[int];
+	AttrValueList:[int];
+	MissionList:[int];
+}
+table FB_ChangeJobPhaseContainer {
+	items:[FB_ChangeJobPhase];
+}
+root_type FB_ChangeJobPhaseContainer;
+file_identifier "swdt";

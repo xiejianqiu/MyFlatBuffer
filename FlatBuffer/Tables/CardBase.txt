@@ -1,0 +1,19 @@
+namespace Shark;
+table FB_CardBase {
+	ID:int = 0;
+	CardName:string;
+	Tips:string;
+	LogType:int = 0;
+	Quality:int = 0;
+	CardImage:string;
+	CardIcon:string;
+	CompoundId:int = -1;
+	DecomposeId:int = -1;
+	GetWayStrId:int = -1;
+	StarmapID_List:[int];
+}
+table FB_CardBaseContainer {
+	items:[FB_CardBase];
+}
+root_type FB_CardBaseContainer;
+file_identifier "swdt";

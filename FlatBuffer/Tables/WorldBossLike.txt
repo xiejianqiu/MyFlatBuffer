@@ -1,0 +1,12 @@
+namespace Shark;
+table FB_WorldBossLike {
+	Id:int = 0;
+	CountDownSeconds:int = -1;
+	MoneyType:int = -1;
+	MoneyNum:int = -1;
+}
+table FB_WorldBossLikeContainer {
+	items:[FB_WorldBossLike];
+}
+root_type FB_WorldBossLikeContainer;
+file_identifier "swdt";

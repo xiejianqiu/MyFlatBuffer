@@ -1,0 +1,17 @@
+namespace Shark;
+table FB_TeamPostion {
+	Id:int = 0;
+	PosX:float = 0;
+	PosY:float = 0;
+	PosZ:float = 0;
+	XRotation:float = 0;
+	YRotation:float = 0;
+	ZRotation:float = 0;
+	Scale:float = 0;
+	AnimationID:int = -1;
+}
+table FB_TeamPostionContainer {
+	items:[FB_TeamPostion];
+}
+root_type FB_TeamPostionContainer;
+file_identifier "swdt";

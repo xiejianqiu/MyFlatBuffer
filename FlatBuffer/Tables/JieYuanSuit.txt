@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_JieYuanSuit {
+	ID:int = 0;
+	AttrIdList:[int];
+	AttrValueList:[int];
+}
+table FB_JieYuanSuitContainer {
+	items:[FB_JieYuanSuit];
+}
+root_type FB_JieYuanSuitContainer;
+file_identifier "swdt";

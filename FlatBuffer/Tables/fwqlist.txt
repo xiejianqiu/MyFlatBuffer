@@ -1,0 +1,17 @@
+namespace Shark;
+table FB_fwqlist {
+	Id:int = 0;
+	ServerName:string;
+	Ip:string;
+	Port:int = 0;
+	ServerStartTime:long = 0;
+	WorldId:int = 0;
+	ServerState:int = 0;
+	IsTuiJian:int = 0;
+	Weight:int = 0;
+}
+table FB_fwqlistContainer {
+	items:[FB_fwqlist];
+}
+root_type FB_fwqlistContainer;
+file_identifier "swdt";

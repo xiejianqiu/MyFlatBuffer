@@ -1,0 +1,15 @@
+namespace Shark;
+table FB_MissionRound {
+	Id:int = 0;
+	LevelMin:int = -1;
+	LevelMax:int = -1;
+	AdvancedMin:int = -1;
+	AdvancedMax:int = -1;
+	MissionList:[int];
+	WeightList:[int];
+}
+table FB_MissionRoundContainer {
+	items:[FB_MissionRound];
+}
+root_type FB_MissionRoundContainer;
+file_identifier "swdt";

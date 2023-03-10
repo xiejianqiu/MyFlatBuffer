@@ -1,0 +1,15 @@
+namespace Shark;
+table FB_ActWanGuPropLevelBase {
+	Id:int = 0;
+	Level:int = 1;
+	Exp:int = -1;
+	QuickItemCount:int = -1;
+	ActWanGuId:int = -1;
+	LevelLimitList:[int];
+	LevelRewardList:[int];
+}
+table FB_ActWanGuPropLevelBaseContainer {
+	items:[FB_ActWanGuPropLevelBase];
+}
+root_type FB_ActWanGuPropLevelBaseContainer;
+file_identifier "swdt";

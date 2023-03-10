@@ -1,0 +1,15 @@
+namespace Shark;
+table FB_BlackCardSignInReward {
+	ID:int = 0;
+	Type:int = -1;
+	Days:int = -1;
+	ItemIDList:[int];
+	ItemNumList:[int];
+	TotalItemID:int = -1;
+	TotalItemNum:int = -1;
+}
+table FB_BlackCardSignInRewardContainer {
+	items:[FB_BlackCardSignInReward];
+}
+root_type FB_BlackCardSignInRewardContainer;
+file_identifier "swdt";

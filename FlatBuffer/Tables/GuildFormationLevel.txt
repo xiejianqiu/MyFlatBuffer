@@ -1,0 +1,14 @@
+namespace Shark;
+table FB_GuildFormationLevel {
+	Id:int = 0;
+	CostMoney:int = -1;
+	UpgradeTime:int = -1;
+	UpgradeExp:int = -1;
+	LevelExp:int = -1;
+	PersonLevel:int = -1;
+}
+table FB_GuildFormationLevelContainer {
+	items:[FB_GuildFormationLevel];
+}
+root_type FB_GuildFormationLevelContainer;
+file_identifier "swdt";

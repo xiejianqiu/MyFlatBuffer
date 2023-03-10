@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_EquipRandomAttr {
+	Id:int = 0;
+	Type:int = 0;
+	DropType_List:[int];
+	ItemID_List:[int];
+	ItemDropRate_List:[int];
+}
+table FB_EquipRandomAttrContainer {
+	items:[FB_EquipRandomAttr];
+}
+root_type FB_EquipRandomAttrContainer;
+file_identifier "swdt";

@@ -1,0 +1,22 @@
+namespace Shark;
+table FB_SYHFestivalCarnivalReward {
+	ID:int = 0;
+	ActivityName:string;
+	Score:int = -1;
+	CountLimit:int = -1;
+	DicId:int = -1;
+	MDId:int = -1;
+	ShowItemId:int = -1;
+	ActivityId:int = -1;
+	FuntionOpenID:int = 0;
+	UIID:int = 1;
+	AwardId:int = -1;
+	AwardCount:int = 0;
+	WorldLimit:int = 0;
+	LogicId:int = 0;
+}
+table FB_SYHFestivalCarnivalRewardContainer {
+	items:[FB_SYHFestivalCarnivalReward];
+}
+root_type FB_SYHFestivalCarnivalRewardContainer;
+file_identifier "swdt";

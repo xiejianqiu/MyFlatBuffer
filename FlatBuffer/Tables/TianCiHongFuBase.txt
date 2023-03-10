@@ -1,0 +1,15 @@
+namespace Shark;
+table FB_TianCiHongFuBase {
+	ID:int = 0;
+	actType:int = 0;
+	MaxNum:int = 0;
+	BeiJing:string;
+	TitleDesc:string;
+	ShowTimeList:[int];
+	ContinueTimeList:[int];
+}
+table FB_TianCiHongFuBaseContainer {
+	items:[FB_TianCiHongFuBase];
+}
+root_type FB_TianCiHongFuBaseContainer;
+file_identifier "swdt";

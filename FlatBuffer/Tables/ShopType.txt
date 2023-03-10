@@ -1,0 +1,18 @@
+namespace Shark;
+table FB_ShopType {
+	ID:int = 0;
+	IsXianGou:bool = false;
+	RefreshType:int = -1;
+	RefreshDataId:int = -1;
+	ManualRefreshID:int = -1;
+	RefreshMax:int = -1;
+	RefreshCount:int = -1;
+	Name:string;
+	TabList:[int];
+	IsBinding:bool = false;
+}
+table FB_ShopTypeContainer {
+	items:[FB_ShopType];
+}
+root_type FB_ShopTypeContainer;
+file_identifier "swdt";

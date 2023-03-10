@@ -1,0 +1,12 @@
+namespace Shark;
+table FB_BossInvestType {
+	ID:int = 0;
+	MoneyNum:int = -1;
+	MoneyConsum:int = -1;
+	Type:int = -1;
+}
+table FB_BossInvestTypeContainer {
+	items:[FB_BossInvestType];
+}
+root_type FB_BossInvestTypeContainer;
+file_identifier "swdt";

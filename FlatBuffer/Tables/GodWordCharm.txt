@@ -1,0 +1,15 @@
+namespace Shark;
+table FB_GodWordCharm {
+	Id:int = 0;
+	Name:string;
+	CraftReq:int = -1;
+	CraftNum:int = -1;
+	StrDictionryID:int = -1;
+	Icon:string;
+	CraftItemList:[int];
+}
+table FB_GodWordCharmContainer {
+	items:[FB_GodWordCharm];
+}
+root_type FB_GodWordCharmContainer;
+file_identifier "swdt";

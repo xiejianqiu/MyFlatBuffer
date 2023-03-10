@@ -1,0 +1,14 @@
+namespace Shark;
+table FB_CopySceneMoNengFeiXu {
+	Id:int = 0;
+	LevelLimit:int = -1;
+	ItemIDList:[int];
+	LevelId:int = -1;
+	DropBoxID:int = -1;
+	PassIndex:int = -1;
+}
+table FB_CopySceneMoNengFeiXuContainer {
+	items:[FB_CopySceneMoNengFeiXu];
+}
+root_type FB_CopySceneMoNengFeiXuContainer;
+file_identifier "swdt";

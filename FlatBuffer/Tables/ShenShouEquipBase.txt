@@ -1,0 +1,23 @@
+namespace Shark;
+table FB_ShenShouEquipBase {
+	ID:int = 0;
+	Name:string;
+	Icon:string;
+	Exp:int = -1;
+	DoubleCost:int = -1;
+	Quality:int = -1;
+	Component:int = -1;
+	StarCount:int = -1;
+	AttrIdList:[int];
+	AttrValueList:[int];
+	Tips:string;
+	DropModle:string;
+	SellPrice:int = -1;
+	GetPathID:int = -1;
+	SystemRemind:int = -1;
+}
+table FB_ShenShouEquipBaseContainer {
+	items:[FB_ShenShouEquipBase];
+}
+root_type FB_ShenShouEquipBaseContainer;
+file_identifier "swdt";

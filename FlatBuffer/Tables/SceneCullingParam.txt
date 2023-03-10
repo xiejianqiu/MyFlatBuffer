@@ -1,0 +1,21 @@
+namespace Shark;
+table FB_SceneCullingParam {
+	ID:int = 0;
+	LowestLOD:float = 0;
+	LowestRangeList:[int];
+	LowestFogList:[int];
+	LowLOD:float = 0;
+	LowRangeList:[int];
+	LowFogList:[int];
+	MidLOD:float = 0;
+	MidRangeList:[int];
+	MidFogList:[int];
+	HighLOD:float = 0;
+	HighRangeList:[int];
+	HighFogList:[int];
+}
+table FB_SceneCullingParamContainer {
+	items:[FB_SceneCullingParam];
+}
+root_type FB_SceneCullingParamContainer;
+file_identifier "swdt";

@@ -1,0 +1,33 @@
+namespace Shark;
+table FB_ActivityAncientSealSearch {
+	ID:int = 0;
+	BaseCount:int = -1;
+	CellsNum:int = 0;
+	BackNum:int = 0;
+	Probability:int = -1;
+	ItemList:[int];
+	WeightList:[int];
+	MaxItemsList:[int];
+	WeightMaxList:[int];
+	SprEnterName:string;
+	EnterName:string;
+	SprHuntName:string;
+	HuntPosXList:[float];
+	HuntPosYList:[float];
+	MoneyType:int = -1;
+	CcurPrice:int = -1;
+	WorldLevel:int = -1;
+	Param:int = -1;
+	CostNum:int = -1;
+	UnlcokMoneyType:int = -1;
+	UnlcokMoneyNum:int = -1;
+	ItemNumList:[int];
+	ItemMaxNumList:[int];
+	BaseProbability:int = -1;
+	EAddProbability:int = -1;
+}
+table FB_ActivityAncientSealSearchContainer {
+	items:[FB_ActivityAncientSealSearch];
+}
+root_type FB_ActivityAncientSealSearchContainer;
+file_identifier "swdt";

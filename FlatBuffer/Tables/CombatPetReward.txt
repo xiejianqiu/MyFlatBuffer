@@ -1,0 +1,14 @@
+namespace Shark;
+table FB_CombatPetReward {
+	ID:int = 0;
+	DicId:int = -1;
+	StarLimitList:[int];
+	BonusIndexList:[int];
+	PassReward:int = -1;
+	FakeObjectId:int = -1;
+}
+table FB_CombatPetRewardContainer {
+	items:[FB_CombatPetReward];
+}
+root_type FB_CombatPetRewardContainer;
+file_identifier "swdt";

@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_ItemGiftBase {
+	Id:int = 0;
+	Name:string;
+	Type:int = -1;
+	Param:int = -1;
+	GiftNum:int = 0;
+}
+table FB_ItemGiftBaseContainer {
+	items:[FB_ItemGiftBase];
+}
+root_type FB_ItemGiftBaseContainer;
+file_identifier "swdt";

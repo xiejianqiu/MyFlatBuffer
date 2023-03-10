@@ -1,0 +1,15 @@
+namespace Shark;
+table FB_EquipExchange {
+	Id:int = 0;
+	Type:int = 0;
+	JieLvl:int = 0;
+	Quality:int = 0;
+	StarCount:int = 0;
+	ItemId:int = 0;
+	ItemCount:int = 0;
+}
+table FB_EquipExchangeContainer {
+	items:[FB_EquipExchange];
+}
+root_type FB_EquipExchangeContainer;
+file_identifier "swdt";

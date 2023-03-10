@@ -1,0 +1,12 @@
+namespace Shark;
+table FB_SYHYuanBaoInvestType {
+	ID:int = 0;
+	MoneyNum:int = -1;
+	MoneyConsum:int = -1;
+	Type:int = -1;
+}
+table FB_SYHYuanBaoInvestTypeContainer {
+	items:[FB_SYHYuanBaoInvestType];
+}
+root_type FB_SYHYuanBaoInvestTypeContainer;
+file_identifier "swdt";

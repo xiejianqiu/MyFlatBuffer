@@ -1,0 +1,15 @@
+namespace Shark;
+table FB_ShengLingCopyScene {
+	Id:int = 0;
+	RoleBaseAttrId:int = -1;
+	Name:string;
+	Type:int = -1;
+	UnLockLevel:int = -1;
+	ItemList:[int];
+	DropBox:int = -1;
+}
+table FB_ShengLingCopySceneContainer {
+	items:[FB_ShengLingCopyScene];
+}
+root_type FB_ShengLingCopySceneContainer;
+file_identifier "swdt";

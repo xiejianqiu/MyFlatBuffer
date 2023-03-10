@@ -1,0 +1,10 @@
+namespace Shark;
+table FB_ActivityBonus {
+	ID:int = 0;
+	ParamList:[long];
+}
+table FB_ActivityBonusContainer {
+	items:[FB_ActivityBonus];
+}
+root_type FB_ActivityBonusContainer;
+file_identifier "swdt";

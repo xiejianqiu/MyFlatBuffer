@@ -1,0 +1,15 @@
+namespace Shark;
+table FB_HunJiangJiBanLevelUp {
+	ID:int = 0;
+	StarCount:int = -1;
+	ItemId:int = -1;
+	ItemCount:int = -1;
+	AttrIdList:[int];
+	AttrValueList:[int];
+	SkillDesList:[string];
+}
+table FB_HunJiangJiBanLevelUpContainer {
+	items:[FB_HunJiangJiBanLevelUp];
+}
+root_type FB_HunJiangJiBanLevelUpContainer;
+file_identifier "swdt";

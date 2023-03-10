@@ -1,0 +1,12 @@
+namespace Shark;
+table FB_CardFlopBase {
+	Id:int = 0;
+	ActiveLimit:int = -1;
+	DropBox:int = -1;
+	CardSpriteName:string;
+}
+table FB_CardFlopBaseContainer {
+	items:[FB_CardFlopBase];
+}
+root_type FB_CardFlopBaseContainer;
+file_identifier "swdt";

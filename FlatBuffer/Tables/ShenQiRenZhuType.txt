@@ -1,0 +1,17 @@
+namespace Shark;
+table FB_ShenQiRenZhuType {
+	ID:int = 0;
+	DicStrId:int = -1;
+	GoalType:int = -1;
+	GoalNum:int = -1;
+	Param:int = -1;
+	RewaredId:int = -1;
+	RewaredNum:int = -1;
+	ShowRewardNum:bool = true;
+	RewardItemIdList:[int];
+}
+table FB_ShenQiRenZhuTypeContainer {
+	items:[FB_ShenQiRenZhuType];
+}
+root_type FB_ShenQiRenZhuTypeContainer;
+file_identifier "swdt";

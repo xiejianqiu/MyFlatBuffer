@@ -1,0 +1,17 @@
+namespace Shark;
+table FB_GuildBoss {
+	ID:int = 0;
+	Level:int = -1;
+	OpenExpend:int = -1;
+	FirstExpend:int = -1;
+	RoleBaseIDList:[int];
+	PosX:float = -1;
+	PosZ:float = -1;
+	FaceDirection:float = -1;
+	ShowItemIDList:[int];
+}
+table FB_GuildBossContainer {
+	items:[FB_GuildBoss];
+}
+root_type FB_GuildBossContainer;
+file_identifier "swdt";

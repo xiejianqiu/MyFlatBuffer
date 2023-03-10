@@ -1,0 +1,12 @@
+namespace Shark;
+table FB_ActWanGuPropLevelReward {
+	Id:int = 0;
+	RewardIdList:[int];
+	RewardNumList:[int];
+	RewardTypeList:[int];
+}
+table FB_ActWanGuPropLevelRewardContainer {
+	items:[FB_ActWanGuPropLevelReward];
+}
+root_type FB_ActWanGuPropLevelRewardContainer;
+file_identifier "swdt";

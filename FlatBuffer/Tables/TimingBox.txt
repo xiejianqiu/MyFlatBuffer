@@ -1,0 +1,12 @@
+namespace Shark;
+table FB_TimingBox {
+	ID:int = 0;
+	BonusTypeList:[int];
+	BonusIDList:[int];
+	BonusNumList:[int];
+}
+table FB_TimingBoxContainer {
+	items:[FB_TimingBox];
+}
+root_type FB_TimingBoxContainer;
+file_identifier "swdt";

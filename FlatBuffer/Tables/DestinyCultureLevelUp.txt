@@ -1,0 +1,15 @@
+namespace Shark;
+table FB_DestinyCultureLevelUp {
+	Id:int = 0;
+	CostItemId:int = -1;
+	CostItemCount:int = -1;
+	PassiveSkillId:int = -1;
+	LimitTemperCount:int = -1;
+	SkillDesc:string;
+	LockSkillDesc:string;
+}
+table FB_DestinyCultureLevelUpContainer {
+	items:[FB_DestinyCultureLevelUp];
+}
+root_type FB_DestinyCultureLevelUpContainer;
+file_identifier "swdt";

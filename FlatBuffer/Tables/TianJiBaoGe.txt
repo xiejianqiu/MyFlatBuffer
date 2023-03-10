@@ -1,0 +1,19 @@
+namespace Shark;
+table FB_TianJiBaoGe {
+	ID:int = 0;
+	LevelMin:int = -1;
+	LevelMax:int = -1;
+	Set:int = -1;
+	RewardID:int = -1;
+	RewardNumber:int = -1;
+	ItemIDList:[int];
+	ItemNumberList:[int];
+	MoneyTypeList:[int];
+	PriceList:[int];
+	PriceSaleList:[int];
+}
+table FB_TianJiBaoGeContainer {
+	items:[FB_TianJiBaoGe];
+}
+root_type FB_TianJiBaoGeContainer;
+file_identifier "swdt";

@@ -1,0 +1,12 @@
+namespace Shark;
+table FB_AuctionClass {
+	ID:int = 0;
+	Name:string;
+	IsRare:bool = false;
+	TypeList:[int];
+}
+table FB_AuctionClassContainer {
+	items:[FB_AuctionClass];
+}
+root_type FB_AuctionClassContainer;
+file_identifier "swdt";

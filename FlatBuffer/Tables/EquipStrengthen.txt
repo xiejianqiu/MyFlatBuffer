@@ -1,0 +1,23 @@
+namespace Shark;
+table FB_EquipStrengthen {
+	Id:int = 0;
+	LevelNow:int = -1;
+	MaterialList:[int];
+	MaterialNumList:[int];
+	ProbabilityList:[int];
+	SpProbabilityList:[int];
+	Exp:int = -1;
+	SpExp:int = -1;
+	MaxExp:int = -1;
+	MaxHP:int = -1;
+	PAttack:int = -1;
+	MAttack:int = -1;
+	PDefense:int = -1;
+	MDefense:int = -1;
+	AttrValueList:[int];
+}
+table FB_EquipStrengthenContainer {
+	items:[FB_EquipStrengthen];
+}
+root_type FB_EquipStrengthenContainer;
+file_identifier "swdt";

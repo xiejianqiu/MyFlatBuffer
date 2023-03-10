@@ -1,0 +1,15 @@
+namespace Shark;
+table FB_ZhongShenDian {
+	ID:int = 0;
+	Icon:string;
+	EffectName:string;
+	ShenDianPoint:int = 0;
+	TitleId:int = 0;
+	RewardItemId:int = 0;
+	RewardItemCount:int = 0;
+}
+table FB_ZhongShenDianContainer {
+	items:[FB_ZhongShenDian];
+}
+root_type FB_ZhongShenDianContainer;
+file_identifier "swdt";

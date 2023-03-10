@@ -1,0 +1,28 @@
+namespace Shark;
+table FB_TaiGuRelicShopItem {
+	ID:int = 0;
+	BinType:int = -1;
+	LevelLimit:int = -1;
+	PayLimit:int = -1;
+	MaxLevelLimit:int = -1;
+	MaxPayLimit:int = -1;
+	ItemIDList:[int];
+	ItemNumList:[int];
+	LimitBuyNum:int = -1;
+	Quality:int = -1;
+	ItemName:string;
+	ItemValidTime:int = -1;
+	CoolingTime:int = -1;
+	Weight:int = -1;
+	PushNum:int = -1;
+	MoneyType:int = -1;
+	CcurPrice:int = -1;
+	RmbTabId:int = -1;
+	ParamList:[int];
+	ParamItemIdList:[int];
+}
+table FB_TaiGuRelicShopItemContainer {
+	items:[FB_TaiGuRelicShopItem];
+}
+root_type FB_TaiGuRelicShopItemContainer;
+file_identifier "swdt";

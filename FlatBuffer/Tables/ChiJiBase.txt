@@ -1,0 +1,22 @@
+namespace Shark;
+table FB_ChiJiBase {
+	Id:int = 0;
+	QuanTime:int = 0;
+	PeopleNum:int = 0;
+	NextQuanIdList:[int];
+	GroupPointId:int = 0;
+	Radii:int = 0;
+	PosX:float = 0;
+	PosY:float = 0;
+	BuffId:int = 0;
+	GroupPointIdList:[int];
+	GroupPointNumList:[int];
+	GroupPointPosList:[int];
+	ChuanSongDianId:int = 0;
+	ChuanSongDianPos:int = 0;
+}
+table FB_ChiJiBaseContainer {
+	items:[FB_ChiJiBase];
+}
+root_type FB_ChiJiBaseContainer;
+file_identifier "swdt";

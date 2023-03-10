@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_LevelCompensate {
+	ID:int = 0;
+	RewardList:[int];
+	RewardNumList:[int];
+}
+table FB_LevelCompensateContainer {
+	items:[FB_LevelCompensate];
+}
+root_type FB_LevelCompensateContainer;
+file_identifier "swdt";

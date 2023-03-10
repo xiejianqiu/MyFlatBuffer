@@ -1,0 +1,18 @@
+namespace Shark;
+table FB_RewardSurvey {
+	ID:int = 0;
+	TitleID:int = -1;
+	SelNum:int = -1;
+	OperationNum:int = -1;
+	NextID:int = -1;
+	SkipTitle:int = -1;
+	InputNum:int = -1;
+	InputLengthList:[int];
+	AnswerIDList:[int];
+	SkipIDList:[int];
+}
+table FB_RewardSurveyContainer {
+	items:[FB_RewardSurvey];
+}
+root_type FB_RewardSurveyContainer;
+file_identifier "swdt";

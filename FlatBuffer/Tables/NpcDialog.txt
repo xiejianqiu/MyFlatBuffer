@@ -1,0 +1,14 @@
+namespace Shark;
+table FB_NpcDialog {
+	Id:int = 0;
+	Dialog:string;
+	OptionDialogId:int = -1;
+	OptionDialogType:int = -1;
+	ScriptId:int = -1;
+	MissionIDList:[int];
+}
+table FB_NpcDialogContainer {
+	items:[FB_NpcDialog];
+}
+root_type FB_NpcDialogContainer;
+file_identifier "swdt";

@@ -1,0 +1,34 @@
+namespace Shark;
+table FB_FuLiDaTing {
+	Id:int = 0;
+	Name:string;
+	IsAcitve:bool = false;
+	ActivityId:int = -1;
+	UnlockType:int = -1;
+	UnlockParam:int = -1;
+	ExpIndex:int = -1;
+	CanUseAddExpRate:bool = false;
+	MoneyType:int = -1;
+	MoneyCost:int = -1;
+	YBAddExpRate:float = -1;
+	YBItemIdList:[int];
+	YBItemCountList:[int];
+	YBMoneyType:int = -1;
+	YBMoneyCost:long = -1;
+	YBMoneyShow:int = -1;
+	NormalItemIdList:[int];
+	NormalItemCountList:[int];
+	NormalMoneyType:int = -1;
+	NormalMoneyCost:long = -1;
+	NormalMoneyShow:int = -1;
+	MdId:int = -1;
+	Count:int = -1;
+	MFId:int = -1;
+	AchievementTypeList:[int];
+	AchievementPointList:[int];
+}
+table FB_FuLiDaTingContainer {
+	items:[FB_FuLiDaTing];
+}
+root_type FB_FuLiDaTingContainer;
+file_identifier "swdt";

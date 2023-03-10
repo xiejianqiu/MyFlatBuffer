@@ -1,0 +1,15 @@
+namespace Shark;
+table FB_StarSoulUnitLevel {
+	ID:int = 0;
+	Attack:int = -1;
+	CombatPower:int = -1;
+	CostItemId:int = -1;
+	CostItemCount:int = -1;
+	AttrIdList:[int];
+	AttrValueList:[int];
+}
+table FB_StarSoulUnitLevelContainer {
+	items:[FB_StarSoulUnitLevel];
+}
+root_type FB_StarSoulUnitLevelContainer;
+file_identifier "swdt";

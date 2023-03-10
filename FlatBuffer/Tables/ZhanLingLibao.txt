@@ -1,0 +1,17 @@
+namespace Shark;
+table FB_ZhanLingLibao {
+	ID:int = 0;
+	Type:int = -1;
+	Days:int = -1;
+	ConsumeMoney:int = -1;
+	ConsumeYuanBao:int = -1;
+	ItemIDList:[int];
+	ItemNumList:[int];
+	ItemIDGudingList:[int];
+	ItemNumGudingList:[int];
+}
+table FB_ZhanLingLibaoContainer {
+	items:[FB_ZhanLingLibao];
+}
+root_type FB_ZhanLingLibaoContainer;
+file_identifier "swdt";

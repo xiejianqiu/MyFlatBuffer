@@ -1,0 +1,25 @@
+namespace Shark;
+table FB_ShiLianBoss {
+	ID:int = 0;
+	CSName:string;
+	BossName:string;
+	DictID:int = -1;
+	LevelLimit:int = -1;
+	FakeObjID:int = -1;
+	DropDescID:int = -1;
+	ShowItemIDList:[int];
+	DropBoxIDList:[int];
+	BgName:string;
+	TitalName:string;
+	TeamPlatformId:int = -1;
+	bossicon:string;
+	BigBoxId:int = -1;
+	SmallBoxId:int = -1;
+	BloodBigBoxDropId:int = -1;
+	BloodSmallBoxDropId:int = -1;
+}
+table FB_ShiLianBossContainer {
+	items:[FB_ShiLianBoss];
+}
+root_type FB_ShiLianBossContainer;
+file_identifier "swdt";

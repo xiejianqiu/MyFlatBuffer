@@ -1,0 +1,23 @@
+namespace Shark;
+table FB_ActivityChickenBase {
+	ID:int = 0;
+	Name:string;
+	LevelLimit:int = -1;
+	CopySceneID:int = -1;
+	ActivityDesc:int = -1;
+	ActivityId:int = -1;
+	JoinCount:int = 0;
+	OpenType:int = -1;
+	OpenTime:int = -1;
+	EndTime:int = -1;
+	ChickenNum:int = 0;
+	EagleNum:int = 0;
+	VictoryMail:int = 0;
+	FailMail:int = 0;
+	DurationTime:int = -1;
+}
+table FB_ActivityChickenBaseContainer {
+	items:[FB_ActivityChickenBase];
+}
+root_type FB_ActivityChickenBaseContainer;
+file_identifier "swdt";

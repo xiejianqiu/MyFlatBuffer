@@ -1,0 +1,20 @@
+namespace Shark;
+table FB_ChiJiRewardBase {
+	ID:int = 0;
+	Type:int = -1;
+	MinRank:int = -1;
+	MaxRank:int = -1;
+	Title:int = -1;
+	Level:int = -1;
+	Judge:int = -1;
+	MailID:int = -1;
+	RewardIDList:[int];
+	RewardCountList:[int];
+	RewardItemID:int = -1;
+	RewardItemCount:int = -1;
+}
+table FB_ChiJiRewardBaseContainer {
+	items:[FB_ChiJiRewardBase];
+}
+root_type FB_ChiJiRewardBaseContainer;
+file_identifier "swdt";

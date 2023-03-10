@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_CopySceneLastShot {
+	ID:int = 0;
+	RoleBaseID:int = -1;
+	SceneID:int = -1;
+}
+table FB_CopySceneLastShotContainer {
+	items:[FB_CopySceneLastShot];
+}
+root_type FB_CopySceneLastShotContainer;
+file_identifier "swdt";

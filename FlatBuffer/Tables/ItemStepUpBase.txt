@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_ItemStepUpBase {
+	ID:int = 0;
+	Name:string;
+	CompoundIDList:[int];
+}
+table FB_ItemStepUpBaseContainer {
+	items:[FB_ItemStepUpBase];
+}
+root_type FB_ItemStepUpBaseContainer;
+file_identifier "swdt";

@@ -1,0 +1,22 @@
+namespace Shark;
+table FB_ActivityPray {
+	ID:int = 0;
+	TriggerId:int = -1;
+	WorldLvMin:int = -1;
+	WorldLvMax:int = -1;
+	PrayPrice:int = -1;
+	PrayScore:int = -1;
+	PrayManyTime:int = -1;
+	RewardOnce:int = -1;
+	RewardMany:int = -1;
+	ButtonOnce:int = -1;
+	ButtonMany:int = -1;
+	ProbailityDisplay:int = -1;
+	ShowItem:int = -1;
+	CostItem:int = -1;
+}
+table FB_ActivityPrayContainer {
+	items:[FB_ActivityPray];
+}
+root_type FB_ActivityPrayContainer;
+file_identifier "swdt";

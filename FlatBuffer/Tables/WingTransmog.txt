@@ -1,0 +1,32 @@
+namespace Shark;
+table FB_WingTransmog {
+	ID:int = 0;
+	Name:string;
+	IsShowAfterGetting:bool = false;
+	DescribeID:int = -1;
+	KPJDesStrID:int = -1;
+	UnlockWingDesStrID:int = -1;
+	DictionaryID:int = -1;
+	UnlockType:int = 0;
+	UnlockID:int = -1;
+	CharWingID:int = -1;
+	EffectID:int = -1;
+	WingModelIDList:[int];
+	IconPath:string;
+	UnLockItemId:int = 0;
+	UnLockItemNum:int = 0;
+	MenuFakeObjID:int = -1;
+	WingLevel:int = -1;
+	WingStep:string;
+	AvatarExp:int = -1;
+	FakeObjEffect:string;
+	HasExtraModel:bool = false;
+	ExtraModelId:int = -1;
+	ExtraWingEffectId:int = -1;
+	ExpireDays:int = -1;
+}
+table FB_WingTransmogContainer {
+	items:[FB_WingTransmog];
+}
+root_type FB_WingTransmogContainer;
+file_identifier "swdt";

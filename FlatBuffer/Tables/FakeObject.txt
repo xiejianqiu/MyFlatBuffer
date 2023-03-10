@@ -1,0 +1,27 @@
+namespace Shark;
+table FB_FakeObject {
+	Id:int = 0;
+	CharModelId:int = -1;
+	AnimaId:int = 0;
+	XOffSet:float = 0;
+	YOffSet:float = 0;
+	ZOffset:float = 0;
+	XRotation:float = 0;
+	YRotation:float = 0;
+	ZRotation:float = 0;
+	CameraRotationX:float = 0;
+	IsPlayer:bool = false;
+	BGPath:string;
+	Scale:float = 0;
+	sCamYRota:float = 0;
+	sCamXOffset:float = 0;
+	sCamZOffset:float = 0;
+	sCamSize:float = 0;
+	HasShadow:bool = false;
+	CamFieldOfView:float = 30;
+}
+table FB_FakeObjectContainer {
+	items:[FB_FakeObject];
+}
+root_type FB_FakeObjectContainer;
+file_identifier "swdt";

@@ -1,0 +1,14 @@
+namespace Shark;
+table FB_TianDaoShengYuanReward {
+	ID:int = 0;
+	ItemIDList:[int];
+	ItemNumList:[int];
+	HighDropBox:int = -1;
+	LowDropBox:int = -1;
+	SystemShoutId:int = -1;
+}
+table FB_TianDaoShengYuanRewardContainer {
+	items:[FB_TianDaoShengYuanReward];
+}
+root_type FB_TianDaoShengYuanRewardContainer;
+file_identifier "swdt";

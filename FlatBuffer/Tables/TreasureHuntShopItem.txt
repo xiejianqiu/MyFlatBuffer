@@ -1,0 +1,19 @@
+namespace Shark;
+table FB_TreasureHuntShopItem {
+	ID:int = 0;
+	GiftName:string;
+	LimitItemNum:int = -1;
+	MoneyType:int = -1;
+	Price:int = -1;
+	CcurPrice:int = -1;
+	Discount:int = -1;
+	ItemId:int = -1;
+	ItemNum:int = -1;
+	WorldLvMin:int = -1;
+	WorldLvMax:int = -1;
+}
+table FB_TreasureHuntShopItemContainer {
+	items:[FB_TreasureHuntShopItem];
+}
+root_type FB_TreasureHuntShopItemContainer;
+file_identifier "swdt";

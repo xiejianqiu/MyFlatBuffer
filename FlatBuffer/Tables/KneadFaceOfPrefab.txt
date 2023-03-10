@@ -1,0 +1,19 @@
+namespace Shark;
+table FB_KneadFaceOfPrefab {
+	Id:int = 0;
+	MenPai:int = -1;
+	Sex:int = 1;
+	FacePath:string;
+	FaceType:int = 0;
+	FaceValueList:[int];
+	HairValue:int = 0;
+	MakeUpValueList:[int];
+	PrefabIcon:string;
+	DescStr:string;
+	SecondDescStr:string;
+}
+table FB_KneadFaceOfPrefabContainer {
+	items:[FB_KneadFaceOfPrefab];
+}
+root_type FB_KneadFaceOfPrefabContainer;
+file_identifier "swdt";

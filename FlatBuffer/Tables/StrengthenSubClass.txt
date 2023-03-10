@@ -1,0 +1,14 @@
+namespace Shark;
+table FB_StrengthenSubClass {
+	ID:int = 0;
+	Name:string;
+	MissionIDList:[int];
+	RewardID:int = -1;
+	RewardCount:int = -1;
+	FlagID:int = -1;
+}
+table FB_StrengthenSubClassContainer {
+	items:[FB_StrengthenSubClass];
+}
+root_type FB_StrengthenSubClassContainer;
+file_identifier "swdt";

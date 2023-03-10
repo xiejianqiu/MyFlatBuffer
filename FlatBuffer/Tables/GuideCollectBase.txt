@@ -1,0 +1,12 @@
+namespace Shark;
+table FB_GuideCollectBase {
+	Id:int = 0;
+	Name:string;
+	AddPointNum:int = -1;
+	CombatProbability:int = -1;
+}
+table FB_GuideCollectBaseContainer {
+	items:[FB_GuideCollectBase];
+}
+root_type FB_GuideCollectBaseContainer;
+file_identifier "swdt";

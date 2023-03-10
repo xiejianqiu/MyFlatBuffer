@@ -1,0 +1,19 @@
+namespace Shark;
+table FB_MissionBonus {
+	Id:int = 0;
+	BindMoney:long = 189;
+	Exp:long = 538;
+	MenPaiItemIDList:[int];
+	MenPaiNumList:[int];
+	ItemIDList:[int];
+	ItemNumList:[int];
+	DoubleBonusCost:int = 0;
+	SectionProcess:int = -1;
+	ItemFlagIndex:int = -1;
+	YuanShenExp:long = -1;
+}
+table FB_MissionBonusContainer {
+	items:[FB_MissionBonus];
+}
+root_type FB_MissionBonusContainer;
+file_identifier "swdt";

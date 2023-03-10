@@ -1,0 +1,15 @@
+namespace Shark;
+table FB_StarSoulSkill {
+	ID:int = 0;
+	PassiveSkillId:int = -1;
+	ReplacePassiveSkillId:int = -1;
+	InvalidPassiveSkillId:int = -1;
+	IsShowOnUI:bool = false;
+	UnLockLevel:int = -1;
+	SkillLevel:int = -1;
+}
+table FB_StarSoulSkillContainer {
+	items:[FB_StarSoulSkill];
+}
+root_type FB_StarSoulSkillContainer;
+file_identifier "swdt";

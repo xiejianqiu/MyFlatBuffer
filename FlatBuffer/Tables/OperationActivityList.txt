@@ -1,0 +1,17 @@
+namespace Shark;
+table FB_OperationActivityList {
+	ID:int = 0;
+	Name:string;
+	GiftType:int = -1;
+	RefreshType:int = -1;
+	OpenTimeType:int = -1;
+	OpenTime:int = -1;
+	EndTime:int = -1;
+	RewardTime:int = -1;
+	OpenLevel:int = -1;
+}
+table FB_OperationActivityListContainer {
+	items:[FB_OperationActivityList];
+}
+root_type FB_OperationActivityListContainer;
+file_identifier "swdt";

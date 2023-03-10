@@ -1,0 +1,14 @@
+namespace Shark;
+table FB_AutoBindBase {
+	Id:int = 0;
+	Name:string;
+	Type:int = -1;
+	TypeName:string;
+	Class:int = -1;
+	ClassName:string;
+}
+table FB_AutoBindBaseContainer {
+	items:[FB_AutoBindBase];
+}
+root_type FB_AutoBindBaseContainer;
+file_identifier "swdt";

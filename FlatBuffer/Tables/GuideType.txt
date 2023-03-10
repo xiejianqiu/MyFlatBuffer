@@ -1,0 +1,14 @@
+namespace Shark;
+table FB_GuideType {
+	Id:int = 0;
+	GuideID:int = -1;
+	GuideType:int = -1;
+	Param:int = -1;
+	OpenDepUI:int = -1;
+	FuncId:int = -1;
+}
+table FB_GuideTypeContainer {
+	items:[FB_GuideType];
+}
+root_type FB_GuideTypeContainer;
+file_identifier "swdt";

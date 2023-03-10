@@ -1,0 +1,24 @@
+namespace Shark;
+table FB_Treasure {
+	Id:int = 0;
+	CostItemID:int = -1;
+	CostNumList:[int];
+	ItemPriceMoney:int = -1;
+	ItemPrice:int = -1;
+	FreeCd:int = -1;
+	ShowBigItem:int = -1;
+	BroadcastBig:int = -1;
+	ShowItem:string;
+	RecordNum:int = -1;
+	RecordNormal:int = -1;
+	SaleId:int = -1;
+	CountNum:int = -1;
+	Blessing:int = -1;
+	Score:int = -1;
+	BroadcastLink:int = -1;
+}
+table FB_TreasureContainer {
+	items:[FB_Treasure];
+}
+root_type FB_TreasureContainer;
+file_identifier "swdt";

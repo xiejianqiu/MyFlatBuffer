@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_SkillCamAnim {
+	Id:int = 0;
+	TotalTime:float = 0;
+	DelayTime:float = 0;
+}
+table FB_SkillCamAnimContainer {
+	items:[FB_SkillCamAnim];
+}
+root_type FB_SkillCamAnimContainer;
+file_identifier "swdt";

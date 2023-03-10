@@ -1,0 +1,16 @@
+namespace Shark;
+table FB_FlyCutterUI {
+	Level:int = 0;
+	TimeLinit:int = 0;
+	KnifeNum:int = 0;
+	KnifeFlyTime:float = 0;
+	BombAniNameList:[string];
+	MosterAniNameList:[string];
+	BombSpriteNameList:[string];
+	MosterSpriteNameList:[string];
+}
+table FB_FlyCutterUIContainer {
+	items:[FB_FlyCutterUI];
+}
+root_type FB_FlyCutterUIContainer;
+file_identifier "swdt";

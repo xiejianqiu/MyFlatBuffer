@@ -1,0 +1,27 @@
+namespace Shark;
+table FB_PetMount {
+	Id:int = 0;
+	Name:string;
+	Icon:string;
+	ModelID:int = -1;
+	NameSprite:string;
+	FakeObjID:int = -1;
+	UnlockStep:string;
+	UnLockType:int = -1;
+	UnLockParam:int = -1;
+	UnLockParamSec:int = -1;
+	FlyMount:bool = false;
+	BattleSkillList:[int];
+	DescStrId:int = 0;
+	UnlockDescStrId:int = 0;
+	AvatarExp:int = 0;
+	AvatarDesc:int = 0;
+	IsActiveShow:bool = false;
+	RankFakeObjID:int = 0;
+	ExpireDays:int = -1;
+}
+table FB_PetMountContainer {
+	items:[FB_PetMount];
+}
+root_type FB_PetMountContainer;
+file_identifier "swdt";

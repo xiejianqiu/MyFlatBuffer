@@ -1,0 +1,19 @@
+namespace Shark;
+table FB_EffectPoint {
+	ModelTypeId:int = 0;
+	CenterPointPath:string;
+	HeadPointPath:string;
+	LHandPointPath:string;
+	RHandPointPath:string;
+	LFootPointPath:string;
+	RFootPointPath:string;
+	LUpperArmPointPath:string;
+	WingPointPath:string;
+	ShenQiPointPath:string;
+	WeaponPointPath:string;
+}
+table FB_EffectPointContainer {
+	items:[FB_EffectPoint];
+}
+root_type FB_EffectPointContainer;
+file_identifier "swdt";

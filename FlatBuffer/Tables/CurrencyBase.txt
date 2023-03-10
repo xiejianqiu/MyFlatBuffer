@@ -1,0 +1,21 @@
+namespace Shark;
+table FB_CurrencyBase {
+	ID:int = 0;
+	Name:string;
+	IconPath:string;
+	LimitType:int = -1;
+	Limit:int = -1;
+	EveryLimit:int = -1;
+	TimeDataID:int = -1;
+	NumberDataID:int = -1;
+	DictID:int = -1;
+	TargetType:int = -1;
+	TargetParamList:[int];
+	UnlockType:int = -1;
+	UnlockParam:int = -1;
+}
+table FB_CurrencyBaseContainer {
+	items:[FB_CurrencyBase];
+}
+root_type FB_CurrencyBaseContainer;
+file_identifier "swdt";

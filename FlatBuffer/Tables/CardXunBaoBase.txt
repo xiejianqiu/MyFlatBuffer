@@ -1,0 +1,17 @@
+namespace Shark;
+table FB_CardXunBaoBase {
+	Id:int = 0;
+	LowDropBox:int = -1;
+	HighDropBoxList:[int];
+	HighMinCountList:[int];
+	HighMaxCountList:[int];
+	BaseRandomList:[int];
+	AddRandomList:[int];
+	ShopItemId:int = -1;
+	NeedItemId:int = -1;
+}
+table FB_CardXunBaoBaseContainer {
+	items:[FB_CardXunBaoBase];
+}
+root_type FB_CardXunBaoBaseContainer;
+file_identifier "swdt";

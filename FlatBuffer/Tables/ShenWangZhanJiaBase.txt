@@ -1,0 +1,15 @@
+namespace Shark;
+table FB_ShenWangZhanJiaBase {
+	Id:int = 0;
+	Info:string;
+	Name:string;
+	Tag:string;
+	StartTime:int = 0;
+	EndTime:int = 0;
+	AttrRatio:int = 0;
+}
+table FB_ShenWangZhanJiaBaseContainer {
+	items:[FB_ShenWangZhanJiaBase];
+}
+root_type FB_ShenWangZhanJiaBaseContainer;
+file_identifier "swdt";

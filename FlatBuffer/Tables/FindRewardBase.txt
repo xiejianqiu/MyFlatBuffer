@@ -1,0 +1,29 @@
+namespace Shark;
+table FB_FindRewardBase {
+	ID:int = 0;
+	Name:string;
+	ActicityBaseIDList:[int];
+	IsGuild:bool = false;
+	Time:int = 0;
+	VIPId:int = 0;
+	LowCost:int = -1;
+	LowRatio:float = 0;
+	HighCost:int = -1;
+	HighRatio:float = 0;
+	MDId:int = -1;
+	VipMDId:int = -1;
+	FindType:int = -1;
+	ParamList:[int];
+	Ratio:int = -1;
+	IsVIP:bool = false;
+	HighGoldItemId:int = -1;
+	HighGoldItemCount:int = -1;
+	LowGoldItemId:int = -1;
+	LowGoldItemCount:int = -1;
+	AddYuanShenExpIndex:int = -1;
+}
+table FB_FindRewardBaseContainer {
+	items:[FB_FindRewardBase];
+}
+root_type FB_FindRewardBaseContainer;
+file_identifier "swdt";

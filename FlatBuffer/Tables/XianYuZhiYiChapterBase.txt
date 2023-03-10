@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_XianYuZhiYiChapterBase {
+	ID:int = 0;
+	Name:string;
+	BookIDList:[int];
+}
+table FB_XianYuZhiYiChapterBaseContainer {
+	items:[FB_XianYuZhiYiChapterBase];
+}
+root_type FB_XianYuZhiYiChapterBaseContainer;
+file_identifier "swdt";

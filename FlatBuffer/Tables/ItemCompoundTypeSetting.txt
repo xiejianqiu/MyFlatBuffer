@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_ItemCompoundTypeSetting {
+	ID:int = 0;
+	Name:string;
+	FunctionOpenID:int = -1;
+	DefaultIcon:string;
+	SelectIcon:string;
+}
+table FB_ItemCompoundTypeSettingContainer {
+	items:[FB_ItemCompoundTypeSetting];
+}
+root_type FB_ItemCompoundTypeSettingContainer;
+file_identifier "swdt";

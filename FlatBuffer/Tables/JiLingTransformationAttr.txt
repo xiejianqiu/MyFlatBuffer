@@ -1,0 +1,12 @@
+namespace Shark;
+table FB_JiLingTransformationAttr {
+	Id:int = 0;
+	AttrId:int = -1;
+	AttrPercentId:int = 0;
+	TransformationAttrId:int = 0;
+}
+table FB_JiLingTransformationAttrContainer {
+	items:[FB_JiLingTransformationAttr];
+}
+root_type FB_JiLingTransformationAttrContainer;
+file_identifier "swdt";

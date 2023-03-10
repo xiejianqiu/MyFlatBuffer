@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_AllActivity {
+	Id:int = 0;
+	Name:string;
+	UIID:int = -1;
+}
+table FB_AllActivityContainer {
+	items:[FB_AllActivity];
+}
+root_type FB_AllActivityContainer;
+file_identifier "swdt";

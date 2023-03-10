@@ -1,0 +1,28 @@
+namespace Shark;
+table FB_ShenShiBase {
+	ID:int = 0;
+	Name:string;
+	Icon:string;
+	MenPai:int = -1;
+	Type:int = -1;
+	Position:int = -1;
+	MaxLevel:int = -1;
+	SkillType:int = -1;
+	UnLockLogicList:[int];
+	UnLockTypeList:[int];
+	UnLockIdList:[int];
+	UnLockValueList:[int];
+	TakeEffectType:int = -1;
+	TakeEffectValue:int = -1;
+	TakeEffectTypeSec:int = -1;
+	TakeEffectValueSec:int = -1;
+	AddSystemId:int = -1;
+	AddSystemPoint:int = -1;
+	StrDescId:int = -1;
+	DescParamList:[float];
+}
+table FB_ShenShiBaseContainer {
+	items:[FB_ShenShiBase];
+}
+root_type FB_ShenShiBaseContainer;
+file_identifier "swdt";

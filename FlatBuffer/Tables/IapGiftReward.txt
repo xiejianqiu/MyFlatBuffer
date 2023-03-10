@@ -1,0 +1,14 @@
+namespace Shark;
+table FB_IapGiftReward {
+	Id:int = 0;
+	RmbId:int = -1;
+	RefreshType:int = -1;
+	LimitValue:int = -1;
+	ItemIdList:[int];
+	ItemCountList:[int];
+}
+table FB_IapGiftRewardContainer {
+	items:[FB_IapGiftReward];
+}
+root_type FB_IapGiftRewardContainer;
+file_identifier "swdt";

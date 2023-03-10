@@ -1,0 +1,21 @@
+namespace Shark;
+table FB_ActivityPrayShow {
+	ID:int = 0;
+	FirstRowIDList:[int];
+	FirstRowNumList:[int];
+	SecondRowIDList:[int];
+	SecondRowNumList:[int];
+	ThirdRowIDList:[int];
+	ThirdRowNumList:[int];
+	FourRowIDList:[int];
+	FourRowNumList:[int];
+	FiveRowIDList:[int];
+	FiveRowNumList:[int];
+	SixRowIDList:[int];
+	SixRowNumList:[int];
+}
+table FB_ActivityPrayShowContainer {
+	items:[FB_ActivityPrayShow];
+}
+root_type FB_ActivityPrayShowContainer;
+file_identifier "swdt";

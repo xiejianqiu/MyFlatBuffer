@@ -1,0 +1,12 @@
+namespace Shark;
+table FB_LevelSealCopyScene {
+	ID:int = 0;
+	CopySceneId:int = -1;
+	ShowItemList:[int];
+	CostValueList:[int];
+}
+table FB_LevelSealCopySceneContainer {
+	items:[FB_LevelSealCopyScene];
+}
+root_type FB_LevelSealCopySceneContainer;
+file_identifier "swdt";

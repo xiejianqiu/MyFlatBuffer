@@ -1,0 +1,15 @@
+namespace Shark;
+table FB_HunGeBase {
+	ID:int = 0;
+	Name:string;
+	AttrIdList:[int];
+	AttrValueList:[int];
+	NeedExp:long = -1;
+	NeedItemId:int = -1;
+	NeedItemCount:int = -1;
+}
+table FB_HunGeBaseContainer {
+	items:[FB_HunGeBase];
+}
+root_type FB_HunGeBaseContainer;
+file_identifier "swdt";

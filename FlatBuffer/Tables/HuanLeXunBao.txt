@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_HuanLeXunBao {
+	ModelTypeId:int = 0;
+	ItemIDList:[int];
+	ItemNumList:[int];
+}
+table FB_HuanLeXunBaoContainer {
+	items:[FB_HuanLeXunBao];
+}
+root_type FB_HuanLeXunBaoContainer;
+file_identifier "swdt";

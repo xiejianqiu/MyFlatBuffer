@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_NPCPaoPao {
+	Id:int = 0;
+	StrDescIdList:[int];
+	LeftTime:float = 0;
+}
+table FB_NPCPaoPaoContainer {
+	items:[FB_NPCPaoPao];
+}
+root_type FB_NPCPaoPaoContainer;
+file_identifier "swdt";

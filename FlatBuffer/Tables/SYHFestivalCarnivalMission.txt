@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_SYHFestivalCarnivalMission {
+	ID:int = 0;
+	ScoreLimit:int = -1;
+	ShowItemId:int = -1;
+}
+table FB_SYHFestivalCarnivalMissionContainer {
+	items:[FB_SYHFestivalCarnivalMission];
+}
+root_type FB_SYHFestivalCarnivalMissionContainer;
+file_identifier "swdt";

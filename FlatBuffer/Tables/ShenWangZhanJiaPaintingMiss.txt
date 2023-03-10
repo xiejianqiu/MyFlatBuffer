@@ -1,0 +1,17 @@
+namespace Shark;
+table FB_ShenWangZhanJiaPaintingMiss {
+	ID:int = 0;
+	MissTimeType:int = -1;
+	MissSpecificType:int = -1;
+	Desc:string;
+	MissNum:int = -1;
+	AddExp:int = -1;
+	MissName:string;
+	FunctionID:int = -1;
+	GetPathBaseId:int = -1;
+}
+table FB_ShenWangZhanJiaPaintingMissContainer {
+	items:[FB_ShenWangZhanJiaPaintingMiss];
+}
+root_type FB_ShenWangZhanJiaPaintingMissContainer;
+file_identifier "swdt";

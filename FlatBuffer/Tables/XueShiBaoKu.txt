@@ -1,0 +1,18 @@
+namespace Shark;
+table FB_XueShiBaoKu {
+	Id:int = 0;
+	ItemIDList:[int];
+	DropIDList:[int];
+	LvlLimit:int = -1;
+	CopySceneId:int = -1;
+	TeamPlatformId:int = -1;
+	CardScoreList:[int];
+	CardBossCom:int = 0;
+	CardBossKill:int = 0;
+	IsCanMopUp:bool = false;
+}
+table FB_XueShiBaoKuContainer {
+	items:[FB_XueShiBaoKu];
+}
+root_type FB_XueShiBaoKuContainer;
+file_identifier "swdt";

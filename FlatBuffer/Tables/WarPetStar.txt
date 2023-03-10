@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_WarPetStar {
+	ID:int = 0;
+	Name:string;
+	StarExpList:[int];
+}
+table FB_WarPetStarContainer {
+	items:[FB_WarPetStar];
+}
+root_type FB_WarPetStarContainer;
+file_identifier "swdt";

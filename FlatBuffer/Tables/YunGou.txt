@@ -1,0 +1,20 @@
+namespace Shark;
+table FB_YunGou {
+	ID:int = 0;
+	Price:string;
+	RewardByJobList:[int];
+	RewardList:[int];
+	RewardNumList:[int];
+	RewardRate_List:[int];
+	FirstBuyRewardId:int = -1;
+	FirstBuyRewardNum:int = -1;
+	FirstRewardByJobList:[int];
+	SecRewardByJobList:[int];
+	FirstPrice:string;
+	SecPrice:string;
+}
+table FB_YunGouContainer {
+	items:[FB_YunGou];
+}
+root_type FB_YunGouContainer;
+file_identifier "swdt";

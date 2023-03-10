@@ -1,0 +1,16 @@
+namespace Shark;
+table FB_HuanJingType {
+	Id:int = 0;
+	WorldName:string;
+	WorldId:int = -1;
+	Name:string;
+	IconList:[string];
+	Flagid:int = -1;
+	UIIcon:string;
+	LeftEffect:string;
+}
+table FB_HuanJingTypeContainer {
+	items:[FB_HuanJingType];
+}
+root_type FB_HuanJingTypeContainer;
+file_identifier "swdt";

@@ -1,0 +1,24 @@
+namespace Shark;
+table FB_HuanJingBase {
+	Id:int = 0;
+	Name:string;
+	Type:int = 0;
+	TypeMini:int = 0;
+	Modle:int = 0;
+	Quality:int = 0;
+	UnlockType:int = 0;
+	UnlockParam:int = 0;
+	UnlockParamSec:int = 0;
+	HuanJingEquip:string;
+	HuanJingJiBan:bool = false;
+	IconButtonList:[string];
+	Icon:string;
+	FakeObjId:int = 0;
+	StoryTitle:string;
+	StoryInfo:string;
+}
+table FB_HuanJingBaseContainer {
+	items:[FB_HuanJingBase];
+}
+root_type FB_HuanJingBaseContainer;
+file_identifier "swdt";

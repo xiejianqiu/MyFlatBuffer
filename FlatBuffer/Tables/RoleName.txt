@@ -1,0 +1,21 @@
+namespace Shark;
+table FB_RoleName {
+	Id:int = 0;
+	Surnname:string;
+	MaleName:string;
+	FemaleName:string;
+	PreSymbol:string;
+	MidSymbol:string;
+	PostSymbol:string;
+	SurnnameNum:int = 73;
+	MaleNameNum:int = 666;
+	FemaleNameNum:int = 666;
+	PreSymbolNum:int = 182;
+	MidSymbolNum:int = 26;
+	PostSymbolNum:int = 25;
+}
+table FB_RoleNameContainer {
+	items:[FB_RoleName];
+}
+root_type FB_RoleNameContainer;
+file_identifier "swdt";

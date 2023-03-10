@@ -1,0 +1,10 @@
+namespace Shark;
+table FB_ParamCollectionPublic {
+	ID:int = 0;
+	ParamList:[long];
+}
+table FB_ParamCollectionPublicContainer {
+	items:[FB_ParamCollectionPublic];
+}
+root_type FB_ParamCollectionPublicContainer;
+file_identifier "swdt";

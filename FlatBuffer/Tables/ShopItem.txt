@@ -1,0 +1,27 @@
+namespace Shark;
+table FB_ShopItem {
+	ID:int = 0;
+	ItemID:int = -1;
+	ItemDesc:string;
+	GoldType:int = -1;
+	PayGold:int = -1;
+	LimitValue:int = -1;
+	VipLvlVisible:int = -1;
+	Discount:int = 10;
+	OnSaleTime:int = -1;
+	OffSaleTime:int = -1;
+	Weight:int = 0;
+	TradeCDType:int = -1;
+	MiniLvl:int = -1;
+	MaxLvl:int = -1;
+	MinJingJie:int = -1;
+	MiniLvlShiLi:int = -1;
+	VipLvlBuyable:int = -1;
+	BuyLimitOnce:int = 99;
+	RefType:int = -1;
+}
+table FB_ShopItemContainer {
+	items:[FB_ShopItem];
+}
+root_type FB_ShopItemContainer;
+file_identifier "swdt";

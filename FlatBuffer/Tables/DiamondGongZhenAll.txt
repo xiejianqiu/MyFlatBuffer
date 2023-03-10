@@ -1,0 +1,12 @@
+namespace Shark;
+table FB_DiamondGongZhenAll {
+	Id:int = 0;
+	LvSum:int = -1;
+	AttrIdList:[int];
+	AttrValueList:[int];
+}
+table FB_DiamondGongZhenAllContainer {
+	items:[FB_DiamondGongZhenAll];
+}
+root_type FB_DiamondGongZhenAllContainer;
+file_identifier "swdt";

@@ -1,0 +1,10 @@
+namespace Shark;
+table FB_EquipFavPoint {
+	Id:int = 0;
+	Lock:bool = false;
+}
+table FB_EquipFavPointContainer {
+	items:[FB_EquipFavPoint];
+}
+root_type FB_EquipFavPointContainer;
+file_identifier "swdt";

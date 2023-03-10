@@ -1,0 +1,15 @@
+namespace Shark;
+table FB_MissionSceneEffect {
+	Id:int = 0;
+	Name:string;
+	SceneID:int = 0;
+	EffectId:int = 0;
+	PosX:float = 0;
+	PosZ:float = 0;
+	PosY:float = 0;
+}
+table FB_MissionSceneEffectContainer {
+	items:[FB_MissionSceneEffect];
+}
+root_type FB_MissionSceneEffectContainer;
+file_identifier "swdt";

@@ -1,0 +1,17 @@
+namespace Shark;
+table FB_ShenWangZhanJiaPracticeLevelUp {
+	ID:int = 0;
+	CostType:int = -1;
+	Exp:int = -1;
+	CostPractice:int = -1;
+	Practice:int = -1;
+	AttrIdList:[int];
+	AttrValueList:[int];
+	LegendAttrIdList:[int];
+	LegendAttrValueList:[int];
+}
+table FB_ShenWangZhanJiaPracticeLevelUpContainer {
+	items:[FB_ShenWangZhanJiaPracticeLevelUp];
+}
+root_type FB_ShenWangZhanJiaPracticeLevelUpContainer;
+file_identifier "swdt";

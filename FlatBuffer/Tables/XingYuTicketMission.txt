@@ -1,0 +1,18 @@
+namespace Shark;
+table FB_XingYuTicketMission {
+	ID:int = 0;
+	MissionDesc:string;
+	Type:int = -1;
+	UI:int = -1;
+	UiNum:int = -1;
+	StageList:[int];
+	StageRewardList:[int];
+	MIssionType:int = -1;
+	Weight:int = -1;
+	Show:int = -1;
+}
+table FB_XingYuTicketMissionContainer {
+	items:[FB_XingYuTicketMission];
+}
+root_type FB_XingYuTicketMissionContainer;
+file_identifier "swdt";

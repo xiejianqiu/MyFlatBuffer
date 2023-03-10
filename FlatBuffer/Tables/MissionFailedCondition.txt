@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_MissionFailedCondition {
+	Id:int = 0;
+	Type:int = -1;
+	ParamList:[int];
+}
+table FB_MissionFailedConditionContainer {
+	items:[FB_MissionFailedCondition];
+}
+root_type FB_MissionFailedConditionContainer;
+file_identifier "swdt";

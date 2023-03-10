@@ -1,0 +1,10 @@
+namespace Shark;
+table FB_CommonItemParamTypeList {
+	Id:int = 0;
+	ParamTypeList:[int];
+}
+table FB_CommonItemParamTypeListContainer {
+	items:[FB_CommonItemParamTypeList];
+}
+root_type FB_CommonItemParamTypeListContainer;
+file_identifier "swdt";

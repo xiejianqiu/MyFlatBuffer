@@ -1,0 +1,16 @@
+namespace Shark;
+table FB_RunesTreasureBase {
+	ID:int = 0;
+	BaseCount:int = 0;
+	MustGetCount:int = 0;
+	AddRandom:int = 0;
+	TowerId:int = 0;
+	GetFirstPercent:int = 0;
+	ItemList:[int];
+	WeightList:[int];
+}
+table FB_RunesTreasureBaseContainer {
+	items:[FB_RunesTreasureBase];
+}
+root_type FB_RunesTreasureBaseContainer;
+file_identifier "swdt";

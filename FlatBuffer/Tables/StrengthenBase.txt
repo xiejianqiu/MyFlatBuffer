@@ -1,0 +1,20 @@
+namespace Shark;
+table FB_StrengthenBase {
+	ID:int = 0;
+	StrDictID:int = -1;
+	Icon:string;
+	UseLogic:int = -1;
+	GoalNum:int = -1;
+	ParamList:[int];
+	SortLevel:int = -1;
+	FunctionID:int = -1;
+	UIID:int = -1;
+	ActiveID:int = -1;
+	AttrIdList:[int];
+	AttrValueList:[int];
+}
+table FB_StrengthenBaseContainer {
+	items:[FB_StrengthenBase];
+}
+root_type FB_StrengthenBaseContainer;
+file_identifier "swdt";

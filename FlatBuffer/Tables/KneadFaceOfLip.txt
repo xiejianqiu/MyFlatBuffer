@@ -1,0 +1,19 @@
+namespace Shark;
+table FB_KneadFaceOfLip {
+	Id:int = 0;
+	MenPai:int = -1;
+	Sex:int = 1;
+	LipOffX:float = -1;
+	LipOffY:float = -1;
+	LipXLimitMin:float = -1;
+	LipXLimitMax:float = -1;
+	LipYLimitMin:float = -1;
+	LipYLimitMax:float = -1;
+	LipResPath:string;
+	LipIcon:string;
+}
+table FB_KneadFaceOfLipContainer {
+	items:[FB_KneadFaceOfLip];
+}
+root_type FB_KneadFaceOfLipContainer;
+file_identifier "swdt";

@@ -1,0 +1,15 @@
+namespace Shark;
+table FB_GetPathBase {
+	Id:int = 0;
+	Name:string;
+	BtnDesc:string;
+	Icon:string;
+	type:int = -1;
+	ParamList:[int];
+	FuncBaseID:int = -1;
+}
+table FB_GetPathBaseContainer {
+	items:[FB_GetPathBase];
+}
+root_type FB_GetPathBaseContainer;
+file_identifier "swdt";

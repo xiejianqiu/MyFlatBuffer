@@ -1,0 +1,19 @@
+namespace Shark;
+table FB_MarryXinWuBase {
+	ID:int = 0;
+	Name:string;
+	Level:int = -1;
+	Step:int = -1;
+	Exp:int = -1;
+	PayItemID:int = -1;
+	QuickItemCount:int = -1;
+	AttrIDList:[int];
+	AttrValueList:[int];
+	SpecAttrIDList:[int];
+	SpectAttrValueList:[int];
+}
+table FB_MarryXinWuBaseContainer {
+	items:[FB_MarryXinWuBase];
+}
+root_type FB_MarryXinWuBaseContainer;
+file_identifier "swdt";

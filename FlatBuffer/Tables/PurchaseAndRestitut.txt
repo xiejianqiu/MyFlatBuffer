@@ -1,0 +1,19 @@
+namespace Shark;
+table FB_PurchaseAndRestitut {
+	ID:int = 0;
+	Type:int = -1;
+	NameDesList:[string];
+	ItemIDList:[int];
+	UIModelIDList:[int];
+	CostType:int = -1;
+	CostNum:int = -1;
+	RestituteNum:int = -1;
+	RestituteTime:int = -1;
+	TipSprite:string;
+	StrID:int = -1;
+}
+table FB_PurchaseAndRestitutContainer {
+	items:[FB_PurchaseAndRestitut];
+}
+root_type FB_PurchaseAndRestitutContainer;
+file_identifier "swdt";

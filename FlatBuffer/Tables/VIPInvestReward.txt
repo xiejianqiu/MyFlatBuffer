@@ -1,0 +1,15 @@
+namespace Shark;
+table FB_VIPInvestReward {
+	ID:int = 0;
+	RefreshType:int = -1;
+	MinLvlLimit:int = -1;
+	MaxLvlLimit:int = -1;
+	DayNum:int = -1;
+	GiftIDList:[int];
+	GiftNumList:[int];
+}
+table FB_VIPInvestRewardContainer {
+	items:[FB_VIPInvestReward];
+}
+root_type FB_VIPInvestRewardContainer;
+file_identifier "swdt";

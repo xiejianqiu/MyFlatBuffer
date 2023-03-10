@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_SYHFestivalMonster {
+	ID:int = 0;
+	ActivityName:string;
+	ActivityTime:int = -1;
+}
+table FB_SYHFestivalMonsterContainer {
+	items:[FB_SYHFestivalMonster];
+}
+root_type FB_SYHFestivalMonsterContainer;
+file_identifier "swdt";
