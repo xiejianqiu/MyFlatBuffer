@@ -1,0 +1,12 @@
+namespace Shark;
+table FB_UIText {
+	Id:int = 0;
+	Chinese:string;
+	OldText:string;
+	Thai:string;
+}
+table FB_UITextContainer {
+	items:[FB_UIText];
+}
+root_type FB_UITextContainer;
+file_identifier "swdt";

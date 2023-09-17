@@ -1,0 +1,12 @@
+namespace Shark;
+table FB_DiamondAttribute {
+	ID:int = 0;
+	MinLevel:int = -1;
+	AttrIDList:[int];
+	AttrValueList:[int];
+}
+table FB_DiamondAttributeContainer {
+	items:[FB_DiamondAttribute];
+}
+root_type FB_DiamondAttributeContainer;
+file_identifier "swdt";

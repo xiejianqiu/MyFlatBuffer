@@ -1,0 +1,14 @@
+namespace Shark;
+table FB_ShenWangZhanJiaMakeLevelUp {
+	ID:int = 0;
+	Exp:int = -1;
+	CostMakeExp:int = -1;
+	MakeExp:int = -1;
+	AttrIdList:[int];
+	AttrValueList:[int];
+}
+table FB_ShenWangZhanJiaMakeLevelUpContainer {
+	items:[FB_ShenWangZhanJiaMakeLevelUp];
+}
+root_type FB_ShenWangZhanJiaMakeLevelUpContainer;
+file_identifier "swdt";

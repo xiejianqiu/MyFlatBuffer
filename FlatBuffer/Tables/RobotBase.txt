@@ -1,0 +1,19 @@
+namespace Shark;
+table FB_RobotBase {
+	ID:int = 0;
+	RoleId:int = -1;
+	MenPai:int = -1;
+	MinRobotCombat:int = -1;
+	MaxRobotCombat:int = -1;
+	HairModelID:int = -1;
+	WeaponModelID:int = -1;
+	FaceId:int = -1;
+	Realm:int = -1;
+	Wing:int = -1;
+	PassiveSkillList:[int];
+}
+table FB_RobotBaseContainer {
+	items:[FB_RobotBase];
+}
+root_type FB_RobotBaseContainer;
+file_identifier "swdt";

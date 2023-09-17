@@ -1,0 +1,22 @@
+namespace Shark;
+table FB_SkillLevel {
+	ID:int = 0;
+	Level:int = -1;
+	LevelLimit:int = -1;
+	GoldType:int = -1;
+	PayGold:int = -1;
+	ItemID:int = -1;
+	PayItem:int = -1;
+	NextLevel:int = -1;
+	AdvancedExp:int = 0;
+	BattlePower:int = 0;
+	LogicList:[int];
+	LogicOneParamList:[int];
+	LogicTowParamList:[int];
+	LevelUpDesc:string;
+}
+table FB_SkillLevelContainer {
+	items:[FB_SkillLevel];
+}
+root_type FB_SkillLevelContainer;
+file_identifier "swdt";

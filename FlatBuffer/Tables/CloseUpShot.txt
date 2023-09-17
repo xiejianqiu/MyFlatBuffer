@@ -1,0 +1,19 @@
+namespace Shark;
+table FB_CloseUpShot {
+	Id:int = 0;
+	AnimationID:int = -1;
+	Time:int = 0;
+	PosX:float = 0;
+	PosY:float = 0;
+	PosZ:float = 0;
+	RotX:float = 0;
+	RotY:float = 0;
+	RotZ:float = 0;
+	Distance:float = 0;
+	FOV:float = 0;
+}
+table FB_CloseUpShotContainer {
+	items:[FB_CloseUpShot];
+}
+root_type FB_CloseUpShotContainer;
+file_identifier "swdt";

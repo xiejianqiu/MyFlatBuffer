@@ -1,0 +1,10 @@
+namespace Shark;
+table FB_RechargeAndConsumeBase {
+	ID:int = 0;
+	RewardMD:int = 0;
+}
+table FB_RechargeAndConsumeBaseContainer {
+	items:[FB_RechargeAndConsumeBase];
+}
+root_type FB_RechargeAndConsumeBaseContainer;
+file_identifier "swdt";

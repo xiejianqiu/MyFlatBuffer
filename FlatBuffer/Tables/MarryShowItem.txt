@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_MarryShowItem {
+	ID:int = 0;
+	ItemIDList:[int];
+	ItemCountList:[int];
+}
+table FB_MarryShowItemContainer {
+	items:[FB_MarryShowItem];
+}
+root_type FB_MarryShowItemContainer;
+file_identifier "swdt";

@@ -1,0 +1,24 @@
+namespace Shark;
+table FB_ShenWangZhanJiaEquip {
+	ID:int = 0;
+	Name:string;
+	Icon:string;
+	ExpType:int = -1;
+	Exp:int = -1;
+	Quality:int = -1;
+	Component:int = -1;
+	Stage:int = 0;
+	AttrIdList:[int];
+	AttrValueList:[int];
+	PassiveSkill:int = -1;
+	Tips:string;
+	SellPrice:int = -1;
+	GetPathID:int = -1;
+	SystemRemind:int = -1;
+	DropModle:string;
+}
+table FB_ShenWangZhanJiaEquipContainer {
+	items:[FB_ShenWangZhanJiaEquip];
+}
+root_type FB_ShenWangZhanJiaEquipContainer;
+file_identifier "swdt";

@@ -1,0 +1,10 @@
+namespace Shark;
+table FB_ShieldString {
+	Id:int = 0;
+	ShieldStr:string;
+}
+table FB_ShieldStringContainer {
+	items:[FB_ShieldString];
+}
+root_type FB_ShieldStringContainer;
+file_identifier "swdt";

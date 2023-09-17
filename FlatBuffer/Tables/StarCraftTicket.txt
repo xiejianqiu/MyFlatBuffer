@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_StarCraftTicket {
+	ID:int = 0;
+	Type:int = -1;
+	ParamList:[int];
+}
+table FB_StarCraftTicketContainer {
+	items:[FB_StarCraftTicket];
+}
+root_type FB_StarCraftTicketContainer;
+file_identifier "swdt";

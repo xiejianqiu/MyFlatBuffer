@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_WorldCupCountry {
+	ID:int = 0;
+	Name:string;
+	Icon:string;
+}
+table FB_WorldCupCountryContainer {
+	items:[FB_WorldCupCountry];
+}
+root_type FB_WorldCupCountryContainer;
+file_identifier "swdt";

@@ -1,0 +1,15 @@
+namespace Shark;
+table FB_DiamondSet {
+	Id:int = 0;
+	SlotNum:int = -1;
+	SlotTypeList:[int];
+	UnlockGodWordLevelList:[int];
+	UnlockGodVIPLevel:int = -1;
+	UnlockGodVIP7Level:int = -1;
+	ShenZhuangUnLockLevelList:[int];
+}
+table FB_DiamondSetContainer {
+	items:[FB_DiamondSet];
+}
+root_type FB_DiamondSetContainer;
+file_identifier "swdt";

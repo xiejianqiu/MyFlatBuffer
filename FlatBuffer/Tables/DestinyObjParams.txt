@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_DestinyObjParams {
+	Id:int = 0;
+	FreeOrFixed:int = -1;
+	DefaultFOV:int = -1;
+	Path:string;
+	ModelPath:string;
+}
+table FB_DestinyObjParamsContainer {
+	items:[FB_DestinyObjParams];
+}
+root_type FB_DestinyObjParamsContainer;
+file_identifier "swdt";

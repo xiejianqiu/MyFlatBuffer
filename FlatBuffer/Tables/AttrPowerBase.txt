@@ -1,0 +1,14 @@
+namespace Shark;
+table FB_AttrPowerBase {
+	ID:int = 0;
+	Ratio:float = 0;
+	Model:int = -1;
+	IsBasePercentAdd:bool = false;
+	PowerType:int = -1;
+	InitialValue:int = -1;
+}
+table FB_AttrPowerBaseContainer {
+	items:[FB_AttrPowerBase];
+}
+root_type FB_AttrPowerBaseContainer;
+file_identifier "swdt";

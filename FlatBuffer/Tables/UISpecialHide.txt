@@ -1,0 +1,12 @@
+namespace Shark;
+table FB_UISpecialHide {
+	Id:int = 0;
+	HideTime:int = 0;
+	ShowStartTime:float = 0;
+	ShowTime:int = 0;
+}
+table FB_UISpecialHideContainer {
+	items:[FB_UISpecialHide];
+}
+root_type FB_UISpecialHideContainer;
+file_identifier "swdt";

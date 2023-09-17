@@ -1,0 +1,17 @@
+namespace Shark;
+table FB_CardRankRewardBase {
+	ID:int = 0;
+	GoalList:[int];
+	Label:string;
+	RewardByJobList:[int];
+	RewardByJobNameList:[string];
+	RewardList:[int];
+	RewardNumList:[int];
+	RewardNameList:[string];
+	IsBind:bool = false;
+}
+table FB_CardRankRewardBaseContainer {
+	items:[FB_CardRankRewardBase];
+}
+root_type FB_CardRankRewardBaseContainer;
+file_identifier "swdt";

@@ -1,0 +1,15 @@
+namespace Shark;
+table FB_IapGiftUI {
+	Id:int = 0;
+	PicTitle:string;
+	PicSlogan:string;
+	PicBackList:[string];
+	PicPriceList:[string];
+	GifeNameList:[string];
+	Help:int = -1;
+}
+table FB_IapGiftUIContainer {
+	items:[FB_IapGiftUI];
+}
+root_type FB_IapGiftUIContainer;
+file_identifier "swdt";

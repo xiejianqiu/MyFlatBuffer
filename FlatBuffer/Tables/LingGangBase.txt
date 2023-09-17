@@ -1,0 +1,14 @@
+namespace Shark;
+table FB_LingGangBase {
+	Id:int = 0;
+	Exp:long = -1;
+	AttrIdList:[int];
+	AttrValueList:[int];
+	DamageDelPercent:int = 0;
+	MaxLingGangPoint:long = 0;
+}
+table FB_LingGangBaseContainer {
+	items:[FB_LingGangBase];
+}
+root_type FB_LingGangBaseContainer;
+file_identifier "swdt";

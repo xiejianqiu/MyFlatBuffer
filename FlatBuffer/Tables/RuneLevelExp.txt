@@ -1,0 +1,10 @@
+namespace Shark;
+table FB_RuneLevelExp {
+	ID:int = 0;
+	QualityList:[int];
+}
+table FB_RuneLevelExpContainer {
+	items:[FB_RuneLevelExp];
+}
+root_type FB_RuneLevelExpContainer;
+file_identifier "swdt";

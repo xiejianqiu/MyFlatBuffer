@@ -1,0 +1,15 @@
+namespace Shark;
+table FB_HuanJingEquipStar {
+	ID:int = 0;
+	HuanJingEquipLevel:int = -1;
+	HuanJingEquipStar:int = -1;
+	CostItemIdList:[int];
+	CostItemCountList:[int];
+	AttrIdList:[int];
+	AttrValueList:[int];
+}
+table FB_HuanJingEquipStarContainer {
+	items:[FB_HuanJingEquipStar];
+}
+root_type FB_HuanJingEquipStarContainer;
+file_identifier "swdt";

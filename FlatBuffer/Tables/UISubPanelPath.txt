@@ -1,0 +1,10 @@
+namespace Shark;
+table FB_UISubPanelPath {
+	ID:int = 0;
+	Path:string;
+}
+table FB_UISubPanelPathContainer {
+	items:[FB_UISubPanelPath];
+}
+root_type FB_UISubPanelPathContainer;
+file_identifier "swdt";

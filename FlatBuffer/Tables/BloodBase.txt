@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_BloodBase {
+	ID:int = 0;
+	Exp:int = -1;
+	Attack:int = -1;
+	Defence:int = -1;
+	HP:int = -1;
+}
+table FB_BloodBaseContainer {
+	items:[FB_BloodBase];
+}
+root_type FB_BloodBaseContainer;
+file_identifier "swdt";

@@ -1,0 +1,17 @@
+namespace Shark;
+table FB_AncientSealShopItem {
+	ID:int = 0;
+	GiftName:string;
+	LimitItemNum:int = -1;
+	MoneyType:int = -1;
+	Price:int = -1;
+	CcurPrice:int = -1;
+	Discount:int = -1;
+	ItemId:int = -1;
+	ItemNum:int = -1;
+}
+table FB_AncientSealShopItemContainer {
+	items:[FB_AncientSealShopItem];
+}
+root_type FB_AncientSealShopItemContainer;
+file_identifier "swdt";

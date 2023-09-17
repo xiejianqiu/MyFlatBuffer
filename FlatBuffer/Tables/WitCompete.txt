@@ -1,0 +1,14 @@
+namespace Shark;
+table FB_WitCompete {
+	ID:int = 0;
+	QuestionDic:int = -1;
+	AnswerList:[int];
+	CorrectANswer:int = -1;
+	Money:int = -1;
+	Coefficient:float = 0;
+}
+table FB_WitCompeteContainer {
+	items:[FB_WitCompete];
+}
+root_type FB_WitCompeteContainer;
+file_identifier "swdt";

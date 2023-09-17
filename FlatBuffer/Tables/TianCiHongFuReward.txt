@@ -1,0 +1,12 @@
+namespace Shark;
+table FB_TianCiHongFuReward {
+	ID:int = 0;
+	actType:int = 0;
+	LevelLimit:int = 0;
+	DropIdList:[int];
+}
+table FB_TianCiHongFuRewardContainer {
+	items:[FB_TianCiHongFuReward];
+}
+root_type FB_TianCiHongFuRewardContainer;
+file_identifier "swdt";

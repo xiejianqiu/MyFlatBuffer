@@ -1,0 +1,17 @@
+namespace Shark;
+table FB_MarryShopItem {
+	ID:int = 0;
+	GiftName:string;
+	LimitItemNum:int = -1;
+	MoneyType:int = -1;
+	Price:int = -1;
+	CcurPrice:int = -1;
+	Discount:int = -1;
+	BonusId:int = -1;
+	ActivityType:int = -1;
+}
+table FB_MarryShopItemContainer {
+	items:[FB_MarryShopItem];
+}
+root_type FB_MarryShopItemContainer;
+file_identifier "swdt";

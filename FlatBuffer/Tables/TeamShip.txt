@@ -1,0 +1,21 @@
+namespace Shark;
+table FB_TeamShip {
+	ID:int = 0;
+	Name:string;
+	Icon:string;
+	Tips:int = -1;
+	FakeObjectID:int = -1;
+	CharMountID:int = -1;
+	GetPathID:int = -1;
+	GetPathItemId:int = -1;
+	UnlockType:int = -1;
+	UnlockParam:int = -1;
+	StartEffectId:int = -1;
+	EndEffectId:int = -1;
+	EnterEffectId:int = -1;
+}
+table FB_TeamShipContainer {
+	items:[FB_TeamShip];
+}
+root_type FB_TeamShipContainer;
+file_identifier "swdt";

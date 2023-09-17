@@ -1,0 +1,18 @@
+namespace Shark;
+table FB_GuildActiveBase {
+	Id:int = 0;
+	Name:string;
+	BgSprite:string;
+	Descript:string;
+	IconItemId:int = 0;
+	UnlockType:string;
+	OpenType:string;
+	TargetType:int = -1;
+	TargetParamList:[float];
+	ActivityID:int = -1;
+}
+table FB_GuildActiveBaseContainer {
+	items:[FB_GuildActiveBase];
+}
+root_type FB_GuildActiveBaseContainer;
+file_identifier "swdt";

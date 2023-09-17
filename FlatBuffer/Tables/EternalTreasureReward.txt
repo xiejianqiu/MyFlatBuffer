@@ -1,0 +1,14 @@
+namespace Shark;
+table FB_EternalTreasureReward {
+	ID:int = 0;
+	ScoreLimit:int = -1;
+	Level:int = -1;
+	DicId:int = -1;
+	BonusIndexList:[int];
+	FlagId:int = -1;
+}
+table FB_EternalTreasureRewardContainer {
+	items:[FB_EternalTreasureReward];
+}
+root_type FB_EternalTreasureRewardContainer;
+file_identifier "swdt";

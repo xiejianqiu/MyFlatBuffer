@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_MissionUseItem {
+	Id:int = 0;
+	ItemID:int = -1;
+	RoleID:int = -1;
+}
+table FB_MissionUseItemContainer {
+	items:[FB_MissionUseItem];
+}
+root_type FB_MissionUseItemContainer;
+file_identifier "swdt";

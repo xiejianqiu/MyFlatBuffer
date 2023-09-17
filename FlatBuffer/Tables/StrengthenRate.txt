@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_StrengthenRate {
+	ID:int = 0;
+	Level:int = -1;
+	RateList:[int];
+}
+table FB_StrengthenRateContainer {
+	items:[FB_StrengthenRate];
+}
+root_type FB_StrengthenRateContainer;
+file_identifier "swdt";

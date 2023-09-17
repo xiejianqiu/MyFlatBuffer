@@ -1,0 +1,45 @@
+namespace Shark;
+table FB_RoleBaseAttr {
+	Id:int = 0;
+	CharModelID:int = -1;
+	Name:string;
+	Sex:int = 0;
+	NpcType:int = 0;
+	Level:int = 1;
+	AttackType:int = 0;
+	MaxAP:int = 0;
+	Camp:int = 0;
+	CorpseTime:int = 3000;
+	ReviveTime:int = 2000;
+	DialogID:int = 0;
+	DropItemId:int = 0;
+	Exp:long = 0;
+	CanAttackFly:bool = false;
+	BornEffctID:int = -1;
+	BornTime:int = 0;
+	RampType:int = 0;
+	BelongType:int = 1;
+	TeamBelongType:int = 1;
+	DimensionId:int = 0;
+	AIType:int = 0;
+	SkillIdList:[int];
+	ShowNameBoard:int = 0;
+	IsShowNameBoard:bool = false;
+	Title:string;
+	IsStatic:bool = false;
+	IsHitBack:bool = false;
+	IsThrough:bool = false;
+	IsXiuXian:bool = false;
+	IsStatistics:int = -1;
+	LogicRadius:float = 0;
+	WorldBossType:int = -1;
+	ScriptsId:int = -1;
+	ScenePoint:int = -1;
+	IsLevelSuppress:bool = false;
+	YuanShenExp:long = -1;
+}
+table FB_RoleBaseAttrContainer {
+	items:[FB_RoleBaseAttr];
+}
+root_type FB_RoleBaseAttrContainer;
+file_identifier "swdt";

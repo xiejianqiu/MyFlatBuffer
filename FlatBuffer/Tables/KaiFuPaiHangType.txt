@@ -1,0 +1,18 @@
+namespace Shark;
+table FB_KaiFuPaiHangType {
+	ID:int = 0;
+	GoalList:[int];
+	Label:string;
+	PaiHangIndex:int = -1;
+	RewardByJobList:[int];
+	RewardByJobNameList:[string];
+	RewardList:[int];
+	RewardNumList:[int];
+	RewardNameList:[string];
+	IsBind:bool = false;
+}
+table FB_KaiFuPaiHangTypeContainer {
+	items:[FB_KaiFuPaiHangType];
+}
+root_type FB_KaiFuPaiHangTypeContainer;
+file_identifier "swdt";

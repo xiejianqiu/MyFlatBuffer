@@ -1,0 +1,29 @@
+namespace Shark;
+table FB_MissionDictionary {
+	Id:int = 0;
+	MissionName:string;
+	MissionAcceptDesc:string;
+	MissionDoneDesc:string;
+	MissionDoneText:string;
+	MissionDesc:string;
+	FollowText:string;
+	IsAutoFindPath:bool = true;
+	IsCanFindPath:bool = true;
+	SceneEffectIdApt:int = -1;
+	EftTypeApt:int = -1;
+	SceneEffectIdCpt:int = -1;
+	EftTypeCpt:int = -1;
+	IsCAutoFindPath:bool = true;
+	GuideText:int = -1;
+	DialogGuide:bool = true;
+	DialogArrow:bool = true;
+	BottomDict:int = -1;
+	BottomDelay:int = 0;
+	BtnAText:string;
+	BtnBText:string;
+}
+table FB_MissionDictionaryContainer {
+	items:[FB_MissionDictionary];
+}
+root_type FB_MissionDictionaryContainer;
+file_identifier "swdt";

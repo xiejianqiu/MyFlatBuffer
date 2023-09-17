@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_EquipSlotAttr {
+	ID:int = 0;
+	Rate:int = -1;
+	Quality:int = -1;
+}
+table FB_EquipSlotAttrContainer {
+	items:[FB_EquipSlotAttr];
+}
+root_type FB_EquipSlotAttrContainer;
+file_identifier "swdt";

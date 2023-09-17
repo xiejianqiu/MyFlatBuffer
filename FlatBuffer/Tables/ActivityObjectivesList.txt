@@ -1,0 +1,12 @@
+namespace Shark;
+table FB_ActivityObjectivesList {
+	ID:int = 0;
+	Name:string;
+	MaxObjectives:int = -1;
+	ObjIDList:[int];
+}
+table FB_ActivityObjectivesListContainer {
+	items:[FB_ActivityObjectivesList];
+}
+root_type FB_ActivityObjectivesListContainer;
+file_identifier "swdt";

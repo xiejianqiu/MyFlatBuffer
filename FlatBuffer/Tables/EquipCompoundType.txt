@@ -1,0 +1,17 @@
+namespace Shark;
+table FB_EquipCompoundType {
+	ID:int = 0;
+	Name:string;
+	FirstPage:int = -1;
+	SecondPage:int = -1;
+	Quality:int = -1;
+	StarNum:int = -1;
+	MenPai:int = -1;
+	EquipPoint:string;
+	ExtraMaterial:int = -1;
+}
+table FB_EquipCompoundTypeContainer {
+	items:[FB_EquipCompoundType];
+}
+root_type FB_EquipCompoundTypeContainer;
+file_identifier "swdt";

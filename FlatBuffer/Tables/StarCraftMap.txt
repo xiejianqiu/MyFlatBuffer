@@ -1,0 +1,20 @@
+namespace Shark;
+table FB_StarCraftMap {
+	ID:int = 0;
+	Position:string;
+	Link:string;
+	Type:int = -1;
+	Name:string;
+	Icon:string;
+	Quality:int = 0;
+	Group:int = -1;
+	Difficult:int = -1;
+	Score:int = -1;
+	GateCostNum:int = -1;
+	OccupyRewardList:[int];
+}
+table FB_StarCraftMapContainer {
+	items:[FB_StarCraftMap];
+}
+root_type FB_StarCraftMapContainer;
+file_identifier "swdt";

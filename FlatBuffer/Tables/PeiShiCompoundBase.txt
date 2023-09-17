@@ -1,0 +1,26 @@
+namespace Shark;
+table FB_PeiShiCompoundBase {
+	ID:int = 0;
+	Name:string;
+	Type:int = -1;
+	RequireIDList:[int];
+	RequireNumList:[int];
+	Sort:int = -1;
+	LimitType:int = 0;
+	LimitValue:int = 0;
+	UnLockItemId:int = 0;
+	AvatarExp:int = -1;
+	Quality:int = -1;
+	StrID:int = -1;
+	EquipOnGet:bool = false;
+	EffectName:string;
+	Icon:string;
+	DurationTime:int = -1;
+	AttrIdList:[int];
+	AttrValueList:[int];
+}
+table FB_PeiShiCompoundBaseContainer {
+	items:[FB_PeiShiCompoundBase];
+}
+root_type FB_PeiShiCompoundBaseContainer;
+file_identifier "swdt";

@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_XingHunZhuanJingEffect {
+	Id:int = 0;
+	DefaultEffectId:int = -1;
+	EffectList:[int];
+}
+table FB_XingHunZhuanJingEffectContainer {
+	items:[FB_XingHunZhuanJingEffect];
+}
+root_type FB_XingHunZhuanJingEffectContainer;
+file_identifier "swdt";

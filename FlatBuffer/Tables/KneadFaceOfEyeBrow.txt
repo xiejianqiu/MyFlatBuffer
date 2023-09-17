@@ -1,0 +1,21 @@
+namespace Shark;
+table FB_KneadFaceOfEyeBrow {
+	Id:int = 0;
+	MenPai:int = -1;
+	Sex:int = 1;
+	EyeBrowOffX:float = -1;
+	EyeBrowOffY:float = -1;
+	EyeBrowScaleX:float = -1;
+	EyeBrowScaleY:float = -1;
+	EyeBrowXLimitMin:float = -1;
+	EyeBrowXLimitMax:float = -1;
+	EyeBrowYLimitMin:float = -1;
+	EyeBrowYLimitMax:float = -1;
+	EyeBrowResPath:string;
+	EyeBrowIcon:string;
+}
+table FB_KneadFaceOfEyeBrowContainer {
+	items:[FB_KneadFaceOfEyeBrow];
+}
+root_type FB_KneadFaceOfEyeBrowContainer;
+file_identifier "swdt";

@@ -1,0 +1,30 @@
+namespace Shark;
+table FB_CharMount {
+	Id:int = 0;
+	ModelId:int = -1;
+	SoundID:int = 0;
+	BindPoint:string;
+	FakeObjID:int = 0;
+	HeadInfoAddHeightList:[float];
+	FemaleHeadInfoAddHeightList:[float];
+	FlyAddHeight:float = 0;
+	Scale:float = 0;
+	IdleAnimId:int = -1;
+	RunAnimId:int = -1;
+	XiuXianAnimId:int = -1;
+	SoulStarOffsetY:float = -1;
+	BindID:int = -1;
+	IsTeamShip:bool = false;
+	UIModelId:int = -1;
+	EffectOffsetX:float = -1;
+	EffectOffsetY:float = -1;
+	EffectOffsetZ:float = -1;
+	CameraDis:float = -1;
+	PlayerScale:float = 0;
+	EffecOffsetYList:[float];
+}
+table FB_CharMountContainer {
+	items:[FB_CharMount];
+}
+root_type FB_CharMountContainer;
+file_identifier "swdt";

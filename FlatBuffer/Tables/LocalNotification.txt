@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_LocalNotification {
+	Id:int = 0;
+	Indentifier:string;
+	TimeType:int = -1;
+	TimeValue:int = -1;
+	Notification:string;
+}
+table FB_LocalNotificationContainer {
+	items:[FB_LocalNotification];
+}
+root_type FB_LocalNotificationContainer;
+file_identifier "swdt";

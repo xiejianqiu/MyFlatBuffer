@@ -1,0 +1,19 @@
+namespace Shark;
+table FB_EquipCompoundTypeShenZhuang {
+	ID:int = 0;
+	Name:string;
+	FirstPage:int = -1;
+	SecondPage:int = -1;
+	Quality:int = -1;
+	StarNum:int = -1;
+	MenPai:int = -1;
+	EquipPoint:string;
+	ExtraMaterial:int = -1;
+	Type:int = -1;
+	EquipGrade:int = -1;
+}
+table FB_EquipCompoundTypeShenZhuangContainer {
+	items:[FB_EquipCompoundTypeShenZhuang];
+}
+root_type FB_EquipCompoundTypeShenZhuangContainer;
+file_identifier "swdt";

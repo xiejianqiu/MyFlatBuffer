@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_JieYuanSuitInfo {
+	ID:int = 0;
+	Name:string;
+	Quailty:int = 0;
+	ActiveCount:int = -1;
+	SuitIDList:[int];
+}
+table FB_JieYuanSuitInfoContainer {
+	items:[FB_JieYuanSuitInfo];
+}
+root_type FB_JieYuanSuitInfoContainer;
+file_identifier "swdt";

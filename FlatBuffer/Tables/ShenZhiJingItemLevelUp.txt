@@ -1,0 +1,21 @@
+namespace Shark;
+table FB_ShenZhiJingItemLevelUp {
+	ID:int = 0;
+	LevelUpType:int = -1;
+	Level:int = -1;
+	CostItemId:int = -1;
+	CostItemNum:int = -1;
+	AddPropertyIDList:[int];
+	AddPropertyValueList:[int];
+	SkillID:int = -1;
+	SkillLevel:int = -1;
+	UnlockNextSkillLevel:int = -1;
+	HuaShenLevelLimit:int = -1;
+	UnlockId:int = -1;
+	UnlockValue:int = -1;
+}
+table FB_ShenZhiJingItemLevelUpContainer {
+	items:[FB_ShenZhiJingItemLevelUp];
+}
+root_type FB_ShenZhiJingItemLevelUpContainer;
+file_identifier "swdt";

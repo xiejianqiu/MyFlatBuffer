@@ -1,0 +1,14 @@
+namespace Shark;
+table FB_ShenShouEquipLevelUp {
+	ID:int = 0;
+	Name:string;
+	Exp:int = -1;
+	Quality:int = 0;
+	AttrIdList:[int];
+	AttrValueList:[int];
+}
+table FB_ShenShouEquipLevelUpContainer {
+	items:[FB_ShenShouEquipLevelUp];
+}
+root_type FB_ShenShouEquipLevelUpContainer;
+file_identifier "swdt";

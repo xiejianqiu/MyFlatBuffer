@@ -1,0 +1,22 @@
+namespace Shark;
+table FB_HunJiangItemBase {
+	Id:int = 0;
+	Name:string;
+	Icon:string;
+	Quality:int = 0;
+	Component:int = 0;
+	StarCount:int = 0;
+	Exp:int = -1;
+	AttrIdList:[int];
+	AttrValueList:[int];
+	SellPrice:int = 0;
+	GetPathID:int = -1;
+	SystemRemind:int = -1;
+	ItemDesc:string;
+	DropModle:string;
+}
+table FB_HunJiangItemBaseContainer {
+	items:[FB_HunJiangItemBase];
+}
+root_type FB_HunJiangItemBaseContainer;
+file_identifier "swdt";

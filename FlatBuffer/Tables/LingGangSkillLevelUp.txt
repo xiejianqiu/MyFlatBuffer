@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_LingGangSkillLevelUp {
+	Id:int = 0;
+	Name:string;
+	PassiveSkillId:int = -1;
+	ItemId:int = -1;
+	ItemCount:int = -1;
+}
+table FB_LingGangSkillLevelUpContainer {
+	items:[FB_LingGangSkillLevelUp];
+}
+root_type FB_LingGangSkillLevelUpContainer;
+file_identifier "swdt";

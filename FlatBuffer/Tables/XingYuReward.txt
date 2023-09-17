@@ -1,0 +1,12 @@
+namespace Shark;
+table FB_XingYuReward {
+	ID:int = 0;
+	Type:int = -1;
+	RewardList:[int];
+	ParamList:[int];
+}
+table FB_XingYuRewardContainer {
+	items:[FB_XingYuReward];
+}
+root_type FB_XingYuRewardContainer;
+file_identifier "swdt";

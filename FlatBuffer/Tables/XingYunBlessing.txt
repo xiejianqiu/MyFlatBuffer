@@ -1,0 +1,22 @@
+namespace Shark;
+table FB_XingYunBlessing {
+	EventId:int = 0;
+	BlessType:int = -1;
+	RewardID:int = -1;
+	RewardNum:int = -1;
+	SpecialEventType:int = -1;
+	SpecialEventParam:float = -1;
+	BuffID:int = -1;
+	BufDescId:int = 0;
+	EventWeights:int = -1;
+	LevelLimitType:int = -1;
+	MinLevelLimit:int = 0;
+	MaxLevelLimit:int = 0;
+	RankLimit:int = -1;
+	ActivityBaseId:int = -1;
+}
+table FB_XingYunBlessingContainer {
+	items:[FB_XingYunBlessing];
+}
+root_type FB_XingYunBlessingContainer;
+file_identifier "swdt";

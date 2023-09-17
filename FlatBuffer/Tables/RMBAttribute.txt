@@ -1,0 +1,10 @@
+namespace Shark;
+table FB_RMBAttribute {
+	Id:int = 0;
+	ParamList:[int];
+}
+table FB_RMBAttributeContainer {
+	items:[FB_RMBAttribute];
+}
+root_type FB_RMBAttributeContainer;
+file_identifier "swdt";

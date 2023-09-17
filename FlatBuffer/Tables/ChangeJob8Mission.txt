@@ -1,0 +1,15 @@
+namespace Shark;
+table FB_ChangeJob8Mission {
+	MissionId:int = 0;
+	MissionDesc:int = -1;
+	MissionTriggerType:int = -1;
+	Param:int = -1;
+	MissionTargetNum:int = -1;
+	RewardId:int = -1;
+	RewardNum:int = -1;
+}
+table FB_ChangeJob8MissionContainer {
+	items:[FB_ChangeJob8Mission];
+}
+root_type FB_ChangeJob8MissionContainer;
+file_identifier "swdt";

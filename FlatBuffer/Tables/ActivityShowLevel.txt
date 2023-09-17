@@ -1,0 +1,14 @@
+namespace Shark;
+table FB_ActivityShowLevel {
+	Id:int = 0;
+	Level:int = 1;
+	Exp:int = -1;
+	HpMax:int = -1;
+	PMAttack:int = -1;
+	PMDefence:int = -1;
+}
+table FB_ActivityShowLevelContainer {
+	items:[FB_ActivityShowLevel];
+}
+root_type FB_ActivityShowLevelContainer;
+file_identifier "swdt";

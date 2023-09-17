@@ -1,0 +1,23 @@
+namespace Shark;
+table FB_XingHunZhuanJingBase {
+	ID:int = 0;
+	Name:string;
+	Icon:string;
+	SkillType:int = 0;
+	MenPai:int = -1;
+	Position:int = -1;
+	MaxLevel:int = -1;
+	UnLockType:int = -1;
+	UnLockIdList:[int];
+	UnLockValueList:[int];
+	PassiveSkillId:int = -1;
+	ImpactId:int = -1;
+	SkillId:int = -1;
+	StrDescIdList:[int];
+	DescParamList:[float];
+}
+table FB_XingHunZhuanJingBaseContainer {
+	items:[FB_XingHunZhuanJingBase];
+}
+root_type FB_XingHunZhuanJingBaseContainer;
+file_identifier "swdt";

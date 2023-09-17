@@ -1,0 +1,17 @@
+namespace Shark;
+table FB_TheInherit {
+	Id:int = 0;
+	LevelLimit:int = -1;
+	InheritId:int = -1;
+	InheritLevelLimit:int = -1;
+	InheritRewardList:[int];
+	InheritRewardNumList:[int];
+	FakeObjIDList:[int];
+	AchievementIDList:[int];
+	InheritDesList:[string];
+}
+table FB_TheInheritContainer {
+	items:[FB_TheInherit];
+}
+root_type FB_TheInheritContainer;
+file_identifier "swdt";

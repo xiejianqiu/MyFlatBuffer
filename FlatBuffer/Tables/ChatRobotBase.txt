@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_ChatRobotBase {
+	Id:int = 0;
+	LimitLevel:int = -1;
+	LimitMissionID:int = -1;
+}
+table FB_ChatRobotBaseContainer {
+	items:[FB_ChatRobotBase];
+}
+root_type FB_ChatRobotBaseContainer;
+file_identifier "swdt";

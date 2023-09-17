@@ -1,0 +1,14 @@
+namespace Shark;
+table FB_EquipSource {
+	Id:int = 0;
+	Low:int = -1;
+	High:int = -1;
+	QualityPercentList:[int];
+	QualityLowList:[int];
+	QualityHighList:[int];
+}
+table FB_EquipSourceContainer {
+	items:[FB_EquipSource];
+}
+root_type FB_EquipSourceContainer;
+file_identifier "swdt";

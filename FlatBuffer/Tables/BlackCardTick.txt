@@ -1,0 +1,16 @@
+namespace Shark;
+table FB_BlackCardTick {
+	ID:int = 0;
+	Name:string;
+	ClassID:int = -1;
+	LogicType:int = -1;
+	Goal:int = -1;
+	ParamList:[int];
+	BonusIDList:[int];
+	BonusNumList:[int];
+}
+table FB_BlackCardTickContainer {
+	items:[FB_BlackCardTick];
+}
+root_type FB_BlackCardTickContainer;
+file_identifier "swdt";

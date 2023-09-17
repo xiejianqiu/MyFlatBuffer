@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_CardShop {
+	ID:int = 0;
+	Name:string;
+	DropboxID:int = -1;
+	GoldType:int = -1;
+	PayGold:int = -1;
+}
+table FB_CardShopContainer {
+	items:[FB_CardShop];
+}
+root_type FB_CardShopContainer;
+file_identifier "swdt";

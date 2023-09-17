@@ -1,0 +1,18 @@
+namespace Shark;
+table FB_EquipSlotStrengthen {
+	ID:int = 0;
+	MoneyType:int = -1;
+	MoneyNum:int = -1;
+	ExpByTime:int = -1;
+	ExpNeed:int = -1;
+	LowEquipNeedLevel:int = -1;
+	HighEquipNeedLevel:int = -1;
+	AttrIDList:[int];
+	AttrValueList:[int];
+	ShenZhuangNeedLevel:int = -1;
+}
+table FB_EquipSlotStrengthenContainer {
+	items:[FB_EquipSlotStrengthen];
+}
+root_type FB_EquipSlotStrengthenContainer;
+file_identifier "swdt";

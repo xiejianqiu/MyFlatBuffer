@@ -1,0 +1,16 @@
+namespace Shark;
+table FB_YingYanBase {
+	ID:int = 0;
+	Name:string;
+	Time:int = -1;
+	QuestCount:int = -1;
+	NumberList:[int];
+	Exp:int = -1;
+	BindMoney:int = -1;
+	PigCount:int = -1;
+}
+table FB_YingYanBaseContainer {
+	items:[FB_YingYanBase];
+}
+root_type FB_YingYanBaseContainer;
+file_identifier "swdt";

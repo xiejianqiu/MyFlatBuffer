@@ -1,0 +1,14 @@
+namespace Shark;
+table FB_YuanShenBase {
+	ID:int = 0;
+	Exp:long = -1;
+	Jie:int = -1;
+	NextJieLevel:int = -1;
+	AttrIdList:[int];
+	AttrValueList:[int];
+}
+table FB_YuanShenBaseContainer {
+	items:[FB_YuanShenBase];
+}
+root_type FB_YuanShenBaseContainer;
+file_identifier "swdt";

@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_MarryWuNvBase {
+	ID:int = 0;
+	MoneyType:int = 0;
+	MoneyNum:int = 0;
+	value:int = 0;
+	Num:int = 0;
+}
+table FB_MarryWuNvBaseContainer {
+	items:[FB_MarryWuNvBase];
+}
+root_type FB_MarryWuNvBaseContainer;
+file_identifier "swdt";

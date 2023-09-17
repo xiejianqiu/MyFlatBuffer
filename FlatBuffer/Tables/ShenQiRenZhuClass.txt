@@ -1,0 +1,16 @@
+namespace Shark;
+table FB_ShenQiRenZhuClass {
+	ID:int = 0;
+	Name:string;
+	TypeIdList:[int];
+	RewardId:int = -1;
+	Introduce:string;
+	Icon:string;
+	OpenConditionType:int = 0;
+	OpenConditionParam:int = 0;
+}
+table FB_ShenQiRenZhuClassContainer {
+	items:[FB_ShenQiRenZhuClass];
+}
+root_type FB_ShenQiRenZhuClassContainer;
+file_identifier "swdt";

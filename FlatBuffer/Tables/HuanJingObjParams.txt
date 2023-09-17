@@ -1,0 +1,14 @@
+namespace Shark;
+table FB_HuanJingObjParams {
+	Id:int = 0;
+	Type:int = -1;
+	FreeOrFixed:int = -1;
+	DefaultFOV:int = -1;
+	ResPath:string;
+	ModelPath:string;
+}
+table FB_HuanJingObjParamsContainer {
+	items:[FB_HuanJingObjParams];
+}
+root_type FB_HuanJingObjParamsContainer;
+file_identifier "swdt";

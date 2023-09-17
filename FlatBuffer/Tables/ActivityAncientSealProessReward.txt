@@ -1,0 +1,15 @@
+namespace Shark;
+table FB_ActivityAncientSealProessReward {
+	ID:int = 0;
+	ScoreLimit:int = -1;
+	Level:int = -1;
+	DicId:int = -1;
+	BonusIndex:int = -1;
+	ShowLimit:int = -1;
+	Param:int = -1;
+}
+table FB_ActivityAncientSealProessRewardContainer {
+	items:[FB_ActivityAncientSealProessReward];
+}
+root_type FB_ActivityAncientSealProessRewardContainer;
+file_identifier "swdt";

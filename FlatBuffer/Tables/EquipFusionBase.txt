@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_EquipFusionBase {
+	ID:int = 0;
+	Name:string;
+	Unlock:int = -1;
+	UnlockTip:string;
+	ShowNewIconMFId:int = -1;
+}
+table FB_EquipFusionBaseContainer {
+	items:[FB_EquipFusionBase];
+}
+root_type FB_EquipFusionBaseContainer;
+file_identifier "swdt";

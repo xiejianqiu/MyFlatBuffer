@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_SYHXianShiBox {
+	Id:int = 0;
+	LevelLimit:int = -1;
+	AwardIdexList:[int];
+	ItemCostNumList:[int];
+	ItemWorthNumList:[int];
+}
+table FB_SYHXianShiBoxContainer {
+	items:[FB_SYHXianShiBox];
+}
+root_type FB_SYHXianShiBoxContainer;
+file_identifier "swdt";

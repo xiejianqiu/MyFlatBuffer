@@ -1,0 +1,24 @@
+namespace Shark;
+table FB_BenYuanItemBase {
+	Id:int = 0;
+	Name:string;
+	Icon:string;
+	Quality:int = 0;
+	Component:int = 0;
+	Step:int = 0;
+	StarCount:int = 0;
+	Exp:int = 0;
+	MaxLevel:int = 0;
+	AttrIdList:[int];
+	AttrValueList:[int];
+	DoubleCost:int = 0;
+	GetPathID:int = -1;
+	ItemDesc:string;
+	DropModle:string;
+	SellPrice:int = 0;
+}
+table FB_BenYuanItemBaseContainer {
+	items:[FB_BenYuanItemBase];
+}
+root_type FB_BenYuanItemBaseContainer;
+file_identifier "swdt";

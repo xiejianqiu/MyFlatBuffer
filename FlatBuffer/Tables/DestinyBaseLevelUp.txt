@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_DestinyBaseLevelUp {
+	Id:int = 0;
+	CostItemIdList:[int];
+	CostItemCountList:[int];
+	AttrIdList:[int];
+	AttrValueList:[int];
+}
+table FB_DestinyBaseLevelUpContainer {
+	items:[FB_DestinyBaseLevelUp];
+}
+root_type FB_DestinyBaseLevelUpContainer;
+file_identifier "swdt";

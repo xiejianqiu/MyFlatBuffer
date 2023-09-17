@@ -1,0 +1,10 @@
+namespace Shark;
+table FB_ShieldingSymbol {
+	Id:int = 0;
+	StrSymbol:string;
+}
+table FB_ShieldingSymbolContainer {
+	items:[FB_ShieldingSymbol];
+}
+root_type FB_ShieldingSymbolContainer;
+file_identifier "swdt";

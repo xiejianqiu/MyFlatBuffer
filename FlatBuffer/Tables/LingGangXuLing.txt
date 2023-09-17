@@ -1,0 +1,18 @@
+namespace Shark;
+table FB_LingGangXuLing {
+	Id:int = 0;
+	LimitStep:int = -1;
+	ItemId:int = -1;
+	ItemCount:int = -1;
+	SureSucceedMoney:int = -1;
+	Rate:int = -1;
+	CriticalRate:int = -1;
+	CriticalAddLv:int = -1;
+	AttrIdList:[int];
+	AttrValueList:[int];
+}
+table FB_LingGangXuLingContainer {
+	items:[FB_LingGangXuLing];
+}
+root_type FB_LingGangXuLingContainer;
+file_identifier "swdt";

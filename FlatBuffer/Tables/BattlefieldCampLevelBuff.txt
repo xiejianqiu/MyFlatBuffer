@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_BattlefieldCampLevelBuff {
+	ID:int = 0;
+	BuildNum:int = -1;
+	IncPercentBufList:[int];
+	DelBufList:[int];
+	BuffAddList:[string];
+}
+table FB_BattlefieldCampLevelBuffContainer {
+	items:[FB_BattlefieldCampLevelBuff];
+}
+root_type FB_BattlefieldCampLevelBuffContainer;
+file_identifier "swdt";

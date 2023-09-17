@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_SignTotalReward {
+	ID:int = 0;
+	ItemType:int = -1;
+	ItemID:int = -1;
+	ItemNum:int = -1;
+	Index:int = -1;
+}
+table FB_SignTotalRewardContainer {
+	items:[FB_SignTotalReward];
+}
+root_type FB_SignTotalRewardContainer;
+file_identifier "swdt";

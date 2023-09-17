@@ -1,0 +1,15 @@
+namespace Shark;
+table FB_WarPetModel {
+	ID:int = 0;
+	ModelId:int = -1;
+	AttrAckAction:int = -1;
+	leisureTime:int = -1;
+	BornEffctID:int = -1;
+	DisappearEffctID:int = -1;
+	UIModelTabId:int = -1;
+}
+table FB_WarPetModelContainer {
+	items:[FB_WarPetModel];
+}
+root_type FB_WarPetModelContainer;
+file_identifier "swdt";

@@ -1,0 +1,16 @@
+namespace Shark;
+table FB_SYHXianShiQiangGou {
+	Id:int = 0;
+	LevelLimit:int = -1;
+	Param:int = -1;
+	RMBList:[int];
+	ItemIdList:[int];
+	LimitNumList:[int];
+	YuanBaoNumList:[int];
+	MailList:[int];
+}
+table FB_SYHXianShiQiangGouContainer {
+	items:[FB_SYHXianShiQiangGou];
+}
+root_type FB_SYHXianShiQiangGouContainer;
+file_identifier "swdt";

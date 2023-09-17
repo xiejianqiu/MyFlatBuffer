@@ -1,0 +1,21 @@
+namespace Shark;
+table FB_KneadFaceFakeObjMovePos {
+	Id:int = 0;
+	NearPosX:float = -1;
+	NearPosY:float = -1;
+	NearPosZ:float = -1;
+	NearRotateX:float = -1;
+	NearRotateY:float = -1;
+	NearRotateZ:float = -1;
+	FarPosX:float = -1;
+	FarPosY:float = -1;
+	FarPosZ:float = -1;
+	FarRotateX:float = -1;
+	FarRotateY:float = -1;
+	FarRotateZ:float = -1;
+}
+table FB_KneadFaceFakeObjMovePosContainer {
+	items:[FB_KneadFaceFakeObjMovePos];
+}
+root_type FB_KneadFaceFakeObjMovePosContainer;
+file_identifier "swdt";

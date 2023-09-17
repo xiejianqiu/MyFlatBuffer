@@ -1,0 +1,14 @@
+namespace Shark;
+table FB_ChapterCardLevelUp {
+	ID:int = 0;
+	CardID:int = -1;
+	Quality:int = -1;
+	LevelUpNeedCount:int = -1;
+	AttrTypeList:[int];
+	AttrValueList:[int];
+}
+table FB_ChapterCardLevelUpContainer {
+	items:[FB_ChapterCardLevelUp];
+}
+root_type FB_ChapterCardLevelUpContainer;
+file_identifier "swdt";

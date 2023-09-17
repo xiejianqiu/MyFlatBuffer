@@ -1,0 +1,15 @@
+namespace Shark;
+table FB_WarPetArrayTechniqueLevelUp {
+	ID:int = 0;
+	PetExp:int = -1;
+	AttrIdList:[int];
+	AttrValList:[int];
+	UnLockItem:int = -1;
+	UnLockItemNum:int = -1;
+	UnLockItemIndex:int = -1;
+}
+table FB_WarPetArrayTechniqueLevelUpContainer {
+	items:[FB_WarPetArrayTechniqueLevelUp];
+}
+root_type FB_WarPetArrayTechniqueLevelUpContainer;
+file_identifier "swdt";

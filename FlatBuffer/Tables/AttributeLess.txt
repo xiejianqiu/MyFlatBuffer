@@ -1,0 +1,12 @@
+namespace Shark;
+table FB_AttributeLess {
+	Id:int = 0;
+	CombatPower:int = -1;
+	Attack:int = -1;
+	Defence:int = -1;
+}
+table FB_AttributeLessContainer {
+	items:[FB_AttributeLess];
+}
+root_type FB_AttributeLessContainer;
+file_identifier "swdt";

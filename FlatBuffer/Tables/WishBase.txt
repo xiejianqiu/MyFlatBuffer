@@ -1,0 +1,14 @@
+namespace Shark;
+table FB_WishBase {
+	ID:int = 0;
+	ConsumMoneyList:[int];
+	AwardMoney:int = -1;
+	GratisCount:int = -1;
+	Addition:float = 0;
+	AdditionCount:int = -1;
+}
+table FB_WishBaseContainer {
+	items:[FB_WishBase];
+}
+root_type FB_WishBaseContainer;
+file_identifier "swdt";

@@ -1,0 +1,19 @@
+namespace Shark;
+table FB_VIPPower {
+	ID:int = 0;
+	Exp:int = -1;
+	VIPTitle:string;
+	StartStrID:int = -1;
+	EndStrID:int = -1;
+	NoStartStrID:int = -1;
+	NoEndStrID:int = -1;
+	ImpactId:int = -1;
+	TitleId:int = -1;
+	ActivateStartStrID:int = -1;
+	ActivateEndStrID:int = -1;
+}
+table FB_VIPPowerContainer {
+	items:[FB_VIPPower];
+}
+root_type FB_VIPPowerContainer;
+file_identifier "swdt";

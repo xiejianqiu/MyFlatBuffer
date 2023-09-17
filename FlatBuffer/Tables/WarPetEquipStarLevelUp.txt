@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_WarPetEquipStarLevelUp {
+	ID:int = 0;
+	CostItemIdList:[int];
+	CostItemNumList:[int];
+	AttrIdList:[int];
+	AttrValList:[int];
+}
+table FB_WarPetEquipStarLevelUpContainer {
+	items:[FB_WarPetEquipStarLevelUp];
+}
+root_type FB_WarPetEquipStarLevelUpContainer;
+file_identifier "swdt";

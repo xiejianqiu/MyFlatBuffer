@@ -1,0 +1,18 @@
+namespace Shark;
+table FB_LimitActivityBroadcast {
+	ID:int = 0;
+	ActivityIcon:string;
+	TriggerType:int = -1;
+	CountDownTime:int = -1;
+	TriggerTime:int = -1;
+	StrDic:int = -1;
+	ActivityID:int = -1;
+	UIName:string;
+	Path:string;
+	TriggerEndTime:int = -1;
+}
+table FB_LimitActivityBroadcastContainer {
+	items:[FB_LimitActivityBroadcast];
+}
+root_type FB_LimitActivityBroadcastContainer;
+file_identifier "swdt";

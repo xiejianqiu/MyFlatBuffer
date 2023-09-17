@@ -1,0 +1,15 @@
+namespace Shark;
+table FB_SignInReward {
+	ID:int = 0;
+	ItemType:int = -1;
+	ItemID:int = -1;
+	ItemNum:int = -1;
+	VipLvl:int = -1;
+	VipTime:int = -1;
+	LevelPart:int = -1;
+}
+table FB_SignInRewardContainer {
+	items:[FB_SignInReward];
+}
+root_type FB_SignInRewardContainer;
+file_identifier "swdt";

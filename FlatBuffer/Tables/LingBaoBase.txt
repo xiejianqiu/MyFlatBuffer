@@ -1,0 +1,20 @@
+namespace Shark;
+table FB_LingBaoBase {
+	Id:int = 0;
+	Name:string;
+	NameSprite:string;
+	FakeObjId:int = 0;
+	Quality:int = 0;
+	Type:int = 0;
+	UnlockType:int = 0;
+	UnlockParam:int = 0;
+	UnlockParamSec:int = 0;
+	AttrIdList:[int];
+	AttrValueList:[int];
+	AttValueMaxList:[int];
+}
+table FB_LingBaoBaseContainer {
+	items:[FB_LingBaoBase];
+}
+root_type FB_LingBaoBaseContainer;
+file_identifier "swdt";

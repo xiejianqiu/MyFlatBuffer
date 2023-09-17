@@ -1,0 +1,10 @@
+namespace Shark;
+table FB_RealmPracticeBase {
+	ID:int = 0;
+	Name:string;
+}
+table FB_RealmPracticeBaseContainer {
+	items:[FB_RealmPracticeBase];
+}
+root_type FB_RealmPracticeBaseContainer;
+file_identifier "swdt";

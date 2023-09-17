@@ -1,0 +1,12 @@
+namespace Shark;
+table FB_ShenYuPointAddition {
+	ID:int = 0;
+	Count:int = -1;
+	ImpactID:int = -1;
+	AttrAdd:int = 0;
+}
+table FB_ShenYuPointAdditionContainer {
+	items:[FB_ShenYuPointAddition];
+}
+root_type FB_ShenYuPointAdditionContainer;
+file_identifier "swdt";

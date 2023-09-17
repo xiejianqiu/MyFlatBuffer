@@ -1,0 +1,25 @@
+namespace Shark;
+table FB_JieYuanBase {
+	ID:int = 0;
+	Name:string;
+	Icon:string;
+	Quality:int = 0;
+	SpecialSymbol:int = -1;
+	Component:int = -1;
+	SuitId:int = -1;
+	UnLockLevel:int = 0;
+	Decompose:int = 0;
+	BaseAttrIdList:[int];
+	BaseAttrValueList:[int];
+	SpecialAttrIdList:[int];
+	SpecialAttrValueList:[int];
+	GetPathId:int = 0;
+	Describe:string;
+	DropModle:string;
+	SystemRemind:int = -1;
+}
+table FB_JieYuanBaseContainer {
+	items:[FB_JieYuanBase];
+}
+root_type FB_JieYuanBaseContainer;
+file_identifier "swdt";

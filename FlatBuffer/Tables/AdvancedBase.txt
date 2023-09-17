@@ -1,0 +1,25 @@
+namespace Shark;
+table FB_AdvancedBase {
+	ID:int = 0;
+	Name:string;
+	IconSpecial:bool = false;
+	IconTipsDictID:int = -1;
+	AdvancedLevel:int = -1;
+	ItemID:int = -1;
+	PayItem:int = -1;
+	AdvanceDescCount:int = -1;
+	AdvancedDescIDList:[string];
+	LevelLimit:int = -1;
+	AddAttrTypeList:[int];
+	AddAttrList:[int];
+	PowerLimit:int = -1;
+	Icon:string;
+	LableColor:string;
+	SectionID:int = -1;
+	LevelSpList:[string];
+}
+table FB_AdvancedBaseContainer {
+	items:[FB_AdvancedBase];
+}
+root_type FB_AdvancedBaseContainer;
+file_identifier "swdt";

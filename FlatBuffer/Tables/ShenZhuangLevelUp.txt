@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_ShenZhuangLevelUp {
+	ID:int = 0;
+	MoneyType:int = -1;
+	MoneyCost:int = -1;
+	AttrIDList:[int];
+	AttrValueList:[int];
+}
+table FB_ShenZhuangLevelUpContainer {
+	items:[FB_ShenZhuangLevelUp];
+}
+root_type FB_ShenZhuangLevelUpContainer;
+file_identifier "swdt";

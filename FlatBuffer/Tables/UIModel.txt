@@ -1,0 +1,17 @@
+namespace Shark;
+table FB_UIModel {
+	Id:int = 0;
+	AnimaId:int = 0;
+	XOffSet:float = 0;
+	YOffSet:float = 0;
+	ZOffset:float = 0;
+	XRotation:float = 0;
+	YRotation:float = 0;
+	ZRotation:float = 0;
+	Scale:float = 1;
+}
+table FB_UIModelContainer {
+	items:[FB_UIModel];
+}
+root_type FB_UIModelContainer;
+file_identifier "swdt";

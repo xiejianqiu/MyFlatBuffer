@@ -1,0 +1,19 @@
+namespace Shark;
+table FB_LotteryMission {
+	ID:int = 0;
+	Name:string;
+	StrDictID:int = -1;
+	Icon:string;
+	Type:int = -1;
+	GoalNum:long = -1;
+	ParamList:[long];
+	ParamTypeList:[int];
+	BonusTypeList:[int];
+	BonusIDList:[int];
+	BonusNumList:[int];
+}
+table FB_LotteryMissionContainer {
+	items:[FB_LotteryMission];
+}
+root_type FB_LotteryMissionContainer;
+file_identifier "swdt";

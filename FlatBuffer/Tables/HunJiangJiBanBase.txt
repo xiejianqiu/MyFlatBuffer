@@ -1,0 +1,15 @@
+namespace Shark;
+table FB_HunJiangJiBanBase {
+	ID:int = 0;
+	Name:string;
+	Quality:int = -1;
+	SkillIDList:[int];
+	HunJiangIDList:[int];
+	ShangZhenAttrIdList:[int];
+	ShangZhenAttrValList:[int];
+}
+table FB_HunJiangJiBanBaseContainer {
+	items:[FB_HunJiangJiBanBase];
+}
+root_type FB_HunJiangJiBanBaseContainer;
+file_identifier "swdt";

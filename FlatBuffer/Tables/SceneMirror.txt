@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_SceneMirror {
+	SceneID:int = 0;
+	DayGapList:[int];
+	MirrorCountList:[int];
+}
+table FB_SceneMirrorContainer {
+	items:[FB_SceneMirror];
+}
+root_type FB_SceneMirrorContainer;
+file_identifier "swdt";

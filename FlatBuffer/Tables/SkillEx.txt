@@ -1,0 +1,56 @@
+namespace Shark;
+table FB_SkillEx {
+	SkillExID:int = 0;
+	Name:string;
+	IsPuGong:bool = false;
+	NextSkillExId:int = -1;
+	IsBlood:bool = false;
+	IsUsePassive:bool = false;
+	BaseId:int = -1;
+	Icon:string;
+	SkillType:string;
+	SkillDesc:string;
+	TheurgyVerse:string;
+	TheurgyDesc:string;
+	TheurgyNextLevelDes:string;
+	TheurgyRangeDes:string;
+	SkillReplaceID:int = -1;
+	TheurgyReplaceIDList:[int];
+	TheurgyUpID:int = -1;
+	level:int = 0;
+	SkillLogic:int = 0;
+	LogicParamList:[int];
+	Radius:float = 10;
+	CDTimeId:int = 97;
+	SkillDelayTime:int = 0;
+	SkillContinueTime:int = 1000;
+	YinChangTime:int = 0;
+	Forced:int = 0;
+	DelType_List:[int];
+	DelNum_List:[int];
+	GainsType_List:[int];
+	GainsNum_List:[int];
+	Impact_List:[int];
+	SatrtMotionId:int = 217;
+	BulletEffectID_List:[int];
+	HitEffect:int = -1;
+	PaoPaoOnStartSkill:int = -1;
+	CanUseInNotIdle:bool = false;
+	CanSynchronization:bool = false;
+	ProgressId:int = -1;
+	SkillTipId:int = -1;
+	AttackFlyRate:int = 0;
+	AttackFlyRange:int = 0;
+	AttackFlyTime:int = 0;
+	Priority:int = -1;
+	BigSkillTex:string;
+	IsShenTong:bool = false;
+	IsXingHunSkill:bool = false;
+	HitSoundID:int = -1;
+	ShowTipId:int = -1;
+}
+table FB_SkillExContainer {
+	items:[FB_SkillEx];
+}
+root_type FB_SkillExContainer;
+file_identifier "swdt";

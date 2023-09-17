@@ -1,0 +1,16 @@
+namespace Shark;
+table FB_GodWordBase {
+	Id:int = 0;
+	Name:string;
+	HintID:int = -1;
+	AdvancedLimit:int = -1;
+	EquipLevel:int = -1;
+	DiamondCompoundLimit:int = -1;
+	CopySceneID:int = -1;
+	CopySceneMissionId:int = -1;
+}
+table FB_GodWordBaseContainer {
+	items:[FB_GodWordBase];
+}
+root_type FB_GodWordBaseContainer;
+file_identifier "swdt";

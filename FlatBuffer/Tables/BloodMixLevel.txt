@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_BloodMixLevel {
+	ID:int = 0;
+	CostItemID:int = -1;
+	CostItemCount:int = -1;
+	AttrIdList:[int];
+	AttrValueList:[int];
+}
+table FB_BloodMixLevelContainer {
+	items:[FB_BloodMixLevel];
+}
+root_type FB_BloodMixLevelContainer;
+file_identifier "swdt";

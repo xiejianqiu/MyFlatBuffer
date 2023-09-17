@@ -1,0 +1,21 @@
+namespace Shark;
+table FB_ZhuangBeiXunBao {
+	Id:int = 0;
+	MenPai:int = -1;
+	DropLevel:int = -1;
+	HighDropBox:int = -1;
+	LowDropBox:int = -1;
+	LowTime:int = -1;
+	HighTime:int = -1;
+	BaseRandom:int = -1;
+	AddRandom:int = -1;
+	NeedItemId:int = -1;
+	TreasureAddMoney:int = -1;
+	ItemIDList:[int];
+	ItemNumList:[int];
+}
+table FB_ZhuangBeiXunBaoContainer {
+	items:[FB_ZhuangBeiXunBao];
+}
+root_type FB_ZhuangBeiXunBaoContainer;
+file_identifier "swdt";

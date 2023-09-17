@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_JiLingDestinyAddAttr {
+	Id:int = 0;
+	Name:string;
+	UnlockingLevel:int = 1;
+	AttrIDList:[int];
+	AttrValueList:[int];
+}
+table FB_JiLingDestinyAddAttrContainer {
+	items:[FB_JiLingDestinyAddAttr];
+}
+root_type FB_JiLingDestinyAddAttrContainer;
+file_identifier "swdt";

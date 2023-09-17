@@ -1,0 +1,12 @@
+namespace Shark;
+table FB_ActivityChickenGift {
+	ID:int = 0;
+	DicId:int = -1;
+	BonusIndex:int = -1;
+	Score:int = -1;
+}
+table FB_ActivityChickenGiftContainer {
+	items:[FB_ActivityChickenGift];
+}
+root_type FB_ActivityChickenGiftContainer;
+file_identifier "swdt";

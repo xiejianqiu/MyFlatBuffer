@@ -1,0 +1,19 @@
+namespace Shark;
+table FB_BloodMix {
+	ID:int = 0;
+	Name:string;
+	CostItemID:int = -1;
+	CostItemCount:int = -1;
+	PassiveSkillList:[int];
+	LevelUpConditionTypeList:[int];
+	LevelUpConditionValueList:[int];
+	BloodPossessedId:int = -1;
+	ImpactList:[int];
+	FakeobjIdList:[int];
+	NameIconId:int = -1;
+}
+table FB_BloodMixContainer {
+	items:[FB_BloodMix];
+}
+root_type FB_BloodMixContainer;
+file_identifier "swdt";

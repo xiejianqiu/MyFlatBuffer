@@ -1,0 +1,15 @@
+namespace Shark;
+table FB_BottomRightMenu {
+	ID:int = 0;
+	NameLabel:string;
+	Name:string;
+	Icon:string;
+	FunctionBaseID:int = -1;
+	SortId:int = -1;
+	UIInfo:int = -1;
+}
+table FB_BottomRightMenuContainer {
+	items:[FB_BottomRightMenu];
+}
+root_type FB_BottomRightMenuContainer;
+file_identifier "swdt";

@@ -1,0 +1,18 @@
+namespace Shark;
+table FB_XingYuPingFen {
+	Id:int = 0;
+	PingJi:int = -1;
+	SceneID:int = -1;
+	MinDamage:long = -1;
+	MaxDamage:long = -1;
+	Score:int = -1;
+	RewardItemIdList:[int];
+	RewardItemNumList:[int];
+	RandomItemIdList:[int];
+	RandomItemNumList:[int];
+}
+table FB_XingYuPingFenContainer {
+	items:[FB_XingYuPingFen];
+}
+root_type FB_XingYuPingFenContainer;
+file_identifier "swdt";

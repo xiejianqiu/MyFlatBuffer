@@ -1,0 +1,14 @@
+namespace Shark;
+table FB_RealmPracticeLevelUp {
+	Id:int = 0;
+	BreakThrough:int = -1;
+	CostItemId:int = -1;
+	CostItemCount:int = -1;
+	AttrIdList:[int];
+	AttrValueList:[int];
+}
+table FB_RealmPracticeLevelUpContainer {
+	items:[FB_RealmPracticeLevelUp];
+}
+root_type FB_RealmPracticeLevelUpContainer;
+file_identifier "swdt";

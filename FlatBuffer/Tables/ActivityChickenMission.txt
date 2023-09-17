@@ -1,0 +1,17 @@
+namespace Shark;
+table FB_ActivityChickenMission {
+	ID:int = 0;
+	TaskName:string;
+	MissionType:int = -1;
+	Score:int = 0;
+	limitTimes:int = -1;
+	DicId:int = -1;
+	MissionLevel:int = -1;
+	ItemId:int = -1;
+	ItemNum:int = -1;
+}
+table FB_ActivityChickenMissionContainer {
+	items:[FB_ActivityChickenMission];
+}
+root_type FB_ActivityChickenMissionContainer;
+file_identifier "swdt";

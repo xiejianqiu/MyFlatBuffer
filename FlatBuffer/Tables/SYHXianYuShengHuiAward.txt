@@ -1,0 +1,16 @@
+namespace Shark;
+table FB_SYHXianYuShengHuiAward {
+	ID:int = 0;
+	AwardIdex:int = 0;
+	LevelLimit:int = 0;
+	Parm:int = -1;
+	ParmSec:int = -1;
+	XianYuId:int = -1;
+	ShowItemList:[int];
+	DicId:int = -1;
+}
+table FB_SYHXianYuShengHuiAwardContainer {
+	items:[FB_SYHXianYuShengHuiAward];
+}
+root_type FB_SYHXianYuShengHuiAwardContainer;
+file_identifier "swdt";

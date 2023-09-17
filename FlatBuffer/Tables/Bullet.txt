@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_Bullet {
+	Id:int = 0;
+	EffectId:int = -1;
+	Duration:float = 0;
+	Delay:float = 0;
+	HeightRefix:float = 0;
+}
+table FB_BulletContainer {
+	items:[FB_Bullet];
+}
+root_type FB_BulletContainer;
+file_identifier "swdt";

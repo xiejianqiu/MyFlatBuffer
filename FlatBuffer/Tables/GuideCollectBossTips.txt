@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_GuideCollectBossTips {
+	Id:int = 0;
+	Name:string;
+	BossFakeObjId:int = -1;
+	BossCharModelId:int = -1;
+	BossTalk:int = -1;
+}
+table FB_GuideCollectBossTipsContainer {
+	items:[FB_GuideCollectBossTips];
+}
+root_type FB_GuideCollectBossTipsContainer;
+file_identifier "swdt";

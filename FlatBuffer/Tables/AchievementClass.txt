@@ -1,0 +1,12 @@
+namespace Shark;
+table FB_AchievementClass {
+	ID:int = 0;
+	CountPoint:int = -1;
+	Name:string;
+	SubClassIDList:[int];
+}
+table FB_AchievementClassContainer {
+	items:[FB_AchievementClass];
+}
+root_type FB_AchievementClassContainer;
+file_identifier "swdt";

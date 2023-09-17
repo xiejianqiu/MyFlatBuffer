@@ -1,0 +1,14 @@
+namespace Shark;
+table FB_OldGodItemLevelUp {
+	ID:int = 0;
+	MoneyType:int = -1;
+	MoneyCost:int = -1;
+	PerTimeMoneyCost:int = -1;
+	BaseAttrIdList:[int];
+	BaseAttrValueList:[int];
+}
+table FB_OldGodItemLevelUpContainer {
+	items:[FB_OldGodItemLevelUp];
+}
+root_type FB_OldGodItemLevelUpContainer;
+file_identifier "swdt";

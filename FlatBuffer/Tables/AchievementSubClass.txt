@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_AchievementSubClass {
+	ID:int = 0;
+	Name:string;
+	AchievementIDList:[int];
+}
+table FB_AchievementSubClassContainer {
+	items:[FB_AchievementSubClass];
+}
+root_type FB_AchievementSubClassContainer;
+file_identifier "swdt";

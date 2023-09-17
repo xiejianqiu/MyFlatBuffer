@@ -1,0 +1,12 @@
+namespace Shark;
+table FB_VipDayGift {
+	ID:int = 0;
+	Cost:int = -1;
+	DayGiftIDList:[int];
+	DayGiftNumList:[int];
+}
+table FB_VipDayGiftContainer {
+	items:[FB_VipDayGift];
+}
+root_type FB_VipDayGiftContainer;
+file_identifier "swdt";

@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_PropertyIntro {
+	ID:int = 0;
+	Type:int = -1;
+	Intro:string;
+}
+table FB_PropertyIntroContainer {
+	items:[FB_PropertyIntro];
+}
+root_type FB_PropertyIntroContainer;
+file_identifier "swdt";

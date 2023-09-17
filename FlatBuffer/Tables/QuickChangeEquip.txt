@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_QuickChangeEquip {
+	ID:int = 0;
+	Name:string;
+	Type:int = -1;
+	UnLockType:int = -1;
+	UnLockParamList:[int];
+}
+table FB_QuickChangeEquipContainer {
+	items:[FB_QuickChangeEquip];
+}
+root_type FB_QuickChangeEquipContainer;
+file_identifier "swdt";

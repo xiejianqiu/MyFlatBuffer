@@ -1,0 +1,12 @@
+namespace Shark;
+table FB_GodWeaponLevel {
+	ID:int = 0;
+	Exp:int = -1;
+	AttrIDList:[int];
+	AttrValueList:[int];
+}
+table FB_GodWeaponLevelContainer {
+	items:[FB_GodWeaponLevel];
+}
+root_type FB_GodWeaponLevelContainer;
+file_identifier "swdt";

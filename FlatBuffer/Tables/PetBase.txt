@@ -1,0 +1,23 @@
+namespace Shark;
+table FB_PetBase {
+	Id:int = 0;
+	Level:int = 1;
+	Step:int = 1;
+	StepSprite:string;
+	Exp:int = -1;
+	HpMax:int = -1;
+	PMAttack:int = -1;
+	PMDefence:int = -1;
+	Speed:float = 0;
+	ItemID:int = -1;
+	MoneyType:int = -1;
+	QuickItemCount:int = -1;
+	CombatPower:int = -1;
+	AttrIdList:[int];
+	AttrValueList:[int];
+}
+table FB_PetBaseContainer {
+	items:[FB_PetBase];
+}
+root_type FB_PetBaseContainer;
+file_identifier "swdt";

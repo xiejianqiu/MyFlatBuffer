@@ -1,0 +1,17 @@
+namespace Shark;
+table FB_EquipRecast {
+	Id:int = 0;
+	MustItemId:int = -1;
+	MustItemNum:int = -1;
+	LowItemId:int = -1;
+	LowItemNum:int = -1;
+	HighItemId:int = -1;
+	HighItemNum:int = -1;
+	GoldId:int = -1;
+	GoldNum:int = -1;
+}
+table FB_EquipRecastContainer {
+	items:[FB_EquipRecast];
+}
+root_type FB_EquipRecastContainer;
+file_identifier "swdt";

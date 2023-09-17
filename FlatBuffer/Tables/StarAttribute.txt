@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_StarAttribute {
+	ID:int = 0;
+	StarNum:int = -1;
+	AttrIDList:[int];
+	AttrValueList:[int];
+	EffectID:int = -1;
+}
+table FB_StarAttributeContainer {
+	items:[FB_StarAttribute];
+}
+root_type FB_StarAttributeContainer;
+file_identifier "swdt";

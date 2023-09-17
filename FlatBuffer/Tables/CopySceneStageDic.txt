@@ -1,0 +1,18 @@
+namespace Shark;
+table FB_CopySceneStageDic {
+	ID:int = 0;
+	StageDic:int = -1;
+	StageTip:int = -1;
+	DicNum:int = 0;
+	Tips1Num:int = 0;
+	Titils:string;
+	TipNumIDList:[int];
+	IconId:int = -1;
+	DicInfoId:int = -1;
+	PlayStrDic:int = -1;
+}
+table FB_CopySceneStageDicContainer {
+	items:[FB_CopySceneStageDic];
+}
+root_type FB_CopySceneStageDicContainer;
+file_identifier "swdt";

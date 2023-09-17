@@ -1,0 +1,21 @@
+namespace Shark;
+table FB_OperationActivityGift {
+	ID:int = 0;
+	Type:int = -1;
+	Param:int = -1;
+	GiftJobIDList:[int];
+	GiftJobNum:int = -1;
+	TwoGiftJobIdList:[int];
+	TwoGiftJobNum:int = -1;
+	GiftTypeList:[int];
+	GiftIDList:[int];
+	GiftNumList:[int];
+	NumLimit:int = -1;
+	IsBanding:bool = false;
+	GiftLevel:int = -1;
+}
+table FB_OperationActivityGiftContainer {
+	items:[FB_OperationActivityGift];
+}
+root_type FB_OperationActivityGiftContainer;
+file_identifier "swdt";

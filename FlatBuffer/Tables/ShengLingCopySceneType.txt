@@ -1,0 +1,14 @@
+namespace Shark;
+table FB_ShengLingCopySceneType {
+	Id:int = 0;
+	TypeName:string;
+	IsActive:bool = false;
+	LockStrId:int = -1;
+	UnLockTypeList:[int];
+	UnLockParamList:[int];
+}
+table FB_ShengLingCopySceneTypeContainer {
+	items:[FB_ShengLingCopySceneType];
+}
+root_type FB_ShengLingCopySceneTypeContainer;
+file_identifier "swdt";

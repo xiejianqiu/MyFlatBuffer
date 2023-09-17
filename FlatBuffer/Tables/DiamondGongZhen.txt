@@ -1,0 +1,15 @@
+namespace Shark;
+table FB_DiamondGongZhen {
+	Id:int = 0;
+	Components:string;
+	Lv:int = -1;
+	CostItemId:int = -1;
+	CostItemNum:int = -1;
+	AttrIdList:[int];
+	AttrValueList:[int];
+}
+table FB_DiamondGongZhenContainer {
+	items:[FB_DiamondGongZhen];
+}
+root_type FB_DiamondGongZhenContainer;
+file_identifier "swdt";

@@ -1,0 +1,26 @@
+namespace Shark;
+table FB_MiniMap {
+	Id:int = 0;
+	Scene:int = -1;
+	Name:string;
+	Type:int = -1;
+	ShowType:int = 0;
+	PosX:float = 0;
+	PosZ:float = 0;
+	NpcID:int = 0;
+	OpenType:int = -1;
+	OpenTimeList:[int];
+	EndTimeList:[int];
+	PosY:float = 0;
+	OfflineRewardID:int = -1;
+	MinLvl:int = -1;
+	MaxLvl:int = -1;
+	Quality:int = -1;
+	IsShowFlyShoe:bool = true;
+	RefreshLevel:int = -1;
+}
+table FB_MiniMapContainer {
+	items:[FB_MiniMap];
+}
+root_type FB_MiniMapContainer;
+file_identifier "swdt";

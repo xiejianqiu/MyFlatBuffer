@@ -1,0 +1,14 @@
+namespace Shark;
+table FB_ProgressBase {
+	ID:int = 0;
+	Duration:int = -1;
+	Text:string;
+	Icon:string;
+	AnimationID:int = -1;
+	CanDamageInterrupt:bool = false;
+}
+table FB_ProgressBaseContainer {
+	items:[FB_ProgressBase];
+}
+root_type FB_ProgressBaseContainer;
+file_identifier "swdt";

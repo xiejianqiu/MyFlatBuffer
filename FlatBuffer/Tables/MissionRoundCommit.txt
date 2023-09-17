@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_MissionRoundCommit {
+	Id:int = 0;
+	RoundConfigID:int = -1;
+	Rounds:int = -1;
+}
+table FB_MissionRoundCommitContainer {
+	items:[FB_MissionRoundCommit];
+}
+root_type FB_MissionRoundCommitContainer;
+file_identifier "swdt";

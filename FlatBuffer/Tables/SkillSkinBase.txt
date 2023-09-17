@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_SkillSkinBase {
+	Id:int = 0;
+	UnlockDesc:string;
+	FakeObjIDList:[int];
+	MaxAP:int = -1;
+	NameSprite:string;
+}
+table FB_SkillSkinBaseContainer {
+	items:[FB_SkillSkinBase];
+}
+root_type FB_SkillSkinBaseContainer;
+file_identifier "swdt";

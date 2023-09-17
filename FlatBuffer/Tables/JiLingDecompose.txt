@@ -1,0 +1,12 @@
+namespace Shark;
+table FB_JiLingDecompose {
+	Id:int = 0;
+	DecomposeType:int = -1;
+	MoneyType:int = -1;
+	MoneyNum:int = -1;
+}
+table FB_JiLingDecomposeContainer {
+	items:[FB_JiLingDecompose];
+}
+root_type FB_JiLingDecomposeContainer;
+file_identifier "swdt";

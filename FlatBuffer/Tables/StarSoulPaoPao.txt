@@ -1,0 +1,14 @@
+namespace Shark;
+table FB_StarSoulPaoPao {
+	ID:int = 0;
+	Text:string;
+	SceneID:int = -1;
+	Weight:int = -1;
+	LvlMin:int = -1;
+	LvlMax:int = -1;
+}
+table FB_StarSoulPaoPaoContainer {
+	items:[FB_StarSoulPaoPao];
+}
+root_type FB_StarSoulPaoPaoContainer;
+file_identifier "swdt";

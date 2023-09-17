@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_MountBindPoint {
+	Id:int = 0;
+	BindPointList:[string];
+	BindPointAniIDList:[int];
+}
+table FB_MountBindPointContainer {
+	items:[FB_MountBindPoint];
+}
+root_type FB_MountBindPointContainer;
+file_identifier "swdt";

@@ -1,0 +1,18 @@
+namespace Shark;
+table FB_TimeLimitBag {
+	ID:int = 0;
+	OpenType:int = -1;
+	OpenServerDay:int = -1;
+	BagPrice:int = -1;
+	BagMaxPrice:int = -1;
+	RewardIDList:[int];
+	RewardCountList:[int];
+	MailId:int = -1;
+	TabSprite:string;
+	DesSprite:string;
+}
+table FB_TimeLimitBagContainer {
+	items:[FB_TimeLimitBag];
+}
+root_type FB_TimeLimitBagContainer;
+file_identifier "swdt";

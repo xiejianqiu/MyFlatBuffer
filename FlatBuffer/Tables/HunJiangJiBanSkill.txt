@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_HunJiangJiBanSkill {
+	ID:int = 0;
+	Name:string;
+	PassiveSkillID:int = -1;
+}
+table FB_HunJiangJiBanSkillContainer {
+	items:[FB_HunJiangJiBanSkill];
+}
+root_type FB_HunJiangJiBanSkillContainer;
+file_identifier "swdt";

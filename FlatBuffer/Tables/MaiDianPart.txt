@@ -1,0 +1,15 @@
+namespace Shark;
+table FB_MaiDianPart {
+	ID:int = 0;
+	StateLevel:int = -1;
+	PayItemID:int = -1;
+	PayItem:int = -1;
+	AttributeIDList:[int];
+	AttributeValueList:[int];
+	IsLevelHundred:bool = false;
+}
+table FB_MaiDianPartContainer {
+	items:[FB_MaiDianPart];
+}
+root_type FB_MaiDianPartContainer;
+file_identifier "swdt";

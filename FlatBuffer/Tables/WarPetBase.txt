@@ -1,0 +1,30 @@
+namespace Shark;
+table FB_WarPetBase {
+	ID:int = 0;
+	Name:string;
+	NameIcon:string;
+	ItemIcon:string;
+	FakeObjId:int = -1;
+	RankFakeObjID:int = -1;
+	CharSoulId:int = -1;
+	Quality:int = -1;
+	Generation:int = -1;
+	ItemId:int = -1;
+	ItemNum:int = -1;
+	MaxLevel:int = -1;
+	InheritMoney:int = -1;
+	ReleaseExp:int = -1;
+	PassiveSkilId:int = -1;
+	FixedTalent:int = -1;
+	RandomTalentList:[int];
+	QualificationsList:[int];
+	MaxQualifications:int = -1;
+	GetPathBaseId:int = -1;
+	EvolutionMap:int = -1;
+	GetPathStrId:int = -1;
+}
+table FB_WarPetBaseContainer {
+	items:[FB_WarPetBase];
+}
+root_type FB_WarPetBaseContainer;
+file_identifier "swdt";

@@ -1,0 +1,15 @@
+namespace Shark;
+table FB_CombatPetScene {
+	Id:int = 0;
+	StageName:string;
+	StageType:int = -1;
+	CombatPetBaseId:int = -1;
+	ItemListList:[int];
+	SceneDescList:[string];
+	SceneInfoList:[string];
+}
+table FB_CombatPetSceneContainer {
+	items:[FB_CombatPetScene];
+}
+root_type FB_CombatPetSceneContainer;
+file_identifier "swdt";

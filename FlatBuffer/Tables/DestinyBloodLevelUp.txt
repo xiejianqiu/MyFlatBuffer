@@ -1,0 +1,14 @@
+namespace Shark;
+table FB_DestinyBloodLevelUp {
+	Id:int = 0;
+	BreakThrough:int = -1;
+	CostItemId:int = -1;
+	CostItemCount:int = -1;
+	AttrIdList:[int];
+	AttrValueList:[int];
+}
+table FB_DestinyBloodLevelUpContainer {
+	items:[FB_DestinyBloodLevelUp];
+}
+root_type FB_DestinyBloodLevelUpContainer;
+file_identifier "swdt";

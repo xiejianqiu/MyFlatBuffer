@@ -1,0 +1,12 @@
+namespace Shark;
+table FB_EquipAttrValue {
+	Id:int = 0;
+	AttrIdList:[int];
+	AttrValueList:[int];
+	MaxAttrValueList:[int];
+}
+table FB_EquipAttrValueContainer {
+	items:[FB_EquipAttrValue];
+}
+root_type FB_EquipAttrValueContainer;
+file_identifier "swdt";

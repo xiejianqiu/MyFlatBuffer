@@ -1,0 +1,29 @@
+namespace Shark;
+table FB_Effect {
+	EffectID:int = 0;
+	Path:string;
+	DelayTime:float = 0;
+	IsDestroy:bool = true;
+	ParentName:string;
+	IsFellowOwner:bool = true;
+	PosX:float = 0;
+	PosY:float = 0;
+	PosZ:float = 0;
+	RotationX:float = 0;
+	RotationY:float = 0;
+	RotationZ:float = 0;
+	Scale:float = 0;
+	Duration:float = 0;
+	NextID:int = -1;
+	BreakEffect:bool = false;
+	IsRotateOwner:bool = true;
+	IsRefCount:bool = false;
+	DestroyOnBlood:bool = false;
+	IsNeedMountOffset:bool = false;
+	Sound:int = -1;
+}
+table FB_EffectContainer {
+	items:[FB_Effect];
+}
+root_type FB_EffectContainer;
+file_identifier "swdt";

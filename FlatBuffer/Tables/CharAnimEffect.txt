@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_CharAnimEffect {
+	Id:int = 0;
+	AnimiD:int = -1;
+	EffectIDList:[int];
+}
+table FB_CharAnimEffectContainer {
+	items:[FB_CharAnimEffect];
+}
+root_type FB_CharAnimEffectContainer;
+file_identifier "swdt";

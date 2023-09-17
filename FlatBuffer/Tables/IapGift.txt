@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_IapGift {
+	Id:int = 0;
+	Type:int = -1;
+	IapId:int = -1;
+	WorldLvList:[int];
+	RmbIdList:[int];
+}
+table FB_IapGiftContainer {
+	items:[FB_IapGift];
+}
+root_type FB_IapGiftContainer;
+file_identifier "swdt";

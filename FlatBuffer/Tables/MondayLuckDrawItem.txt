@@ -1,0 +1,16 @@
+namespace Shark;
+table FB_MondayLuckDrawItem {
+	ID:int = 0;
+	ItemCount:int = 0;
+	RewardType:int = 0;
+	Weight:int = 0;
+	UnlockLevel:int = 0;
+	CountLimit:int = 0;
+	MDId:int = 0;
+	ShowNewMDId:int = 0;
+}
+table FB_MondayLuckDrawItemContainer {
+	items:[FB_MondayLuckDrawItem];
+}
+root_type FB_MondayLuckDrawItemContainer;
+file_identifier "swdt";

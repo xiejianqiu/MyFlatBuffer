@@ -1,0 +1,15 @@
+namespace Shark;
+table FB_TipsPreview {
+	Id:int = 0;
+	Type:int = 0;
+	UIModelId:int = -1;
+	CharModelId:int = -1;
+	WomanUIModelId:int = -1;
+	WomanCharModelId:int = -1;
+	PlayTweenAnim:bool = true;
+}
+table FB_TipsPreviewContainer {
+	items:[FB_TipsPreview];
+}
+root_type FB_TipsPreviewContainer;
+file_identifier "swdt";

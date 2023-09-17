@@ -1,0 +1,16 @@
+namespace Shark;
+table FB_LingBaoQiLing {
+	Id:int = 0;
+	ItemId:int = -1;
+	ItemCount:int = -1;
+	AttrRateList:[int];
+	MinAddValueList:[int];
+	MaxAddValueList:[int];
+	DefaultAttrValue:int = 0;
+	GuaranteeAddRate:int = 0;
+}
+table FB_LingBaoQiLingContainer {
+	items:[FB_LingBaoQiLing];
+}
+root_type FB_LingBaoQiLingContainer;
+file_identifier "swdt";

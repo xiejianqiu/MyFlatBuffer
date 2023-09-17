@@ -1,0 +1,10 @@
+namespace Shark;
+table FB_JiLingTreeBase {
+	ID:int = 0;
+	IsOpen:bool = false;
+}
+table FB_JiLingTreeBaseContainer {
+	items:[FB_JiLingTreeBase];
+}
+root_type FB_JiLingTreeBaseContainer;
+file_identifier "swdt";

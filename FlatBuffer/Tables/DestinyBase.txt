@@ -1,0 +1,38 @@
+namespace Shark;
+table FB_DestinyBase {
+	Id:int = 0;
+	Name:string;
+	MaxLv:int = -1;
+	NameSprite:string;
+	Title:string;
+	SubTitle:string;
+	DescId:int = -1;
+	Getpath:string;
+	GetpathName:string;
+	FakeobjID:int = -1;
+	Icon:string;
+	Class:int = -1;
+	Index:int = -1;
+	MissionID:int = -1;
+	CopySceneID:int = -1;
+	LevelLimit:int = -1;
+	HuaShenLevelLimit:int = -1;
+	AttributeLessId:long = 0;
+	GoldAttackIce:int = -1;
+	GoldAttackFire:int = -1;
+	SceneGroupPointId:int = -1;
+	Scale:float = 0;
+	RotateY:float = 0;
+	OffsetY:float = 0;
+	SystemBroadCastId:int = -1;
+	PassiveSkillList:[int];
+	GetExp:long = 0;
+	Quality:int = -1;
+	DropBoxId:int = -1;
+	SkillOpenId:int = -1;
+}
+table FB_DestinyBaseContainer {
+	items:[FB_DestinyBase];
+}
+root_type FB_DestinyBaseContainer;
+file_identifier "swdt";

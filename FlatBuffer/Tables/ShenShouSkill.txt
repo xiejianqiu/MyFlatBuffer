@@ -1,0 +1,12 @@
+namespace Shark;
+table FB_ShenShouSkill {
+	ID:int = 0;
+	PassiveSkillId:int = -1;
+	Level:int = -1;
+	SkillDescId:int = -1;
+}
+table FB_ShenShouSkillContainer {
+	items:[FB_ShenShouSkill];
+}
+root_type FB_ShenShouSkillContainer;
+file_identifier "swdt";

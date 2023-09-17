@@ -1,0 +1,12 @@
+namespace Shark;
+table FB_EmotionBase {
+	ID:int = 0;
+	Class:int = -1;
+	SpriteName:string;
+	Name:string;
+}
+table FB_EmotionBaseContainer {
+	items:[FB_EmotionBase];
+}
+root_type FB_EmotionBaseContainer;
+file_identifier "swdt";

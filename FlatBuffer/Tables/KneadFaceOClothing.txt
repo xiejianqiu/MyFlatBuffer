@@ -1,0 +1,16 @@
+namespace Shark;
+table FB_KneadFaceOClothing {
+	Id:int = 0;
+	MenPai:int = -1;
+	Sex:int = 1;
+	PupilColor:int = -1;
+	PupilIcon:string;
+	HairModelId:int = -1;
+	HairModelIcon:string;
+	PlayerSkinBaseId:int = -1;
+}
+table FB_KneadFaceOClothingContainer {
+	items:[FB_KneadFaceOClothing];
+}
+root_type FB_KneadFaceOClothingContainer;
+file_identifier "swdt";

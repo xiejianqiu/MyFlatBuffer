@@ -1,0 +1,33 @@
+namespace Shark;
+table FB_TeamPlatform {
+	ID:int = 0;
+	Name:string;
+	ClassID:int = -1;
+	ContainChild:bool = false;
+	MinLevelLimit:int = -1;
+	MaxLevelLimit:int = -1;
+	OpenType:int = -1;
+	OpenTimeList:[int];
+	EndTimeList:[int];
+	DefaultMin:int = 0;
+	DefaultMax:int = 0;
+	PlayerLimitID:int = -1;
+	TimeLimitID:int = -1;
+	CopySceneID:int = -1;
+	SceneClassID:int = -1;
+	PosX:float = 0;
+	PosZ:float = 0;
+	RolebaseID:int = -1;
+	LowLevelTips:int = -1;
+	IsShowAddHp:bool = false;
+	IsRobot:bool = false;
+	WaitingTime:int = -1;
+	MinRobotId:int = -1;
+	MaxRobotId:int = -1;
+	ChangeJobLimit:int = -1;
+}
+table FB_TeamPlatformContainer {
+	items:[FB_TeamPlatform];
+}
+root_type FB_TeamPlatformContainer;
+file_identifier "swdt";

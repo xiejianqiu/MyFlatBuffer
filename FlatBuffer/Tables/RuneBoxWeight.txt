@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_RuneBoxWeight {
+	ID:int = 0;
+	UnLockTowerId:int = -1;
+	WeightList:[int];
+}
+table FB_RuneBoxWeightContainer {
+	items:[FB_RuneBoxWeight];
+}
+root_type FB_RuneBoxWeightContainer;
+file_identifier "swdt";

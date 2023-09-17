@@ -1,0 +1,20 @@
+namespace Shark;
+table FB_ShenWangZhanJiaCsBase {
+	ID:int = 0;
+	Totaljifen:int = -1;
+	MopUpLockId:int = -1;
+	TotalStage:int = -1;
+	FlushTime:int = -1;
+	CopySceneId:int = -1;
+	BossType:int = -1;
+	Probability:int = -1;
+	ShopId:int = -1;
+	CombatPowerNum:long = -1;
+	ZhanJiaAttack:int = -1;
+	ZhanJiaDefence:int = -1;
+}
+table FB_ShenWangZhanJiaCsBaseContainer {
+	items:[FB_ShenWangZhanJiaCsBase];
+}
+root_type FB_ShenWangZhanJiaCsBaseContainer;
+file_identifier "swdt";

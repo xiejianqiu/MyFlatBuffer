@@ -1,0 +1,20 @@
+namespace Shark;
+table FB_DymaticSceneEffect {
+	Id:int = 0;
+	Path:string;
+	Distance:int = 3;
+	Rate:int = -1;
+	WSSceneID:int = -1;
+	PosX:float = 0;
+	PosY:float = 0;
+	PosZ:float = 0;
+	FaceDir:float = 0;
+	UpOrDownAngle:float = 0;
+	Scale:float = 1;
+	IsDefaultShow:bool = true;
+}
+table FB_DymaticSceneEffectContainer {
+	items:[FB_DymaticSceneEffect];
+}
+root_type FB_DymaticSceneEffectContainer;
+file_identifier "swdt";

@@ -1,0 +1,15 @@
+namespace Shark;
+table FB_PicturePuzzle {
+	Level:int = 0;
+	TimeLinit:int = 0;
+	ViewLimit:int = 0;
+	ViewLimitRate:int = 0;
+	PictureList:[string];
+	PictureWidthList:[int];
+	PictureHeightList:[int];
+}
+table FB_PicturePuzzleContainer {
+	items:[FB_PicturePuzzle];
+}
+root_type FB_PicturePuzzleContainer;
+file_identifier "swdt";

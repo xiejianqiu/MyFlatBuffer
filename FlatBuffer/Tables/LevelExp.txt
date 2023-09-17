@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_LevelExp {
+	LevelID:int = 0;
+	Level:int = -1;
+	Exp:long = -1;
+}
+table FB_LevelExpContainer {
+	items:[FB_LevelExp];
+}
+root_type FB_LevelExpContainer;
+file_identifier "swdt";

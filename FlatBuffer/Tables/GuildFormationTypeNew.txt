@@ -1,0 +1,14 @@
+namespace Shark;
+table FB_GuildFormationTypeNew {
+	Id:int = 0;
+	Name:string;
+	Icon:string;
+	FormationDesc:int = -1;
+	AttrDesc:int = -1;
+	LevelLimit:int = -1;
+}
+table FB_GuildFormationTypeNewContainer {
+	items:[FB_GuildFormationTypeNew];
+}
+root_type FB_GuildFormationTypeNewContainer;
+file_identifier "swdt";

@@ -1,0 +1,16 @@
+namespace Shark;
+table FB_JiLingWuHunLevelUp {
+	Id:int = 0;
+	Step:int = 1;
+	StepSprite:string;
+	CostType:int = -1;
+	CostValue:int = -1;
+	RealityCostType:int = -1;
+	AttrIDList:[int];
+	AttrValueList:[int];
+}
+table FB_JiLingWuHunLevelUpContainer {
+	items:[FB_JiLingWuHunLevelUp];
+}
+root_type FB_JiLingWuHunLevelUpContainer;
+file_identifier "swdt";

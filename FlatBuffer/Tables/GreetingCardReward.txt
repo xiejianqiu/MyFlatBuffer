@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_GreetingCardReward {
+	ID:int = 0;
+	ItemList:[int];
+	ItemCountList:[int];
+	SpecialItem:int = 0;
+	SpecialCount:int = 0;
+}
+table FB_GreetingCardRewardContainer {
+	items:[FB_GreetingCardReward];
+}
+root_type FB_GreetingCardRewardContainer;
+file_identifier "swdt";

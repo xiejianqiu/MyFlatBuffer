@@ -1,0 +1,12 @@
+namespace Shark;
+table FB_teQuanEnum {
+	Id:int = 0;
+	Name:string;
+	AttrIdList:[int];
+	AttrValueList:[int];
+}
+table FB_teQuanEnumContainer {
+	items:[FB_teQuanEnum];
+}
+root_type FB_teQuanEnumContainer;
+file_identifier "swdt";

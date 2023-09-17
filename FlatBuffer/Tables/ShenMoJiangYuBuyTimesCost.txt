@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_ShenMoJiangYuBuyTimesCost {
+	ID:int = 0;
+	CostMoneyType:int = -1;
+	CostMoneyValue:int = -1;
+}
+table FB_ShenMoJiangYuBuyTimesCostContainer {
+	items:[FB_ShenMoJiangYuBuyTimesCost];
+}
+root_type FB_ShenMoJiangYuBuyTimesCostContainer;
+file_identifier "swdt";

@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_HuLingBase {
+	ID:int = 0;
+	MoneyType:int = -1;
+	MoneyNum:int = 0;
+	AttrIdList:[int];
+	AttrValueList:[int];
+}
+table FB_HuLingBaseContainer {
+	items:[FB_HuLingBase];
+}
+root_type FB_HuLingBaseContainer;
+file_identifier "swdt";

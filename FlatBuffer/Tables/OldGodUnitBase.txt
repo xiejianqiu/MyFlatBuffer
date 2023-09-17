@@ -1,0 +1,24 @@
+namespace Shark;
+table FB_OldGodUnitBase {
+	ID:int = 0;
+	Name:string;
+	NameIcon:string;
+	UnitIcon:string;
+	SquareUnitIcon:string;
+	FakeObjId:int = -1;
+	FuncOpenFakeObjId:int = -1;
+	CharSoulId:int = -1;
+	Quality:int = -1;
+	UnLockType:int = -1;
+	UnLockItemId:int = -1;
+	UnLockItemCount:int = -1;
+	AttrIdList:[int];
+	AttrValueList:[int];
+	PassiveCountList:[int];
+	PassiveIdList:[int];
+}
+table FB_OldGodUnitBaseContainer {
+	items:[FB_OldGodUnitBase];
+}
+root_type FB_OldGodUnitBaseContainer;
+file_identifier "swdt";

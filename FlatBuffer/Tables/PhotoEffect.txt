@@ -1,0 +1,22 @@
+namespace Shark;
+table FB_PhotoEffect {
+	ID:int = 0;
+	Name:string;
+	IconPath:string;
+	EffectID:int = -1;
+	BtnBgIconName:string;
+	PhotoEffectName:string;
+	BtnLabelColor:string;
+	Temperature:float = 0;
+	Tint:float = 0;
+	HueShift:float = 0;
+	Saturation:float = 0;
+	Brightness:float = 0;
+	Contrast:float = 0;
+	SortId:int = -1;
+}
+table FB_PhotoEffectContainer {
+	items:[FB_PhotoEffect];
+}
+root_type FB_PhotoEffectContainer;
+file_identifier "swdt";

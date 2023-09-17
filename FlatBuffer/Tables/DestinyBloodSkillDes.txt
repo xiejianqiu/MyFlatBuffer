@@ -1,0 +1,15 @@
+namespace Shark;
+table FB_DestinyBloodSkillDes {
+	Id:int = 0;
+	Name:string;
+	Icon:string;
+	MaxLevel:int = 0;
+	StrDicID:int = -1;
+	BasicValueList:[float];
+	DescParamList:[float];
+}
+table FB_DestinyBloodSkillDesContainer {
+	items:[FB_DestinyBloodSkillDes];
+}
+root_type FB_DestinyBloodSkillDesContainer;
+file_identifier "swdt";

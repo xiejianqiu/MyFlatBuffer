@@ -1,0 +1,20 @@
+namespace Shark;
+table FB_FindRewardClass {
+	ID:int = 0;
+	BaseID:int = -1;
+	MinLvl:int = -1;
+	MaxLvl:int = -1;
+	CSLvl:int = -1;
+	LowExp:int = -1;
+	LowItemIDList:[int];
+	LowItemCountList:[int];
+	HighExp:int = -1;
+	HighItemIDList:[int];
+	HighItemCountList:[int];
+	ChangeJobLimit:int = -1;
+}
+table FB_FindRewardClassContainer {
+	items:[FB_FindRewardClass];
+}
+root_type FB_FindRewardClassContainer;
+file_identifier "swdt";

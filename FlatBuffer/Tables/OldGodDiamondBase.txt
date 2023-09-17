@@ -1,0 +1,25 @@
+namespace Shark;
+table FB_OldGodDiamondBase {
+	ID:int = 0;
+	Name:string;
+	Icon:string;
+	GodId:int = -1;
+	Type:int = -1;
+	Step:int = -1;
+	Quality:int = 0;
+	IsBind:bool = false;
+	CanAuction:bool = false;
+	SuitId:int = -1;
+	Decompose:int = 0;
+	BaseAttrIdList:[int];
+	BaseAttrValueList:[int];
+	GetPathId:int = 0;
+	Describe:string;
+	DropModle:string;
+	SystemRemind:int = -1;
+}
+table FB_OldGodDiamondBaseContainer {
+	items:[FB_OldGodDiamondBase];
+}
+root_type FB_OldGodDiamondBaseContainer;
+file_identifier "swdt";

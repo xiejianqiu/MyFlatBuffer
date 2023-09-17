@@ -1,0 +1,12 @@
+namespace Shark;
+table FB_JieYuanSlotResonance {
+	ID:int = 0;
+	MinLevel:int = -1;
+	AttrIDList:[int];
+	AttrValueList:[int];
+}
+table FB_JieYuanSlotResonanceContainer {
+	items:[FB_JieYuanSlotResonance];
+}
+root_type FB_JieYuanSlotResonanceContainer;
+file_identifier "swdt";

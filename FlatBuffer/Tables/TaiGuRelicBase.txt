@@ -1,0 +1,15 @@
+namespace Shark;
+table FB_TaiGuRelicBase {
+	ID:int = 0;
+	ActStartTime:int = -1;
+	RefMaxNum:int = -1;
+	RefFreeNum:int = -1;
+	WeekWeightList:[int];
+	PushLevelList:[int];
+	PushShopIDList:[int];
+}
+table FB_TaiGuRelicBaseContainer {
+	items:[FB_TaiGuRelicBase];
+}
+root_type FB_TaiGuRelicBaseContainer;
+file_identifier "swdt";

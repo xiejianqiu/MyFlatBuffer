@@ -1,0 +1,19 @@
+namespace Shark;
+table FB_WarPetTalent {
+	ID:int = 0;
+	Name:string;
+	Icon:string;
+	SkillDesc:int = -1;
+	AttrIdList:[int];
+	AttrValList:[int];
+	SkillId:int = -1;
+	AddImpact:int = -1;
+	Component:int = -1;
+	Level:int = -1;
+	CostItemId:int = -1;
+}
+table FB_WarPetTalentContainer {
+	items:[FB_WarPetTalent];
+}
+root_type FB_WarPetTalentContainer;
+file_identifier "swdt";

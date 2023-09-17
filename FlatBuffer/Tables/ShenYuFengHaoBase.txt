@@ -1,0 +1,23 @@
+namespace Shark;
+table FB_ShenYuFengHaoBase {
+	SceneID:int = 0;
+	Name:string;
+	Point:int = -1;
+	MaxDayPoint:int = -1;
+	SingleSeasionTitleId:int = -1;
+	DoubleSeasionTitleId:int = -1;
+	WinItemIdList:[int];
+	WinItemCountList:[int];
+	LoseItemIdList:[int];
+	LoseItemCountList:[int];
+	ScoreItemIdList:[int];
+	ScoreItemCountList:[int];
+	Discount:int = 10;
+	SecondItemIdList:[int];
+	SecondItemCountList:[int];
+}
+table FB_ShenYuFengHaoBaseContainer {
+	items:[FB_ShenYuFengHaoBase];
+}
+root_type FB_ShenYuFengHaoBaseContainer;
+file_identifier "swdt";

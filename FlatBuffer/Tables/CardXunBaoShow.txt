@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_CardXunBaoShow {
+	ID:int = 0;
+	CardType:int = -1;
+	CardShow:int = -1;
+}
+table FB_CardXunBaoShowContainer {
+	items:[FB_CardXunBaoShow];
+}
+root_type FB_CardXunBaoShowContainer;
+file_identifier "swdt";

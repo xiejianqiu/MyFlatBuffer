@@ -1,0 +1,16 @@
+namespace Shark;
+table FB_StarCraftFight {
+	ID:int = 0;
+	CrossWorldLv:int = -1;
+	StarType:int = -1;
+	Power:string;
+	MonsterLv:int = -1;
+	CopyScene:int = -1;
+	SpecialAttrList:[int];
+	SpecialAttrNumList:[int];
+}
+table FB_StarCraftFightContainer {
+	items:[FB_StarCraftFight];
+}
+root_type FB_StarCraftFightContainer;
+file_identifier "swdt";

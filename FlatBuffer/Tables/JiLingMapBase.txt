@@ -1,0 +1,14 @@
+namespace Shark;
+table FB_JiLingMapBase {
+	ID:int = 0;
+	Name:string;
+	MaPexplain:int = -1;
+	DoubleRewIndex:int = -1;
+	ItemIdList:[int];
+	ItemNumList:[int];
+}
+table FB_JiLingMapBaseContainer {
+	items:[FB_JiLingMapBase];
+}
+root_type FB_JiLingMapBaseContainer;
+file_identifier "swdt";

@@ -1,0 +1,18 @@
+namespace Shark;
+table FB_EquipSetStone {
+	Id:int = 0;
+	StoneType:int = -1;
+	EquipType:int = -1;
+	Level:int = -1;
+	StoneName:int = -1;
+	LevelUpItemIdList:[int];
+	LevelUpItemCountList:[int];
+	AttrAdd:int = -1;
+	AttrIDList:[int];
+	AttrValueList:[int];
+}
+table FB_EquipSetStoneContainer {
+	items:[FB_EquipSetStone];
+}
+root_type FB_EquipSetStoneContainer;
+file_identifier "swdt";

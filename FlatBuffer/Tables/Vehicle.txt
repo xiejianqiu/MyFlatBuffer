@@ -1,0 +1,19 @@
+namespace Shark;
+table FB_Vehicle {
+	Id:int = 0;
+	RoleBaseId:int = -1;
+	ModifyAttr:bool = false;
+	CanBattle:bool = false;
+	ExistTime:int = 3;
+	CanFly:bool = false;
+	CanQuit:bool = false;
+	ScriptId:int = -1;
+	CamXAngle:int = 0;
+	CamYAngel:int = 0;
+	CamDis:float = 0;
+}
+table FB_VehicleContainer {
+	items:[FB_Vehicle];
+}
+root_type FB_VehicleContainer;
+file_identifier "swdt";

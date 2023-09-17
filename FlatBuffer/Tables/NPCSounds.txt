@@ -1,0 +1,10 @@
+namespace Shark;
+table FB_NPCSounds {
+	ID:int = 0;
+	SoundID:int = 0;
+}
+table FB_NPCSoundsContainer {
+	items:[FB_NPCSounds];
+}
+root_type FB_NPCSoundsContainer;
+file_identifier "swdt";

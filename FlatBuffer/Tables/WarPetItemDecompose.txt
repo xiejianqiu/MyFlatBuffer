@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_WarPetItemDecompose {
+	ID:int = 0;
+	Decompose:int = -1;
+	Type:int = -1;
+}
+table FB_WarPetItemDecomposeContainer {
+	items:[FB_WarPetItemDecompose];
+}
+root_type FB_WarPetItemDecomposeContainer;
+file_identifier "swdt";

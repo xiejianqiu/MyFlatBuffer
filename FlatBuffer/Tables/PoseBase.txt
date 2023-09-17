@@ -1,0 +1,16 @@
+namespace Shark;
+table FB_PoseBase {
+	Id:int = 0;
+	Name:string;
+	IconPath:string;
+	AnimationID:int = -1;
+	TextID:int = -1;
+	UnlockID:int = -1;
+	IsUsePaoPao:bool = false;
+	AchievementID:int = -1;
+}
+table FB_PoseBaseContainer {
+	items:[FB_PoseBase];
+}
+root_type FB_PoseBaseContainer;
+file_identifier "swdt";

@@ -1,0 +1,53 @@
+namespace Shark;
+table FB_GroupPoint {
+	Id:int = 0;
+	Name:string;
+	FlowText:string;
+	CharModelID:int = 0;
+	Type:int = 0;
+	IsOnlyClient:bool = false;
+	NotifyId:int = 0;
+	Area:int = 0;
+	CollectTime:int = 0;
+	RespawnTime:int = 0;
+	LiveTime:int = 0;
+	IsDelete:bool = false;
+	InitAnimId:int = 0;
+	FinishAnimId:int = 0;
+	SelfEffectId:int = 0;
+	PlayerKZEffectId:int = 0;
+	PlayerHLEffectId:int = 0;
+	PlayerCKEffectId:int = 0;
+	PlayerYJEffectId:int = 0;
+	IconPath:string;
+	subtype:int = 0;
+	ParamList:[int];
+	IsNeedClick:bool = false;
+	buffId:int = 0;
+	IsRespawn:bool = false;
+	DefaultEffectID:int = 0;
+	FinishedEffectID:int = 0;
+	LimitNum:int = 0;
+	LimitType:int = 0;
+	LimitIndex:int = 0;
+	LimitDict:int = 0;
+	ProgressBase:int = 0;
+	DelDict:int = 0;
+	Height:float = 0;
+	PStrId:int = 0;
+	PLifeTime:float = 0;
+	PShowInChat:bool = false;
+	IsShowNameBoard:bool = false;
+	PlayerInBloodEffect:int = 0;
+	AchieveAnimId:int = 0;
+	AchieveEffect:bool = false;
+	MissionId:int = 0;
+	ModelEffectId:int = 0;
+	StopRange:float = 0;
+	SoundId:int = 0;
+}
+table FB_GroupPointContainer {
+	items:[FB_GroupPoint];
+}
+root_type FB_GroupPointContainer;
+file_identifier "swdt";

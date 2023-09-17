@@ -1,0 +1,16 @@
+namespace Shark;
+table FB_EquipSetStoneGroupAttr {
+	Id:int = 0;
+	Name:string;
+	StoneType:int = -1;
+	EquipType:int = -1;
+	Quality:int = 0;
+	Level:int = -1;
+	AttrIDList:[int];
+	AttrValueList:[int];
+}
+table FB_EquipSetStoneGroupAttrContainer {
+	items:[FB_EquipSetStoneGroupAttr];
+}
+root_type FB_EquipSetStoneGroupAttrContainer;
+file_identifier "swdt";

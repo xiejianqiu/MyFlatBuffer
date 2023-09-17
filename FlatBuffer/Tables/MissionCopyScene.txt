@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_MissionCopyScene {
+	Id:int = 0;
+	CopySceneID:int = -1;
+	IsEnterCSOnAccept:bool = false;
+}
+table FB_MissionCopySceneContainer {
+	items:[FB_MissionCopyScene];
+}
+root_type FB_MissionCopySceneContainer;
+file_identifier "swdt";

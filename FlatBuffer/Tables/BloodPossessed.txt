@@ -1,0 +1,16 @@
+namespace Shark;
+table FB_BloodPossessed {
+	ID:int = 0;
+	CoolDownTimeID:int = -1;
+	DurationTime:int = -1;
+	AdvancedLevel:int = -1;
+	AttrTypeList:[int];
+	AttrList:[int];
+	ImpactIDList:[int];
+	JobModelIDList:[int];
+}
+table FB_BloodPossessedContainer {
+	items:[FB_BloodPossessed];
+}
+root_type FB_BloodPossessedContainer;
+file_identifier "swdt";

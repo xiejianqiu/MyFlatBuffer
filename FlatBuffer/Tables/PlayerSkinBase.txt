@@ -1,0 +1,23 @@
+namespace Shark;
+table FB_PlayerSkinBase {
+	ID:int = 0;
+	Name:string;
+	Sort:int = -1;
+	OccupationLimit:int = -1;
+	SexLimit:int = -1;
+	EquipType:int = -1;
+	ModelID:int = -1;
+	PartColorIDList:[int];
+	PartsNumber:int = -1;
+	LimitType:int = 0;
+	LimitValue:int = 0;
+	UnLockItemId:int = 0;
+	EquipOnGet:bool = false;
+	AvatarExp:int = -1;
+	ExpireDays:int = -1;
+}
+table FB_PlayerSkinBaseContainer {
+	items:[FB_PlayerSkinBase];
+}
+root_type FB_PlayerSkinBaseContainer;
+file_identifier "swdt";

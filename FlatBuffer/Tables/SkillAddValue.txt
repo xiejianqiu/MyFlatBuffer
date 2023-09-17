@@ -1,0 +1,38 @@
+namespace Shark;
+table FB_SkillAddValue {
+	ID:int = 0;
+	TianFuId:int = -1;
+	TianFuLevelValue:int = -1;
+	BloodId:int = -1;
+	BloodLevelValue:int = -1;
+	ZhuanJingId:int = -1;
+	ZhuanJingLevelValue:int = -1;
+	RuneId:int = -1;
+	RuneLevelValue:int = -1;
+	RuneJieValue:int = -1;
+	LingGangId:int = -1;
+	LingGangLevelValue:int = -1;
+	HunJiangJiBanId:int = -1;
+	HunJiangJiBanValue:int = -1;
+	DestinySkillID:int = -1;
+	DestinyValue:int = -1;
+	SevenStartSkillID:int = -1;
+	SevenStartValue:int = -1;
+	WarPetSkillTabId:int = -1;
+	WarPetValue:int = -1;
+	ShenShiId:int = -1;
+	ShenShiValue:int = -1;
+	ShenShiSystemId:int = -1;
+	YuanShenLevelAddValue:int = -1;
+	ShenShiSystemValue:int = -1;
+	XuanJiTianFuId:int = -1;
+	XuanJiTianFuValue:int = -1;
+	CampId:int = -1;
+	CampValue:int = -1;
+	FengHaoValue:int = -1;
+}
+table FB_SkillAddValueContainer {
+	items:[FB_SkillAddValue];
+}
+root_type FB_SkillAddValueContainer;
+file_identifier "swdt";

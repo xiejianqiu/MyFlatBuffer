@@ -1,0 +1,15 @@
+namespace Shark;
+table FB_ActivityDaZhiGouReward {
+	Id:int = 0;
+	TriggerId:int = -1;
+	MDIndex:int = -1;
+	ShowId:int = -1;
+	ItemIdList:[int];
+	ItemCountList:[int];
+	DailyDropID:int = -1;
+}
+table FB_ActivityDaZhiGouRewardContainer {
+	items:[FB_ActivityDaZhiGouReward];
+}
+root_type FB_ActivityDaZhiGouRewardContainer;
+file_identifier "swdt";

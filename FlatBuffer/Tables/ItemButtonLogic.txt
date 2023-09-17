@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_ItemButtonLogic {
+	Id:int = 0;
+	UseParamList:[int];
+	FuntionOpenID:int = -1;
+}
+table FB_ItemButtonLogicContainer {
+	items:[FB_ItemButtonLogic];
+}
+root_type FB_ItemButtonLogicContainer;
+file_identifier "swdt";

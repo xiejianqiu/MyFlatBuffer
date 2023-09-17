@@ -1,0 +1,14 @@
+namespace Shark;
+table FB_PeiShiCompoundType {
+	ID:int = 0;
+	Name:string;
+	Page:int = -1;
+	FirstTab:int = -1;
+	SecondTab:int = -1;
+	CompoundIDList:[int];
+}
+table FB_PeiShiCompoundTypeContainer {
+	items:[FB_PeiShiCompoundType];
+}
+root_type FB_PeiShiCompoundTypeContainer;
+file_identifier "swdt";

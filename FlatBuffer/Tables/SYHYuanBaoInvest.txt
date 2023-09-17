@@ -1,0 +1,14 @@
+namespace Shark;
+table FB_SYHYuanBaoInvest {
+	ID:int = 0;
+	StrDic:int = -1;
+	MoneyNum:int = -1;
+	Dic:int = -1;
+	LevelLimit:int = -1;
+	ExtraReward:int = -1;
+}
+table FB_SYHYuanBaoInvestContainer {
+	items:[FB_SYHYuanBaoInvest];
+}
+root_type FB_SYHYuanBaoInvestContainer;
+file_identifier "swdt";

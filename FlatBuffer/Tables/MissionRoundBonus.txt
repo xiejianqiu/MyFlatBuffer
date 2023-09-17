@@ -1,0 +1,14 @@
+namespace Shark;
+table FB_MissionRoundBonus {
+	Id:int = 0;
+	ExpRateList:[long];
+	BindMoneyRateList:[long];
+	BossItemCountList:[int];
+	ItemCountList:[int];
+	YuanShenExpRate:long = -1;
+}
+table FB_MissionRoundBonusContainer {
+	items:[FB_MissionRoundBonus];
+}
+root_type FB_MissionRoundBonusContainer;
+file_identifier "swdt";

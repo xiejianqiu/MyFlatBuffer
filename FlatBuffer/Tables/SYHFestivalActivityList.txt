@@ -1,0 +1,17 @@
+namespace Shark;
+table FB_SYHFestivalActivityList {
+	ID:int = 0;
+	Name:string;
+	Describe:string;
+	OpenTime:int = -1;
+	EndTime:int = -1;
+	NPCID:int = -1;
+	SceneID:int = -1;
+	NPCX:float = 0;
+	NPCZ:float = 0;
+}
+table FB_SYHFestivalActivityListContainer {
+	items:[FB_SYHFestivalActivityList];
+}
+root_type FB_SYHFestivalActivityListContainer;
+file_identifier "swdt";

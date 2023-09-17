@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_MarryTitleBase {
+	ID:int = 0;
+	Name:string;
+	TargetStep:int = -1;
+}
+table FB_MarryTitleBaseContainer {
+	items:[FB_MarryTitleBase];
+}
+root_type FB_MarryTitleBaseContainer;
+file_identifier "swdt";

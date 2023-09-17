@@ -1,0 +1,24 @@
+namespace Shark;
+table FB_CharAnim {
+	Id:int = 0;
+	Idle:int = -1;
+	Run:int = -1;
+	CombatIdle:int = -1;
+	CombatRun:int = -1;
+	Xiuxian:int = -1;
+	FlyIdle:int = -1;
+	FlyLandList:[int];
+	FlyTakeOffList:[int];
+	FlyUp:int = -1;
+	FlyDown:int = -1;
+	PreFlySpeedUp:int = -1;
+	FlySpeedUp:int = -1;
+	FlyMoveList:[int];
+	FlyXiuXianList:[int];
+	CaiJi:int = -1;
+}
+table FB_CharAnimContainer {
+	items:[FB_CharAnim];
+}
+root_type FB_CharAnimContainer;
+file_identifier "swdt";

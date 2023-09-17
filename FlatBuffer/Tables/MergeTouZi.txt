@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_MergeTouZi {
+	ID:int = 0;
+	Name:string;
+	RewardDay:int = 0;
+	MoneyNum:int = 0;
+	StrId:int = -1;
+}
+table FB_MergeTouZiContainer {
+	items:[FB_MergeTouZi];
+}
+root_type FB_MergeTouZiContainer;
+file_identifier "swdt";

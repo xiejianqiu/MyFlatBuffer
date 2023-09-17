@@ -1,0 +1,15 @@
+namespace Shark;
+table FB_DiamondCuiLian {
+	Id:int = 0;
+	ConditionCuilianLv:int = -1;
+	CostItemId:int = -1;
+	CostItemNum:int = -1;
+	AttrIdList:[int];
+	AttrValueList:[int];
+	Rate:int = -1;
+}
+table FB_DiamondCuiLianContainer {
+	items:[FB_DiamondCuiLian];
+}
+root_type FB_DiamondCuiLianContainer;
+file_identifier "swdt";

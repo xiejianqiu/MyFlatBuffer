@@ -1,0 +1,16 @@
+namespace Shark;
+table FB_XingYunExtractBase {
+	ExtractId:int = 0;
+	ExtraCostTimes:int = -1;
+	CostMoneyType:int = -1;
+	CostMoneyCount:int = -1;
+	AddLuckyValue:int = -1;
+	MaxLuckyValue:int = -1;
+	MaxTotalFortune:int = -1;
+	FreeListCount:int = -1;
+}
+table FB_XingYunExtractBaseContainer {
+	items:[FB_XingYunExtractBase];
+}
+root_type FB_XingYunExtractBaseContainer;
+file_identifier "swdt";

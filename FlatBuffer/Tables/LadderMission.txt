@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_LadderMission {
+	ID:int = 0;
+	IdStrDic:int = -1;
+	TargetList:[int];
+	HonorList:[int];
+	ShowId:int = -1;
+}
+table FB_LadderMissionContainer {
+	items:[FB_LadderMission];
+}
+root_type FB_LadderMissionContainer;
+file_identifier "swdt";

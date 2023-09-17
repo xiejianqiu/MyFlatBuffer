@@ -1,0 +1,20 @@
+namespace Shark;
+table FB_MarryBaseInfo {
+	ID:int = 0;
+	GoldType:int = 0;
+	GoldNum:int = 0;
+	ShoutStrId:int = 0;
+	HaveHunLi:bool = false;
+	ItemId:int = 0;
+	ItemNum:int = 0;
+	FirstMenPaiItemIdList:[int];
+	FirstItemNum:int = 0;
+	SecondMenPaiItemIdList:[int];
+	SecondItemNum:int = 0;
+	MailId:int = 0;
+}
+table FB_MarryBaseInfoContainer {
+	items:[FB_MarryBaseInfo];
+}
+root_type FB_MarryBaseInfoContainer;
+file_identifier "swdt";

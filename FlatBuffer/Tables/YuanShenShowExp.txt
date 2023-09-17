@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_YuanShenShowExp {
+	ID:int = 0;
+	PlayerLv:int = -1;
+	ParamList:[long];
+}
+table FB_YuanShenShowExpContainer {
+	items:[FB_YuanShenShowExp];
+}
+root_type FB_YuanShenShowExpContainer;
+file_identifier "swdt";

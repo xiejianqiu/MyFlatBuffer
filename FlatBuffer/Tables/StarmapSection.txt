@@ -1,0 +1,18 @@
+namespace Shark;
+table FB_StarmapSection {
+	ID:int = 0;
+	OrderName:string;
+	Name:string;
+	UnlockLevel:int = -1;
+	IconName:string;
+	MaxStarmap:int = -1;
+	SortID:int = -1;
+	StarmapList:[int];
+	MainGridType:int = -1;
+	MainGridName:string;
+}
+table FB_StarmapSectionContainer {
+	items:[FB_StarmapSection];
+}
+root_type FB_StarmapSectionContainer;
+file_identifier "swdt";

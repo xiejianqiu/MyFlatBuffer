@@ -1,0 +1,16 @@
+namespace Shark;
+table FB_XianYuZhiYiBase {
+	ID:int = 0;
+	Name:string;
+	Quality:int = -1;
+	UnlockLevel:int = -1;
+	ModelId:int = -1;
+	DescId:int = -1;
+	IconName:string;
+	UnLockModelId:int = -1;
+}
+table FB_XianYuZhiYiBaseContainer {
+	items:[FB_XianYuZhiYiBase];
+}
+root_type FB_XianYuZhiYiBaseContainer;
+file_identifier "swdt";

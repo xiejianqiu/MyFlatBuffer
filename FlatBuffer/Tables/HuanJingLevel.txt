@@ -1,0 +1,16 @@
+namespace Shark;
+table FB_HuanJingLevel {
+	Id:int = 0;
+	HuanJingBaseId:int = -1;
+	HuanJingLevel:int = -1;
+	BreakThrough:int = -1;
+	CostItemIdList:[int];
+	CostItemCountList:[int];
+	AttrIdList:[int];
+	AttrValueList:[int];
+}
+table FB_HuanJingLevelContainer {
+	items:[FB_HuanJingLevel];
+}
+root_type FB_HuanJingLevelContainer;
+file_identifier "swdt";

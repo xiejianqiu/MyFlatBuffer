@@ -1,0 +1,16 @@
+namespace Shark;
+table FB_SevenStartBase {
+	Id:int = 0;
+	Name:string;
+	NameSprite:string;
+	PassiveSkillList:[int];
+	PassiveValueBaseList:[int];
+	PassiveValueAddList:[int];
+	ActivateBattlePower:int = 0;
+	LevelBattlePower:int = 0;
+}
+table FB_SevenStartBaseContainer {
+	items:[FB_SevenStartBase];
+}
+root_type FB_SevenStartBaseContainer;
+file_identifier "swdt";

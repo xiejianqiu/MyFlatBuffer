@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_WarPetRandomStar {
+	ID:int = 0;
+	StarList:[int];
+	WeightList:[int];
+	AttributeMultiplierList:[int];
+	StarLevelList:[int];
+}
+table FB_WarPetRandomStarContainer {
+	items:[FB_WarPetRandomStar];
+}
+root_type FB_WarPetRandomStarContainer;
+file_identifier "swdt";

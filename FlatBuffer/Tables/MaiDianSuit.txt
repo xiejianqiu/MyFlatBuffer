@@ -1,0 +1,27 @@
+namespace Shark;
+table FB_MaiDianSuit {
+	ID:int = 0;
+	System:int = -1;
+	Switch:int = -1;
+	Conditon:int = -1;
+	Name:string;
+	Nameicon:string;
+	ItemList:[int];
+	SkillList:[int];
+	Photo:string;
+	PositionX:float = -1;
+	PositionY:float = -1;
+	Model:int = -1;
+	Button:int = -1;
+	Wear:int = -1;
+	NameiconSelect:string;
+	unlockDescStrId:int = -1;
+	GetNewModelId:int = -1;
+	OpenServerDay:int = 0;
+	IsLevelHundred:bool = false;
+}
+table FB_MaiDianSuitContainer {
+	items:[FB_MaiDianSuit];
+}
+root_type FB_MaiDianSuitContainer;
+file_identifier "swdt";

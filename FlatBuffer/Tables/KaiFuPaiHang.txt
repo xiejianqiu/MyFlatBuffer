@@ -1,0 +1,16 @@
+namespace Shark;
+table FB_KaiFuPaiHang {
+	ID:int = 0;
+	RecommendList:[int];
+	TypeList:[int];
+	ItemId:int = -1;
+	RecommendName:string;
+	RankId:int = -1;
+	OpenDay:int = -1;
+	EndDays:int = -1;
+}
+table FB_KaiFuPaiHangContainer {
+	items:[FB_KaiFuPaiHang];
+}
+root_type FB_KaiFuPaiHangContainer;
+file_identifier "swdt";

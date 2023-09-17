@@ -1,0 +1,14 @@
+namespace Shark;
+table FB_SYHBonusByStage {
+	ID:int = 0;
+	MenPaiAwardList:[int];
+	MenPaiNum:int = 0;
+	MenPaiReal:int = -1;
+	ItemIDList:[int];
+	ItemNumList:[int];
+}
+table FB_SYHBonusByStageContainer {
+	items:[FB_SYHBonusByStage];
+}
+root_type FB_SYHBonusByStageContainer;
+file_identifier "swdt";

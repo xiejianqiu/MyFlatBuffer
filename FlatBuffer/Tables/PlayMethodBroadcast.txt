@@ -1,0 +1,12 @@
+namespace Shark;
+table FB_PlayMethodBroadcast {
+	ID:int = 0;
+	StrDic:int = -1;
+	MinLvl:int = -1;
+	MaxLvl:int = -1;
+}
+table FB_PlayMethodBroadcastContainer {
+	items:[FB_PlayMethodBroadcast];
+}
+root_type FB_PlayMethodBroadcastContainer;
+file_identifier "swdt";

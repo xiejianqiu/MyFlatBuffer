@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_RechargeGift {
+	Id:int = 0;
+	Glod:int = -1;
+	ItemByJobList:[int];
+	RewardItemIdList:[int];
+	RewardItemNumList:[int];
+}
+table FB_RechargeGiftContainer {
+	items:[FB_RechargeGift];
+}
+root_type FB_RechargeGiftContainer;
+file_identifier "swdt";

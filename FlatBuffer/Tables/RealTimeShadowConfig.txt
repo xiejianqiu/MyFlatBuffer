@@ -1,0 +1,14 @@
+namespace Shark;
+table FB_RealTimeShadowConfig {
+	Id:int = 0;
+	Size:float = 0;
+	RenderTextureSize:int = 0;
+	AntiAliasing:int = 0;
+	ShadowColor:string;
+	Alpha:float = 0;
+}
+table FB_RealTimeShadowConfigContainer {
+	items:[FB_RealTimeShadowConfig];
+}
+root_type FB_RealTimeShadowConfigContainer;
+file_identifier "swdt";

@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_JuhunBoxWeight {
+	ID:int = 0;
+	UnLockLevel:int = -1;
+	WeightList:[int];
+}
+table FB_JuhunBoxWeightContainer {
+	items:[FB_JuhunBoxWeight];
+}
+root_type FB_JuhunBoxWeightContainer;
+file_identifier "swdt";

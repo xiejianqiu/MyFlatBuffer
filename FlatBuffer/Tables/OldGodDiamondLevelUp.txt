@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_OldGodDiamondLevelUp {
+	Id:int = 0;
+	MoneyType:int = 0;
+	MoneyCost:int = 0;
+	BaseAttrIdList:[int];
+	BaseAttrValueList:[int];
+}
+table FB_OldGodDiamondLevelUpContainer {
+	items:[FB_OldGodDiamondLevelUp];
+}
+root_type FB_OldGodDiamondLevelUpContainer;
+file_identifier "swdt";

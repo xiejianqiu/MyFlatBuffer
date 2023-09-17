@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_MissionGuide {
+	Id:int = 0;
+	GuideTypeID:int = -1;
+	AttrType:int = -1;
+	AttrParam:int = -1;
+	OpenUIID:int = -1;
+}
+table FB_MissionGuideContainer {
+	items:[FB_MissionGuide];
+}
+root_type FB_MissionGuideContainer;
+file_identifier "swdt";

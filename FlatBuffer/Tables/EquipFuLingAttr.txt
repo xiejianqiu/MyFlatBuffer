@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_EquipFuLingAttr {
+	ID:int = 0;
+	UnlockLevel:int = -1;
+	Component:int = -1;
+	AttrId:int = -1;
+	AttrValue:int = -1;
+}
+table FB_EquipFuLingAttrContainer {
+	items:[FB_EquipFuLingAttr];
+}
+root_type FB_EquipFuLingAttrContainer;
+file_identifier "swdt";

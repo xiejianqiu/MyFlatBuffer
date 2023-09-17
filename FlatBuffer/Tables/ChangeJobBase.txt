@@ -1,0 +1,29 @@
+namespace Shark;
+table FB_ChangeJobBase {
+	ID:int = 0;
+	MenPaiName:string;
+	HeadPic:string;
+	HeadPicFemale:string;
+	TargetHeadPic:string;
+	TargetHeadPicFemale:string;
+	ShowIcon:string;
+	ShowIconFemale:string;
+	Type:int = -1;
+	ParamList:[int];
+	OpenMissionID:int = -1;
+	DictID:int = -1;
+	FinalPhase:int = -1;
+	PhaseList:[int];
+	SkipMoney:int = -1;
+	FakeObjId:int = -1;
+	FakeObjIdFemale:int = -1;
+	CardFakeObjId:int = -1;
+	CardFakeObjIdFemale:int = -1;
+	FakeObjIdFinish:int = -1;
+	FakeObjIdFemaleFinish:int = -1;
+}
+table FB_ChangeJobBaseContainer {
+	items:[FB_ChangeJobBase];
+}
+root_type FB_ChangeJobBaseContainer;
+file_identifier "swdt";

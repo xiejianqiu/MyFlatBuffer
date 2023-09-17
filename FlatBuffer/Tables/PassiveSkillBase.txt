@@ -1,0 +1,31 @@
+namespace Shark;
+table FB_PassiveSkillBase {
+	ID:int = 0;
+	ClassId:int = -1;
+	Name:string;
+	SkillDescId:int = -1;
+	Icon:string;
+	CoolDownTime:int = 0;
+	TriggerType:int = -1;
+	TriggerChance:int = -1;
+	TriggerChanceAddValue:int = -1;
+	TriggerHPTarget:int = -1;
+	TriggerHPPercent:int = -1;
+	CombatType:int = -1;
+	TriggerTarget:int = -1;
+	TriggerResult:int = -1;
+	DestroyEffect:bool = false;
+	TriggerConditionList:[int];
+	TriggerParamList:[int];
+	ChildPassiveSkillList:[int];
+	DamageBoardID:int = -1;
+	SoundId:int = -1;
+	Priority:int = -1;
+	IsBroadCast:bool = false;
+	ContiueTime:float = -1;
+}
+table FB_PassiveSkillBaseContainer {
+	items:[FB_PassiveSkillBase];
+}
+root_type FB_PassiveSkillBaseContainer;
+file_identifier "swdt";

@@ -1,0 +1,14 @@
+namespace Shark;
+table FB_SoulPowerLevelUp {
+	Id:int = 0;
+	MoneyType:int = -1;
+	MoneyCost:int = -1;
+	JieLevel:int = -1;
+	AttrIdList:[int];
+	AttrValueList:[int];
+}
+table FB_SoulPowerLevelUpContainer {
+	items:[FB_SoulPowerLevelUp];
+}
+root_type FB_SoulPowerLevelUpContainer;
+file_identifier "swdt";

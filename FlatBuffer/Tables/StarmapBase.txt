@@ -1,0 +1,32 @@
+namespace Shark;
+table FB_StarmapBase {
+	ID:int = 0;
+	Name:string;
+	Tips:string;
+	Quality:int = -1;
+	SectionID:int = -1;
+	RequireNum:int = -1;
+	RequireIDList:[int];
+	Attribute1ID:int = -1;
+	Attribute1Value:int = -1;
+	Attribute1MinValue:int = -1;
+	Attribute1PowerValue:int = -1;
+	Attribute1MaxValue:int = -1;
+	Attribute2ID:int = -1;
+	Attribute2Value:int = -1;
+	Attribute2MinValue:int = -1;
+	Attribute2PowerValue:int = -1;
+	Attribute2MaxValue:int = -1;
+	NormalRandomID:int = -1;
+	PowerRandomID:int = -1;
+	PowerMax:int = -1;
+	IsDoubleAttr:bool = false;
+	IsBattle:bool = false;
+	BattleID:int = -1;
+	AdvancedExp:int = 0;
+}
+table FB_StarmapBaseContainer {
+	items:[FB_StarmapBase];
+}
+root_type FB_StarmapBaseContainer;
+file_identifier "swdt";

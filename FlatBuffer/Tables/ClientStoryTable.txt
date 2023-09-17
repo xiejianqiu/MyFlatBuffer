@@ -1,0 +1,22 @@
+namespace Shark;
+table FB_ClientStoryTable {
+	Id:int = 0;
+	TargetPosX:float = 0;
+	TargetPosY:float = 0;
+	TargetPosZ:float = 0;
+	TargetPosRadius:float = 2;
+	SpeakerID:int = 491;
+	AnimationID:int = 1;
+	SpriteName:string;
+	Story:string;
+	NextPageTime:float = 7;
+	SoundID:int = -1;
+	NextId:int = -1;
+	RoleName:string;
+	IsShowFakeObj:bool = true;
+}
+table FB_ClientStoryTableContainer {
+	items:[FB_ClientStoryTable];
+}
+root_type FB_ClientStoryTableContainer;
+file_identifier "swdt";

@@ -1,0 +1,17 @@
+namespace Shark;
+table FB_BagTreasure {
+	ID:int = 0;
+	BagType:int = 0;
+	ParamList:[int];
+	IsBanding:bool = false;
+	LimitType:int = 0;
+	VipLimit:int = 0;
+	LevelLimit:int = 0;
+	ItemList:[int];
+	ItemNumList:[int];
+}
+table FB_BagTreasureContainer {
+	items:[FB_BagTreasure];
+}
+root_type FB_BagTreasureContainer;
+file_identifier "swdt";

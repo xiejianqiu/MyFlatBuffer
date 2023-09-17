@@ -1,0 +1,31 @@
+namespace Shark;
+table FB_FunctionBase {
+	ID:int = 0;
+	FunctionName:string;
+	UnlockType:int = -1;
+	UnlockParam:int = -1;
+	SubFunctionList:[int];
+	LockedType:int = -1;
+	LockedTipsID:int = -1;
+	IsShowTips:bool = false;
+	IsShowUI:bool = false;
+	UIModelID:int = -1;
+	StrId:int = -1;
+	SpriteName:string;
+	FuncIcon:string;
+	FuncDescId:int = -1;
+	UIName:string;
+	MovePath:string;
+	IsSunFunc:bool = false;
+	DelayTime:float = -1;
+	IsWorldEnabled:bool = false;
+	MailId:int = -1;
+	IsShowNewIcon:bool = false;
+	MFId:int = -1;
+	IsActivity:bool = false;
+}
+table FB_FunctionBaseContainer {
+	items:[FB_FunctionBase];
+}
+root_type FB_FunctionBaseContainer;
+file_identifier "swdt";

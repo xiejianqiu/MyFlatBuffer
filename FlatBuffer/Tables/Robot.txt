@@ -1,0 +1,12 @@
+namespace Shark;
+table FB_Robot {
+	Id:int = 0;
+	FaceId:int = -1;
+	HairModelId:int = -1;
+	DefultCharModel:int = -1;
+}
+table FB_RobotContainer {
+	items:[FB_Robot];
+}
+root_type FB_RobotContainer;
+file_identifier "swdt";

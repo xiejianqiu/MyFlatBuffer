@@ -1,0 +1,21 @@
+namespace Shark;
+table FB_HuanJingJiBan {
+	Id:int = 0;
+	Group:int = -1;
+	HuanJingJiBanLv:int = -1;
+	PassiveSkillId:int = -1;
+	SkillTitle:string;
+	SkillInfo:string;
+	RequireInfo:string;
+	CostItemIdList:[int];
+	CostItemCountList:[int];
+	HuanJingBaseIdList:[int];
+	HuanJingLevelList:[int];
+	HuanJingSkillLevelList:[int];
+	HuanJingEquipStarList:[int];
+}
+table FB_HuanJingJiBanContainer {
+	items:[FB_HuanJingJiBan];
+}
+root_type FB_HuanJingJiBanContainer;
+file_identifier "swdt";

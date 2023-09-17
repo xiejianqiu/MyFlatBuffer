@@ -1,0 +1,20 @@
+namespace Shark;
+table FB_SYHQiYuanBaoGe {
+	ID:int = 0;
+	HighDropBoxId:int = 0;
+	LowDropBoxId:int = 0;
+	ThreeDropBox:int = 0;
+	LevelLimit:int = 0;
+	Param:int = -1;
+	ShenPuName:string;
+	model:int = -1;
+	ItemIdList:[int];
+	ItemNumList:[int];
+	ShowItemIdList:[int];
+	ShowItemNumList:[int];
+}
+table FB_SYHQiYuanBaoGeContainer {
+	items:[FB_SYHQiYuanBaoGe];
+}
+root_type FB_SYHQiYuanBaoGeContainer;
+file_identifier "swdt";

@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_StarmapRandom {
+	ID:int = 0;
+	GroupsNum:int = -1;
+	GroupList:[int];
+}
+table FB_StarmapRandomContainer {
+	items:[FB_StarmapRandom];
+}
+root_type FB_StarmapRandomContainer;
+file_identifier "swdt";

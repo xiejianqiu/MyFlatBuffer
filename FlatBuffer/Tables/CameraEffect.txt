@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_CameraEffect {
+	Id:int = 0;
+	Type:int = -1;
+	ParamList:[float];
+}
+table FB_CameraEffectContainer {
+	items:[FB_CameraEffect];
+}
+root_type FB_CameraEffectContainer;
+file_identifier "swdt";

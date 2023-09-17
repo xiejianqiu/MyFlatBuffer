@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_ShenWangYouLeChang {
+	Id:int = 0;
+	MonsterName:string;
+	PosX:int = -1;
+	PosZ:int = -1;
+	RoleBaseIDList:[int];
+}
+table FB_ShenWangYouLeChangContainer {
+	items:[FB_ShenWangYouLeChang];
+}
+root_type FB_ShenWangYouLeChangContainer;
+file_identifier "swdt";

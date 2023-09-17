@@ -1,0 +1,23 @@
+namespace Shark;
+table FB_OfflineReward {
+	Id:int = 0;
+	SceneType:int = 0;
+	RecAttrIdList:[int];
+	RecAttrValueList:[int];
+	RecMinLv:int = 1;
+	RecMinDef:int = 1;
+	ViewDroplevelList:[int];
+	ViewDropNumList:[int];
+	StandardExp:long = 1;
+	RecMinAttrpower:int = 1;
+	StandardAttrpower:int = 1;
+	DropBoxIDList:[int];
+	KPM:int = 0;
+	YuanShenExp:long = 0;
+	PlayerLv:int = -1;
+}
+table FB_OfflineRewardContainer {
+	items:[FB_OfflineReward];
+}
+root_type FB_OfflineRewardContainer;
+file_identifier "swdt";

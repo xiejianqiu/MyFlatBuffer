@@ -1,0 +1,16 @@
+namespace Shark;
+table FB_EquipAttrRate {
+	Id:int = 0;
+	GoldenAttrId:int = 0;
+	PurpleAttrIdList:[int];
+	PurpleAttrRateList:[int];
+	BlueAttrIdList:[int];
+	BlueAttrRateList:[int];
+	ShenZhuangAttrIdList:[int];
+	ShenZhuangAttrRateList:[int];
+}
+table FB_EquipAttrRateContainer {
+	items:[FB_EquipAttrRate];
+}
+root_type FB_EquipAttrRateContainer;
+file_identifier "swdt";

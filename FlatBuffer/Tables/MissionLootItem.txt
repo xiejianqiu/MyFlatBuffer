@@ -1,0 +1,18 @@
+namespace Shark;
+table FB_MissionLootItem {
+	Id:int = 0;
+	ItemDataID:int = 40;
+	ItemCount:int = 1;
+	NpcDateID:int = 497;
+	ItemDropRate:int = 8000;
+	IsDelMissionItem:bool = false;
+	TYPE:int = -1;
+	ClassID:int = 0;
+	SubClassID:int = 0;
+	IsSearchClass:bool = false;
+}
+table FB_MissionLootItemContainer {
+	items:[FB_MissionLootItem];
+}
+root_type FB_MissionLootItemContainer;
+file_identifier "swdt";

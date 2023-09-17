@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_WeaponModel {
+	Id:int = 0;
+	ResPathList:[string];
+	BindPointList:[string];
+	SoundId:int = 143;
+	Scale:float = 1;
+}
+table FB_WeaponModelContainer {
+	items:[FB_WeaponModel];
+}
+root_type FB_WeaponModelContainer;
+file_identifier "swdt";

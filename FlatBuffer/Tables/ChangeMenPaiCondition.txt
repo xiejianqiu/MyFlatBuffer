@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_ChangeMenPaiCondition {
+	ID:int = 0;
+	Type:int = -1;
+	Param:int = -1;
+}
+table FB_ChangeMenPaiConditionContainer {
+	items:[FB_ChangeMenPaiCondition];
+}
+root_type FB_ChangeMenPaiConditionContainer;
+file_identifier "swdt";

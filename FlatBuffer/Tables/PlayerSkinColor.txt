@@ -1,0 +1,15 @@
+namespace Shark;
+table FB_PlayerSkinColor {
+	ID:int = 0;
+	RGB:int = -1;
+	CostItemID:int = -1;
+	CostNum:int = -1;
+	LimitType:int = 0;
+	LimitValue:int = 0;
+	AvatarExp:int = -1;
+}
+table FB_PlayerSkinColorContainer {
+	items:[FB_PlayerSkinColor];
+}
+root_type FB_PlayerSkinColorContainer;
+file_identifier "swdt";

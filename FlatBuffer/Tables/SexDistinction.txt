@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_SexDistinction {
+	ID:int = 0;
+	MaleStartEffectList:[int];
+	FemaleStartEffectList:[int];
+	MaleSoundID:int = -1;
+	FemaleSoundID:int = -1;
+}
+table FB_SexDistinctionContainer {
+	items:[FB_SexDistinction];
+}
+root_type FB_SexDistinctionContainer;
+file_identifier "swdt";

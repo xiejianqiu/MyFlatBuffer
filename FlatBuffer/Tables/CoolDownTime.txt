@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_CoolDownTime {
+	Id:int = 0;
+	CDTime:int = 0;
+	CDGroupId:int = 0;
+}
+table FB_CoolDownTimeContainer {
+	items:[FB_CoolDownTime];
+}
+root_type FB_CoolDownTimeContainer;
+file_identifier "swdt";

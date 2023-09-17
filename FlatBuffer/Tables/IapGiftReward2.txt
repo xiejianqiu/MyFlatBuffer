@@ -1,0 +1,22 @@
+namespace Shark;
+table FB_IapGiftReward2 {
+	Id:int = 0;
+	Des2c:string;
+	RefreshType:int = 0;
+	related:int = 0;
+	LimitValue:int = 0;
+	showModel:int = 0;
+	infor:int = 0;
+	showPassiveSkillMain:string;
+	showPassiveSkillMinor:string;
+	ItemIdList:[int];
+	ItemCountList:[int];
+	DailyItemIdList:[int];
+	DailyItemCountList:[int];
+	name:string;
+}
+table FB_IapGiftReward2Container {
+	items:[FB_IapGiftReward2];
+}
+root_type FB_IapGiftReward2Container;
+file_identifier "swdt";

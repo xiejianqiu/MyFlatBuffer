@@ -1,0 +1,18 @@
+namespace Shark;
+table FB_ItemLocation {
+	Id:int = 0;
+	UseTime:int = -1;
+	ShowText:string;
+	Icon:string;
+	SceneID:int = -1;
+	PosX:int = -1;
+	PosZ:int = -1;
+	RoleID:int = -1;
+	Area:int = -1;
+	ProgressBase:int = -1;
+}
+table FB_ItemLocationContainer {
+	items:[FB_ItemLocation];
+}
+root_type FB_ItemLocationContainer;
+file_identifier "swdt";

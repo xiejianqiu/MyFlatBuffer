@@ -1,0 +1,23 @@
+namespace Shark;
+table FB_FunctionPrepare {
+	ID:int = 0;
+	FuncClass:int = -1;
+	MissionID:int = -1;
+	UnlockType:int = -1;
+	FuncIcon:string;
+	FuncName:string;
+	FunctionName:string;
+	FuncSpeaker:string;
+	FakeObjIDList:[int];
+	FuncIntroduceList:[int];
+	PassIndex:int = -1;
+	SortID:int = -1;
+	DescTwoFuncList:[string];
+	DescThreeFuncList:[string];
+	ChapterName:string;
+}
+table FB_FunctionPrepareContainer {
+	items:[FB_FunctionPrepare];
+}
+root_type FB_FunctionPrepareContainer;
+file_identifier "swdt";

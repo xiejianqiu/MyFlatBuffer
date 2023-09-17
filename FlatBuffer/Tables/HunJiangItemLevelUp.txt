@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_HunJiangItemLevelUp {
+	Id:int = 0;
+	Quality:int = 0;
+	Exp:int = 0;
+	AttrIdList:[int];
+	AttrValueList:[int];
+}
+table FB_HunJiangItemLevelUpContainer {
+	items:[FB_HunJiangItemLevelUp];
+}
+root_type FB_HunJiangItemLevelUpContainer;
+file_identifier "swdt";

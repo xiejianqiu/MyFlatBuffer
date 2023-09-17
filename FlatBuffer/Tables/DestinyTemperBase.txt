@@ -1,0 +1,14 @@
+namespace Shark;
+table FB_DestinyTemperBase {
+	Id:int = 0;
+	CostItemId:int = -1;
+	CostItemNum:int = -1;
+	MaxPercent:int = -1;
+	AttrIdList:[int];
+	AttrValueList:[int];
+}
+table FB_DestinyTemperBaseContainer {
+	items:[FB_DestinyTemperBase];
+}
+root_type FB_DestinyTemperBaseContainer;
+file_identifier "swdt";

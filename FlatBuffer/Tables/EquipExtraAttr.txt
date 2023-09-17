@@ -1,0 +1,10 @@
+namespace Shark;
+table FB_EquipExtraAttr {
+	Id:int = 0;
+	AttrList:[int];
+}
+table FB_EquipExtraAttrContainer {
+	items:[FB_EquipExtraAttr];
+}
+root_type FB_EquipExtraAttrContainer;
+file_identifier "swdt";

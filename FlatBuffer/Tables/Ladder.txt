@@ -1,0 +1,28 @@
+namespace Shark;
+table FB_Ladder {
+	ID:int = 0;
+	Name:string;
+	JiFen:int = 0;
+	JiFenReward:int = 300;
+	ShenQiLevel:int = -1;
+	DescStrId:int = -1;
+	DIdShenQi:int = -1;
+	DidShenQiShowId:int = -1;
+	DBangYuan:int = 0;
+	DBangYin:int = 0;
+	DIdItemList:[int];
+	DIdItemCountList:[int];
+	SIdShenQi:int = -1;
+	SIdShenQiShowId:int = -1;
+	SBangYuan:int = 0;
+	SBangYin:int = 0;
+	SIdItemList:[int];
+	SIdItemCountList:[int];
+	RankBg:string;
+	RankIcon:string;
+}
+table FB_LadderContainer {
+	items:[FB_Ladder];
+}
+root_type FB_LadderContainer;
+file_identifier "swdt";

@@ -1,0 +1,16 @@
+namespace Shark;
+table FB_AuctionItem {
+	ID:int = 0;
+	Name:string;
+	BasePrice:int = -1;
+	LowPrice:int = -1;
+	HighPrice:int = -1;
+	AuctionClass:int = -1;
+	AuctionType:int = -1;
+	Cooldown:int = -1;
+}
+table FB_AuctionItemContainer {
+	items:[FB_AuctionItem];
+}
+root_type FB_AuctionItemContainer;
+file_identifier "swdt";

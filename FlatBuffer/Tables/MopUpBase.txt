@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_MopUpBase {
+	ID:int = 0;
+	ItemID:int = -1;
+	CountMaxList:[int];
+	CostType:int = -1;
+	LimitLvl:int = -1;
+}
+table FB_MopUpBaseContainer {
+	items:[FB_MopUpBase];
+}
+root_type FB_MopUpBaseContainer;
+file_identifier "swdt";

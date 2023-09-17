@@ -1,0 +1,12 @@
+namespace Shark;
+table FB_BattlefieldRankRew {
+	ID:int = 0;
+	ItemIdList:[int];
+	ItemNumList:[int];
+	DropBoxId:int = -1;
+}
+table FB_BattlefieldRankRewContainer {
+	items:[FB_BattlefieldRankRew];
+}
+root_type FB_BattlefieldRankRewContainer;
+file_identifier "swdt";

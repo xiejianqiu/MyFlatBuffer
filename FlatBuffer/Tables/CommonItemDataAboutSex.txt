@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_CommonItemDataAboutSex {
+	Id:int = 0;
+	MenAtlasName:int = -1;
+	MenIcon:string;
+	WomenAtlasName:int = -1;
+	WomenIcon:string;
+}
+table FB_CommonItemDataAboutSexContainer {
+	items:[FB_CommonItemDataAboutSex];
+}
+root_type FB_CommonItemDataAboutSexContainer;
+file_identifier "swdt";

@@ -1,0 +1,10 @@
+namespace Shark;
+table FB_WarPetSkillLimit {
+	ID:int = 0;
+	LimitLevel:int = -1;
+}
+table FB_WarPetSkillLimitContainer {
+	items:[FB_WarPetSkillLimit];
+}
+root_type FB_WarPetSkillLimitContainer;
+file_identifier "swdt";

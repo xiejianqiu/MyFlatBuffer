@@ -1,0 +1,30 @@
+namespace Shark;
+table FB_XingYunGuideEvent {
+	EventId:int = 0;
+	EventDescId:int = 0;
+	Type:int = -1;
+	ExtraDropItemId:int = -1;
+	ExtraDropItemName:string;
+	EvaLevel:int = -1;
+	IsShowPrompt:bool = false;
+	Weights:int = -1;
+	LevelLimitType:int = -1;
+	MinLevelLimit:int = -1;
+	MaxLevelLimit:int = -1;
+	RankLimit:int = -1;
+	AddFactor:int = -1;
+	MaxFortune:int = -1;
+	MinFortune:int = -1;
+	MaxAddProportion:int = -1;
+	TriggerProbability:int = -1;
+	EventTriggerType:int = -1;
+	SystemBroadCastId:int = -1;
+	WorldServerType:int = -1;
+	LastRetRatio:int = 0;
+	ActivityBaseId:int = -1;
+}
+table FB_XingYunGuideEventContainer {
+	items:[FB_XingYunGuideEvent];
+}
+root_type FB_XingYunGuideEventContainer;
+file_identifier "swdt";

@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_OldGodSuitAttr {
+	ID:int = 0;
+	StepName:string;
+	Name:string;
+	AttrIdList:[int];
+	AttrValueList:[int];
+}
+table FB_OldGodSuitAttrContainer {
+	items:[FB_OldGodSuitAttr];
+}
+root_type FB_OldGodSuitAttrContainer;
+file_identifier "swdt";

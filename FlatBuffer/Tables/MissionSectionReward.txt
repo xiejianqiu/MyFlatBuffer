@@ -1,0 +1,17 @@
+namespace Shark;
+table FB_MissionSectionReward {
+	ID:int = 0;
+	SectionOrder:string;
+	Name:string;
+	SectionDesc:string;
+	Icon:string;
+	RewardItemIDList:[int];
+	RewardItemNumList:[int];
+	ShowEffectList:[bool];
+	RewardTips:string;
+}
+table FB_MissionSectionRewardContainer {
+	items:[FB_MissionSectionReward];
+}
+root_type FB_MissionSectionRewardContainer;
+file_identifier "swdt";

@@ -1,0 +1,15 @@
+namespace Shark;
+table FB_GuildWelfareBase {
+	Id:int = 0;
+	Name:string;
+	Descript:string;
+	IconItemId:int = 0;
+	BtnName:string;
+	LogicType:int = 0;
+	Param:int = 0;
+}
+table FB_GuildWelfareBaseContainer {
+	items:[FB_GuildWelfareBase];
+}
+root_type FB_GuildWelfareBaseContainer;
+file_identifier "swdt";

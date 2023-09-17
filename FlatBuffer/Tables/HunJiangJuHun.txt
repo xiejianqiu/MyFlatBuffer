@@ -1,0 +1,15 @@
+namespace Shark;
+table FB_HunJiangJuHun {
+	ID:int = 0;
+	UnitId:int = -1;
+	ShopItemId:int = -1;
+	ItemId:int = -1;
+	ItemCount:int = -1;
+	DropBoxItemId:int = -1;
+	GetItemNum:int = -1;
+}
+table FB_HunJiangJuHunContainer {
+	items:[FB_HunJiangJuHun];
+}
+root_type FB_HunJiangJuHunContainer;
+file_identifier "swdt";

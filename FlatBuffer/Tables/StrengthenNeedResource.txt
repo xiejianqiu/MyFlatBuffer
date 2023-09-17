@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_StrengthenNeedResource {
+	ID:int = 0;
+	Name:string;
+	Icon:int = -1;
+	DescribeList:[int];
+	FuncBaseID:int = -1;
+}
+table FB_StrengthenNeedResourceContainer {
+	items:[FB_StrengthenNeedResource];
+}
+root_type FB_StrengthenNeedResourceContainer;
+file_identifier "swdt";

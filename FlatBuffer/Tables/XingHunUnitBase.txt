@@ -1,0 +1,23 @@
+namespace Shark;
+table FB_XingHunUnitBase {
+	ID:int = 0;
+	Name:string;
+	ItemId:int = -1;
+	NameIcon:string;
+	StarSoulName:string;
+	EffectPath:string;
+	MenPai:int = -1;
+	FakeObjId:int = -1;
+	CharXingHunId:int = -1;
+	EffectIndex:int = -1;
+	UnLockTypeList:[int];
+	UnLockParamList:[int];
+	UnlockDescStrId:int = -1;
+	AttrIdList:[int];
+	AttrValueList:[int];
+}
+table FB_XingHunUnitBaseContainer {
+	items:[FB_XingHunUnitBase];
+}
+root_type FB_XingHunUnitBaseContainer;
+file_identifier "swdt";

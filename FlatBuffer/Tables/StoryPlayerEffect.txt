@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_StoryPlayerEffect {
+	Id:int = 0;
+	EffectIdList:[int];
+	NameLabel:string;
+}
+table FB_StoryPlayerEffectContainer {
+	items:[FB_StoryPlayerEffect];
+}
+root_type FB_StoryPlayerEffectContainer;
+file_identifier "swdt";

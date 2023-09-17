@@ -1,0 +1,23 @@
+namespace Shark;
+table FB_TianFuBase {
+	ID:int = 0;
+	Name:string;
+	Icon:string;
+	MenPai:int = -1;
+	Type:int = -1;
+	Position:int = -1;
+	MaxLevel:int = -1;
+	UnLockTypeList:[int];
+	UnLockIdList:[int];
+	UnLockValueList:[int];
+	TakeEffectType:int = -1;
+	TakeEffectValue:int = -1;
+	TakeEffectValueSec:int = -1;
+	StrDescId:int = -1;
+	DescParamList:[float];
+}
+table FB_TianFuBaseContainer {
+	items:[FB_TianFuBase];
+}
+root_type FB_TianFuBaseContainer;
+file_identifier "swdt";

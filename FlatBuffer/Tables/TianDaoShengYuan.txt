@@ -1,0 +1,17 @@
+namespace Shark;
+table FB_TianDaoShengYuan {
+	ID:int = 0;
+	Name:string;
+	LabelList:[string];
+	Sprite:string;
+	DropBox_s:int = -1;
+	DropBox_a:int = -1;
+	MFID_S:int = -1;
+	MFID_A:int = -1;
+	LabelStrId:int = -1;
+}
+table FB_TianDaoShengYuanContainer {
+	items:[FB_TianDaoShengYuan];
+}
+root_type FB_TianDaoShengYuanContainer;
+file_identifier "swdt";

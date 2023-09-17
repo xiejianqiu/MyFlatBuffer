@@ -1,0 +1,12 @@
+namespace Shark;
+table FB_OppoReward {
+	ID:int = 0;
+	MainType:int = -1;
+	VipType:int = -1;
+	PacketId:int = -1;
+}
+table FB_OppoRewardContainer {
+	items:[FB_OppoReward];
+}
+root_type FB_OppoRewardContainer;
+file_identifier "swdt";

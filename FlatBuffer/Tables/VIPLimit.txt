@@ -1,0 +1,10 @@
+namespace Shark;
+table FB_VIPLimit {
+	ID:int = 0;
+	VIPList:[int];
+}
+table FB_VIPLimitContainer {
+	items:[FB_VIPLimit];
+}
+root_type FB_VIPLimitContainer;
+file_identifier "swdt";

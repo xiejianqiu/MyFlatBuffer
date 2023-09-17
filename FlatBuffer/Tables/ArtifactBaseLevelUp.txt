@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_ArtifactBaseLevelUp {
+	Id:int = 0;
+	CostItemId:int = -1;
+	CostItemCount:int = -1;
+	AttrIdList:[int];
+	AttrValueList:[int];
+}
+table FB_ArtifactBaseLevelUpContainer {
+	items:[FB_ArtifactBaseLevelUp];
+}
+root_type FB_ArtifactBaseLevelUpContainer;
+file_identifier "swdt";

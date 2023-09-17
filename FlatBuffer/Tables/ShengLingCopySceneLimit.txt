@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_ShengLingCopySceneLimit {
+	Id:int = 0;
+	IsActive:bool = false;
+	BossCount:int = -1;
+	UnLockTypeList:[int];
+	UnLockParamList:[int];
+}
+table FB_ShengLingCopySceneLimitContainer {
+	items:[FB_ShengLingCopySceneLimit];
+}
+root_type FB_ShengLingCopySceneLimitContainer;
+file_identifier "swdt";

@@ -1,0 +1,17 @@
+namespace Shark;
+table FB_ZheKouShangDian {
+	ID:int = 0;
+	KaiFuPaiHangId:int = -1;
+	RewardItemIdList:[int];
+	RewardItemCountList:[int];
+	Price:int = -1;
+	OriginPrice:int = -1;
+	Discount:int = -1;
+	MaxCount:int = -1;
+	RewardType:int = 0;
+}
+table FB_ZheKouShangDianContainer {
+	items:[FB_ZheKouShangDian];
+}
+root_type FB_ZheKouShangDianContainer;
+file_identifier "swdt";

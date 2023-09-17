@@ -1,0 +1,16 @@
+namespace Shark;
+table FB_SYHCangBaoHuiAward {
+	ID:int = 0;
+	MinLevel:int = -1;
+	MaxLevel:int = -1;
+	TargetPoint:int = -1;
+	AwardIndex:int = -1;
+	LayerId:int = -1;
+	GetIndex:int = -1;
+	BounuID:int = -1;
+}
+table FB_SYHCangBaoHuiAwardContainer {
+	items:[FB_SYHCangBaoHuiAward];
+}
+root_type FB_SYHCangBaoHuiAwardContainer;
+file_identifier "swdt";

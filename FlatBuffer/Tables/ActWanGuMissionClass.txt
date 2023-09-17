@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_ActWanGuMissionClass {
+	ID:int = 0;
+	Name:string;
+	SubClassIDList:[int];
+	ActWanGuId:int = -1;
+	LimitDay:int = -1;
+}
+table FB_ActWanGuMissionClassContainer {
+	items:[FB_ActWanGuMissionClass];
+}
+root_type FB_ActWanGuMissionClassContainer;
+file_identifier "swdt";

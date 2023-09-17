@@ -1,0 +1,16 @@
+namespace Shark;
+table FB_RewardSurveyConfig {
+	ID:int = 0;
+	ActCycle:int = -1;
+	TitleNum:int = -1;
+	AnswerStartID:int = -1;
+	Money:int = -1;
+	Price:int = -1;
+	EndRewardIDList:[int];
+	EndRewardNumList:[int];
+}
+table FB_RewardSurveyConfigContainer {
+	items:[FB_RewardSurveyConfig];
+}
+root_type FB_RewardSurveyConfigContainer;
+file_identifier "swdt";

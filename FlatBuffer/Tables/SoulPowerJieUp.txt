@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_SoulPowerJieUp {
+	Id:int = 0;
+	ItemId:int = -1;
+	ItemCost:int = -1;
+	AttrIdList:[int];
+	AttrValueList:[int];
+}
+table FB_SoulPowerJieUpContainer {
+	items:[FB_SoulPowerJieUp];
+}
+root_type FB_SoulPowerJieUpContainer;
+file_identifier "swdt";

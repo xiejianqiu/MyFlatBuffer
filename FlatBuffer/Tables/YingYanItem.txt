@@ -1,0 +1,15 @@
+namespace Shark;
+table FB_YingYanItem {
+	Id:int = 0;
+	Type:int = 0;
+	Width:int = 0;
+	Height:int = 0;
+	Icon:string;
+	KeyList:[int];
+	Scale:float = 1;
+}
+table FB_YingYanItemContainer {
+	items:[FB_YingYanItem];
+}
+root_type FB_YingYanItemContainer;
+file_identifier "swdt";

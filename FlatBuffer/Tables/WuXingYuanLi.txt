@@ -1,0 +1,15 @@
+namespace Shark;
+table FB_WuXingYuanLi {
+	ID:int = 0;
+	Name:string;
+	AttrIdList:[int];
+	AttrValueList:[int];
+	NeedItemId:int = -1;
+	NeedItemCount:int = -1;
+	Price:int = -1;
+}
+table FB_WuXingYuanLiContainer {
+	items:[FB_WuXingYuanLi];
+}
+root_type FB_WuXingYuanLiContainer;
+file_identifier "swdt";

@@ -1,0 +1,14 @@
+namespace Shark;
+table FB_HunJiangRongLian {
+	Id:int = 0;
+	Name:string;
+	Quality:int = 0;
+	ItemCount:int = 0;
+	DroBoxId:int = 0;
+	Tip:string;
+}
+table FB_HunJiangRongLianContainer {
+	items:[FB_HunJiangRongLian];
+}
+root_type FB_HunJiangRongLianContainer;
+file_identifier "swdt";

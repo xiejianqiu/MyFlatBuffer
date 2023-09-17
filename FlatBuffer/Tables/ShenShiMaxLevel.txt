@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_ShenShiMaxLevel {
+	ID:int = 0;
+	ShenShiIdList:[int];
+	ShenShiMaxLevelList:[int];
+}
+table FB_ShenShiMaxLevelContainer {
+	items:[FB_ShenShiMaxLevel];
+}
+root_type FB_ShenShiMaxLevelContainer;
+file_identifier "swdt";

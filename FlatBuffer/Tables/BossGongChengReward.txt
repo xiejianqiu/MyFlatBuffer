@@ -1,0 +1,15 @@
+namespace Shark;
+table FB_BossGongChengReward {
+	ID:int = 0;
+	ItemIdList:[int];
+	ItemCountList:[int];
+	DelHpDropBoxId:int = -1;
+	BigBossDieDropBoxId:int = -1;
+	NormalBossDieDropBoxId:int = -1;
+	SmallBossDieDropBoxId:int = -1;
+}
+table FB_BossGongChengRewardContainer {
+	items:[FB_BossGongChengReward];
+}
+root_type FB_BossGongChengRewardContainer;
+file_identifier "swdt";

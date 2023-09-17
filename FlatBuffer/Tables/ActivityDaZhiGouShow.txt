@@ -1,0 +1,18 @@
+namespace Shark;
+table FB_ActivityDaZhiGouShow {
+	ID:int = 0;
+	Type:int = -1;
+	Texture:string;
+	DesSprite:string;
+	RewardBG:string;
+	CloseSpr:string;
+	SkillID:int = -1;
+	FakeObjIDList:[int];
+	Combat:int = -1;
+	TopDesSprite:string;
+}
+table FB_ActivityDaZhiGouShowContainer {
+	items:[FB_ActivityDaZhiGouShow];
+}
+root_type FB_ActivityDaZhiGouShowContainer;
+file_identifier "swdt";

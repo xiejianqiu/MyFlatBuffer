@@ -1,0 +1,19 @@
+namespace Shark;
+table FB_JiLingJingJie {
+	Id:int = 0;
+	Level:int = 1;
+	Step:int = 1;
+	Quality:int = 1;
+	StepSprite:string;
+	Info:string;
+	ItemID:int = -1;
+	ItemCount:int = -1;
+	RealityItemID:int = -1;
+	AttrIDList:[int];
+	AttrValueList:[int];
+}
+table FB_JiLingJingJieContainer {
+	items:[FB_JiLingJingJie];
+}
+root_type FB_JiLingJingJieContainer;
+file_identifier "swdt";

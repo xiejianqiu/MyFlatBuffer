@@ -1,0 +1,23 @@
+namespace Shark;
+table FB_WarPetEquip {
+	ID:int = 0;
+	Name:string;
+	Icon:string;
+	Exp:int = -1;
+	Quality:int = -1;
+	Component:int = -1;
+	Star:int = 0;
+	MaxStar:int = 0;
+	AttrIdList:[int];
+	AttrValueList:[int];
+	Tips:string;
+	SellPrice:int = -1;
+	GetPathID:int = -1;
+	SystemRemind:int = -1;
+	DropModle:string;
+}
+table FB_WarPetEquipContainer {
+	items:[FB_WarPetEquip];
+}
+root_type FB_WarPetEquipContainer;
+file_identifier "swdt";

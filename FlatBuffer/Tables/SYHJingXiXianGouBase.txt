@@ -1,0 +1,22 @@
+namespace Shark;
+table FB_SYHJingXiXianGouBase {
+	ID:int = 0;
+	RewardName:string;
+	RewardItemId:int = -1;
+	StartTime:int = 0;
+	EndTime:int = 0;
+	RewardCount:int = -1;
+	UnlockType:int = -1;
+	UnlockParam:int = -1;
+	Duration:int = -1;
+	Price:int = -1;
+	OriginPrice:int = -1;
+	Discount:int = -1;
+	FlagId:int = -1;
+	ShowLevel:int = -1;
+}
+table FB_SYHJingXiXianGouBaseContainer {
+	items:[FB_SYHJingXiXianGouBase];
+}
+root_type FB_SYHJingXiXianGouBaseContainer;
+file_identifier "swdt";

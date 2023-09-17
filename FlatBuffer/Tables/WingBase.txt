@@ -1,0 +1,29 @@
+namespace Shark;
+table FB_WingBase {
+	ID:int = 0;
+	Name:string;
+	StateLevel:int = -1;
+	FloorLevel:int = -1;
+	IsBreak:bool = false;
+	LevelLimit:int = -1;
+	PayItemID:int = -1;
+	PayItem:int = -1;
+	BreakItemID:int = -1;
+	BreakItem:int = -1;
+	Attribute0ID:int = -1;
+	Attribute0Value:int = -1;
+	Attribute1ID:int = -1;
+	Attribute1Value:int = -1;
+	Attribute2ID:int = -1;
+	Attribute2Value:int = -1;
+	WingPowerMax:int = -1;
+	WingPowerRecover:int = -1;
+	FlySpeed:float = 0;
+	QuickenFlySpeed:float = 0;
+	AdvancedExp:int = 0;
+}
+table FB_WingBaseContainer {
+	items:[FB_WingBase];
+}
+root_type FB_WingBaseContainer;
+file_identifier "swdt";

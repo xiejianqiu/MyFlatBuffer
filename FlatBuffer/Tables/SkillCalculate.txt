@@ -1,0 +1,16 @@
+namespace Shark;
+table FB_SkillCalculate {
+	ID:int = 0;
+	BaseValue:int = 0;
+	MaxBaseVal:int = 0;
+	MandomWeight:int = 0;
+	SkillExId:int = 0;
+	SkillLevelValue:int = 0;
+	TheurgyLevelValue:int = 0;
+	MaxTheurgyLevelVal:int = 0;
+}
+table FB_SkillCalculateContainer {
+	items:[FB_SkillCalculate];
+}
+root_type FB_SkillCalculateContainer;
+file_identifier "swdt";

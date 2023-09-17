@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_StarSoulLevel {
+	ID:int = 0;
+	Exp:int = -1;
+	AttackValue:int = -1;
+}
+table FB_StarSoulLevelContainer {
+	items:[FB_StarSoulLevel];
+}
+root_type FB_StarSoulLevelContainer;
+file_identifier "swdt";

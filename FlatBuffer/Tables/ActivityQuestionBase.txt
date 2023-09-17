@@ -1,0 +1,11 @@
+namespace Shark;
+table FB_ActivityQuestionBase {
+	ID:int = 0;
+	QuestionDic:int = -1;
+	AnswerList:[int];
+}
+table FB_ActivityQuestionBaseContainer {
+	items:[FB_ActivityQuestionBase];
+}
+root_type FB_ActivityQuestionBaseContainer;
+file_identifier "swdt";

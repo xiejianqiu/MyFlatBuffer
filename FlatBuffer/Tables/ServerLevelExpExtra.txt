@@ -1,0 +1,13 @@
+namespace Shark;
+table FB_ServerLevelExpExtra {
+	ID:int = 0;
+	ServerLevelLimitList:[int];
+	ExtarRateList:[int];
+	HuaShenServerLevelLimitList:[int];
+	HuaShenExtarRateList:[int];
+}
+table FB_ServerLevelExpExtraContainer {
+	items:[FB_ServerLevelExpExtra];
+}
+root_type FB_ServerLevelExpExtraContainer;
+file_identifier "swdt";
