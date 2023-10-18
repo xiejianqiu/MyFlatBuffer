@@ -16,15 +16,16 @@ SET fbSavePath=%CUR_PATH%FlatBuffer\Tables
 
 SET FBProviderTT=%ToolDir%\FBProvider.txt
 SET FBInitTT=%ToolDir%\FBBinaryExport.txt
+SET FBLoaderTT=%ToolDir%\FBBinaryLoader.txt
 SET FlatBufferProj=%CUR_PATH%\FlatBuffer\FlatBufferTable
 SET csSavePath=%FlatBufferProj%\FlatBufferTable\FlatBuffer
 
 SET hotfixPath=%CUR_PATH%\shengwang\hotfix\hotfix\iLScript
 SET hotfixDll=%CUR_PATH%\shengwang\hotfix\hotfix\dll
-
+SET flatBufferPath=%CUR_PATH%\shengwang\hotfix\hotfix\iLScript\flatbuffers
 SET COMMON_PARMA=jsonPath %jsonPath%
 SET GEN_FB_TABLE=fbSavePath %fbSavePath%
-SET CODE_PARMA=FBProviderTT %FBProviderTT% FBInitTT %FBInitTT% csSavePath %csSavePath%
+SET CODE_PARMA=FBProviderTT %FBProviderTT% FBInitTT %FBInitTT% FBLoaderTT %FBLoaderTT% csSavePath %csSavePath%
 SET REPLACE_CDEE_PARMA=hotfixPath %hotfixPath%
 
 SET GenFB=true
@@ -36,14 +37,12 @@ if %GenCls% == false GOTO BAT_END
 GEN_FB_TABLE_DLL:
 CALL %JsonPaserEXE% %CONTROL_CMD% %COMMON_PARMA% %GEN_FB_TABLE% %CODE_PARMA% %REPLACE_CDEE_PARMA%
 
-CD %FlatBufferProj%
-SET DLL_PATH=%FlatBufferProj%\FlatBufferTable\bin\Release\netcoreapp3.1\
-SET DLL_SAVEPATH=%CUR_PATH%\shengwang\Assets\Plugins\FlatBuffer
+CD %FlatBufferProj%\FlatBufferTable
 dotnet clean
 dotnet build -c Release
-xcopy %DLL_PATH%\FlatBufferTable.dll %DLL_SAVEPATH% /y /q
-xcopy %DLL_PATH%\FlatBufferTable.dll %hotfixDll% /y /q
-
-BAT_END:
+CD %csSavePath%
+xcopy %csSavePath%\FBBinaryLoader.cs %flatBufferPath% /y /q
+xcopy %csSavePath%\FBConfig.cs %flatBufferPath% /y /q
+xcopy %csSavePath%\FBProvider.cs %flatBufferPath% /y /q
 ECHO FINISH!!!!!!!
 PAUSE
