@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
+using System.Net.NetworkInformation;
 using System.Text;
 using System.Text.RegularExpressions;
 
@@ -233,17 +234,22 @@ namespace JsonPaser
 			{
 				Directory.CreateDirectory(providerSavePath);
 			}
-			foreach (var cls in clsDataList)
+			StringBuilder builder = new StringBuilder();
+            builder.AppendLine("using System;");
+            builder.AppendLine("using FlatBuffers;");
+            builder.AppendLine("using System.Collections.Generic;");
+            builder.AppendLine("using System.IO;");
+            //builder.AppendLine("using UnityEngine.Profiling;");
+            builder.AppendLine("using Shark;");
+            foreach (var cls in clsDataList)
 			{
                 var tmplateStr = Consts.FB_PROVIDER_TT;
                 tmplateStr = tmplateStr.Replace("@{class_name_tag}", cls.mClassName);
                 tmplateStr = tmplateStr.Replace("@{field_id_name}", cls.mFields[0].Name);
                 tmplateStr = tmplateStr.Replace("@{class_relative_path}", cls.mRelativePath);
-                string csFilePath = System.IO.Path.Combine(providerSavePath, $"{cls.mClassName}Provider.cs");
-
-                Console.WriteLine(csFilePath);
-                File.WriteAllText(csFilePath, tmplateStr);
+                builder.AppendLine(tmplateStr);
             }
+			File.WriteAllText(providerSavePath + "/FBProvider.cs", builder.ToString());
 		}
 		/// <summary>
 		/// 生成cs代码用于将txt二进制文件供FB使用
@@ -254,27 +260,32 @@ namespace JsonPaser
 			var tbFiles = Directory.GetFiles(fbPath, "*.txt");
 			foreach (var file in tbFiles)
 			{
-				Console.WriteLine($"Parse Table To CS File:{file}");
-
+				//Console.WriteLine($"Parse Table To CS File:{file}");
 				string appParm = $"-n {file} --gen-onefile";
 				Util.RunProcess(EXE, appParm);
 			}
 
 			var csFiles = Directory.GetFiles(Environment.CurrentDirectory, "*.cs");
-			foreach (var file in csFiles)
-			{
-				var saveFilePath = savePath + "/" + Path.GetFileName(file);
-				File.Move(file, saveFilePath);
-			}
-		}
+			StringBuilder builder = new StringBuilder();
+            foreach (var file in csFiles)
+            {
+				var content = File.ReadAllText(file, Encoding.UTF8);
+				builder.AppendLine(content);
+            }
+			File.WriteAllText(savePath + "/FBConfig.cs", builder.ToString());
+            foreach (var file in csFiles)
+            {
+				File.Delete(file);
+            }
+			builder.Clear();
+        }
 		/// <summary>
 		/// 把数值表导出为FB支持的二进制文件
 		/// </summary>
 		/// <param name="clsDataList"></param>
 		/// <param name="csSavePath"></param>
-		public static void ExportBinaryData(List<TemplateCls> clsDataList, string csSavePath)
+		public static void ExportBinaryData(List<TemplateCls> clsDataList, string csSavePath, string tmplateStr)
 		{
-			var tmplateStr = Consts.FB_PROVIDER_EXPROT_TT;
 			//生成加载数值表代码
 			{
 				StringBuilder loadDataBuilder = new StringBuilder();
@@ -298,7 +309,8 @@ namespace JsonPaser
 			//生成FlatBuffer加载二进制文件代码
 			{
 				StringBuilder loadDataBuilder = new StringBuilder();
-				string template = "FB_@{class_name_tag}Provider.Instance.LoadFromFile(GetFlatBufferPath(\"@{table_relateive_path}\"));";
+				StringBuilder loadDataBuilder2 = new StringBuilder();
+                string template = "FB_@{class_name_tag}Provider.Instance.LoadFromFile(GetFlatBufferPath(\"@{table_relateive_path}\"));";
 				int iCount = 0;
 				foreach (var cls in clsDataList)
 				{
@@ -307,17 +319,20 @@ namespace JsonPaser
 						loadDataBuilder.Append("\t\t\t");
 					}
 					loadDataBuilder.AppendLine(template.Replace("@{class_name_tag}", cls.mClassName).Replace("@{table_relateive_path}", cls.mRelativePath));
-					iCount += 1;
+                    loadDataBuilder2.AppendLine(template.Replace("@{class_name_tag}", cls.mClassName).Replace("@{table_relateive_path}", cls.mRelativePath));
+                    iCount += 1;
 					if (0 == iCount % 5)
 					{
 						loadDataBuilder.AppendLine("\t\t\tyield return new WaitForEndOfFrame();");
 					}
 				}
 				tmplateStr = tmplateStr.Replace("@{load_binary_data_from_file_func}", loadDataBuilder.ToString());
-			}
-			//生成FlatBuffer加载二进制文件代码
-			{
+				tmplateStr = tmplateStr.Replace("@{load_binary_data_from_file_func2}", loadDataBuilder2.ToString());
+            }
+            //生成FlatBuffer加载二进制文件代码
+            {
 				StringBuilder loadDataBuilder = new StringBuilder();
+				StringBuilder loadDataBuilder2 = new StringBuilder();
 				string template = "FB_@{class_name_tag}Provider.Instance.LoadFromMemory(ReadFlatBufferDTBytes(\"@{table_relateive_path}\"));";
 				int iCount = 0;
 				foreach (var cls in clsDataList)
@@ -327,6 +342,7 @@ namespace JsonPaser
 						loadDataBuilder.Append("\t\t\t");
 					}
 					loadDataBuilder.AppendLine(template.Replace("@{class_name_tag}", cls.mClassName).Replace("@{table_relateive_path}", cls.mRelativePath));
+                    loadDataBuilder2.AppendLine(template.Replace("@{class_name_tag}", cls.mClassName).Replace("@{table_relateive_path}", cls.mRelativePath));
 					iCount += 1;
 					if (0 == iCount % 5)
 					{
@@ -334,7 +350,8 @@ namespace JsonPaser
 					}
 				}
 				tmplateStr = tmplateStr.Replace("@{load_binary_data_form_memory_func}", loadDataBuilder.ToString());
-			}
+                tmplateStr = tmplateStr.Replace("@{load_binary_data_form_memory_func2}", loadDataBuilder2.ToString());
+            }
 			//清理FlatBuffer表中数据
 			{
 				StringBuilder loadDataBuilder = new StringBuilder();
@@ -371,11 +388,14 @@ namespace JsonPaser
 			var data = Tab_@{class_name_tag}Provider.Instance.ListData;
 	
 			Offset<FB_@{class_name_tag}>[] offsetArray = new Offset<FB_@{class_name_tag}>[data.Count];
+			Dictionary<int, int> KeyMaping = new Dictionary<int, int>();
+			stypeMapDict.Add(typeof(FB_@{class_name_tag}Provider), KeyMaping);
 			for (int index = 0; index < data.Count; index++)
 			{
 				var curData = data[index];
 				@{string_list_to_array}
 				offsetArray[index] = FB_@{class_name_tag}.CreateFB_@{class_name_tag}(fbb, " + "@{fields_name}" + @");
+				KeyMaping[curData.@{field_id}] = index;
 			}
 			var dataVector = FB_@{class_name_tag}Container.CreateItemsVector(fbb, offsetArray);
 	
@@ -462,14 +482,13 @@ namespace JsonPaser
 
 					}
 				
-					newFuncBuilder.AppendLine(template.Replace("@{class_name_tag}", cls.mClassName).Replace("@{relative_path_file}", cls.mRelativePath))
-						;
-					newFuncBuilder.Replace("@{fields_name}", fieldsBuilder.ToString()).Replace("@{string_list_to_array}", codeStrBuilder.ToString());
+					newFuncBuilder.AppendLine(template.Replace("@{class_name_tag}", cls.mClassName).Replace("@{relative_path_file}", cls.mRelativePath));
+					newFuncBuilder.Replace("@{field_id}", cls.mFields[0].Name).Replace("@{fields_name}", fieldsBuilder.ToString()).Replace("@{string_list_to_array}", codeStrBuilder.ToString());
 
 				}
 				tmplateStr = tmplateStr.Replace("@{export_binary_data}", newFuncBuilder.ToString());
 				tmplateStr = tmplateStr.Replace("@{export_binary_data_func}", funcsBuilder.ToString());
-				File.WriteAllText(Path.Combine(csSavePath, "FBBinaryExport.cs"), tmplateStr);
+				File.WriteAllText(csSavePath, tmplateStr);
 			}
 		}
 

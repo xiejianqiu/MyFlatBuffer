@@ -10,6 +10,7 @@ namespace JsonPaser
         csSavePath,//生成的CS代码存储陆建国
         FBProviderTT,//provider模板存放陆建国
         FBInitTT,//将Table导出文件二进制文件
+        FBLoaderTT,//FB加载数据魔板
         hotfixPath,//将Tab代码替换为FB代码
         GenFB,//是否生成table结构,
         GenCls,//是否生成cs代码

@@ -21,5 +21,6 @@ file_identifier" + " \"swdt\";";
 
         public static string FB_PROVIDER_TT = "";
         public static string FB_PROVIDER_EXPROT_TT = "";
+        public static string FB_PROVIDER_LOAD_TT = "";
     }
 }

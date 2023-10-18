@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using Shark;
@@ -11,6 +12,7 @@ namespace JsonPaser
     {
         public static string BinaryRoot = "datables/";
         public static string TxtRoot = "";
+        public static string csSavePath = "";
         public static StringBuilder builder = new StringBuilder();
         public static Func<string, byte[]> ReadBytesHandler;
         public static Func<string, string> ReDirectFilePathHandler;
@@ -79,6 +81,7 @@ namespace JsonPaser
         {
             LoadData();
             ExportBinaryData();
+            //ExportMapDict();
         }
         /// <summary>
         /// 将TXT文件加载到内存
@@ -127,6 +130,30 @@ namespace JsonPaser
             //Debug.Log("<color=green>ClearFBData Begin.</color>");
             @{clear_flatbuffer_data}
             //Debug.Log("<color=green>ClearFBData End.</color>");
+        }
+        /// <summary>
+		/// 用于存放表数据id映射
+		/// </summary>
+		private static Dictionary<Type, Dictionary<int,int>> stypeMapDict= new Dictionary<Type, Dictionary<int, int>>();
+        public static void ExportMapDict()
+        {
+            if (string.IsNullOrEmpty(FBBinaryExport.csSavePath))
+                return;
+            StringBuilder builder = new StringBuilder();
+            foreach (var kv in stypeMapDict)
+            {
+                builder.AppendLine($"public partial class {kv.Key}"+ "{");
+				builder.AppendLine($"\tstatic {kv.Key}()\n" + "\t{");
+				builder.Append("\t\t");
+				foreach (var ki in kv.Value)
+                {
+					builder.Append($"mKeyMapDIct.Add({ki.Key},{ki.Value});");
+				}
+				builder.AppendLine();
+                builder.AppendLine("\t}");
+                builder.AppendLine("}");
+            }
+			File.WriteAllText($"{FBBinaryExport.csSavePath}\\PBProvider_Mapping.cs", builder.ToString(), Encoding.UTF8);
         }
         /// <summary>
         /// 使用FlatBuffet将TXT导出成二进制文件

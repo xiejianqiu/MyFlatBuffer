@@ -7617,6 +7617,194 @@ public partial class FB_PropertyIntroProvider
         mListData.Clear();
     }
 }
+public partial class FB_QQDaWanKaProvider
+{
+    private static FB_QQDaWanKaProvider _Instance;
+    public static FB_QQDaWanKaProvider Instance {
+        get
+        {
+            if (null == _Instance)
+            {
+                _Instance = new FB_QQDaWanKaProvider();
+            }
+            return _Instance;
+        }
+    }
+    public string tableRPath = "Client/QQDaWanKa.txt";
+    protected FB_QQDaWanKaContainer mFBSrcData;
+    private static  Dictionary<int, int> mKeyMapDIct = new Dictionary<int, int>();
+    protected Dictionary<int, FB_QQDaWanKa> mData = new Dictionary<int, FB_QQDaWanKa>();
+    private List<FB_QQDaWanKa> mListData = new List<FB_QQDaWanKa>();
+    public List<FB_QQDaWanKa> ListData
+    {
+        get
+        {
+            var id = this.GetHashCode();
+            if (mListData.Count <= 0)
+            {
+                if (mKeyMapDIct.Count > 0)
+                {
+                    this.Init();
+                }
+                mListData.AddRange(mData.Values);
+            }
+            return mListData;
+        }
+    }
+    public FB_QQDaWanKa GetDataById(int id)
+    {
+        if (mData.ContainsKey(id))
+            return mData[id];
+        if (mKeyMapDIct.ContainsKey(id))
+        {
+            mData[id] = mFBSrcData.GetItems(mKeyMapDIct[id]);
+            return mData[id];
+        }
+        return default(FB_QQDaWanKa);
+    }
+    public Dictionary<int, FB_QQDaWanKa> GetData()
+    {
+        return mData;
+    }
+    public void LoadFromFile(string dataPath)
+    {
+        this.LoadData(new ByteBuffer(File.ReadAllBytes(dataPath)));
+    }
+    public void LoadFromMemory(byte[] dataBytes)
+    {
+        this.LoadData(new ByteBuffer(dataBytes));
+    }
+    public void LoadData(ByteBuffer bb) {
+        if (!FB_QQDaWanKaContainer.FB_QQDaWanKaContainerBufferHasIdentifier(bb))
+        {
+            throw new Exception("Identifier test failed, you sure the identifier is identical to the generated schema's one?");
+        }
+        var data = FB_QQDaWanKaContainer.GetRootAsFB_QQDaWanKaContainer(bb);
+        mFBSrcData = data;
+        if (mKeyMapDIct.Count <= 0 )
+        {
+            this.Init();
+        }
+    }
+    private void Init()
+    {
+		HashSet<int> set = new HashSet<int>();
+        var iter = mData.GetEnumerator();
+        while (iter.MoveNext())
+        {
+            set.Add(mKeyMapDIct[iter.Current.Key]);
+        }
+        for (int index = 0; index < mFBSrcData.ItemsLength; index++)
+        {
+			if (set.Contains(index))
+                continue;
+            var item = mFBSrcData.GetItems(index);
+            if (!mData.ContainsKey(item.ID))
+            {
+                mData.Add(item.ID, item);
+            }
+        }
+    }
+    public void Clear()
+    {
+        mData.Clear();
+        mListData.Clear();
+    }
+}
+public partial class FB_QQDaWanKaPrivilegeProvider
+{
+    private static FB_QQDaWanKaPrivilegeProvider _Instance;
+    public static FB_QQDaWanKaPrivilegeProvider Instance {
+        get
+        {
+            if (null == _Instance)
+            {
+                _Instance = new FB_QQDaWanKaPrivilegeProvider();
+            }
+            return _Instance;
+        }
+    }
+    public string tableRPath = "Client/QQDaWanKaPrivilege.txt";
+    protected FB_QQDaWanKaPrivilegeContainer mFBSrcData;
+    private static  Dictionary<int, int> mKeyMapDIct = new Dictionary<int, int>();
+    protected Dictionary<int, FB_QQDaWanKaPrivilege> mData = new Dictionary<int, FB_QQDaWanKaPrivilege>();
+    private List<FB_QQDaWanKaPrivilege> mListData = new List<FB_QQDaWanKaPrivilege>();
+    public List<FB_QQDaWanKaPrivilege> ListData
+    {
+        get
+        {
+            var id = this.GetHashCode();
+            if (mListData.Count <= 0)
+            {
+                if (mKeyMapDIct.Count > 0)
+                {
+                    this.Init();
+                }
+                mListData.AddRange(mData.Values);
+            }
+            return mListData;
+        }
+    }
+    public FB_QQDaWanKaPrivilege GetDataById(int id)
+    {
+        if (mData.ContainsKey(id))
+            return mData[id];
+        if (mKeyMapDIct.ContainsKey(id))
+        {
+            mData[id] = mFBSrcData.GetItems(mKeyMapDIct[id]);
+            return mData[id];
+        }
+        return default(FB_QQDaWanKaPrivilege);
+    }
+    public Dictionary<int, FB_QQDaWanKaPrivilege> GetData()
+    {
+        return mData;
+    }
+    public void LoadFromFile(string dataPath)
+    {
+        this.LoadData(new ByteBuffer(File.ReadAllBytes(dataPath)));
+    }
+    public void LoadFromMemory(byte[] dataBytes)
+    {
+        this.LoadData(new ByteBuffer(dataBytes));
+    }
+    public void LoadData(ByteBuffer bb) {
+        if (!FB_QQDaWanKaPrivilegeContainer.FB_QQDaWanKaPrivilegeContainerBufferHasIdentifier(bb))
+        {
+            throw new Exception("Identifier test failed, you sure the identifier is identical to the generated schema's one?");
+        }
+        var data = FB_QQDaWanKaPrivilegeContainer.GetRootAsFB_QQDaWanKaPrivilegeContainer(bb);
+        mFBSrcData = data;
+        if (mKeyMapDIct.Count <= 0 )
+        {
+            this.Init();
+        }
+    }
+    private void Init()
+    {
+		HashSet<int> set = new HashSet<int>();
+        var iter = mData.GetEnumerator();
+        while (iter.MoveNext())
+        {
+            set.Add(mKeyMapDIct[iter.Current.Key]);
+        }
+        for (int index = 0; index < mFBSrcData.ItemsLength; index++)
+        {
+			if (set.Contains(index))
+                continue;
+            var item = mFBSrcData.GetItems(index);
+            if (!mData.ContainsKey(item.ID))
+            {
+                mData.Add(item.ID, item);
+            }
+        }
+    }
+    public void Clear()
+    {
+        mData.Clear();
+        mListData.Clear();
+    }
+}
 public partial class FB_RankTypeProvider
 {
     private static FB_RankTypeProvider _Instance;
@@ -42648,6 +42836,194 @@ public partial class FB_QianKunDuoBaoGetIntegralProvider
             throw new Exception("Identifier test failed, you sure the identifier is identical to the generated schema's one?");
         }
         var data = FB_QianKunDuoBaoGetIntegralContainer.GetRootAsFB_QianKunDuoBaoGetIntegralContainer(bb);
+        mFBSrcData = data;
+        if (mKeyMapDIct.Count <= 0 )
+        {
+            this.Init();
+        }
+    }
+    private void Init()
+    {
+		HashSet<int> set = new HashSet<int>();
+        var iter = mData.GetEnumerator();
+        while (iter.MoveNext())
+        {
+            set.Add(mKeyMapDIct[iter.Current.Key]);
+        }
+        for (int index = 0; index < mFBSrcData.ItemsLength; index++)
+        {
+			if (set.Contains(index))
+                continue;
+            var item = mFBSrcData.GetItems(index);
+            if (!mData.ContainsKey(item.ID))
+            {
+                mData.Add(item.ID, item);
+            }
+        }
+    }
+    public void Clear()
+    {
+        mData.Clear();
+        mListData.Clear();
+    }
+}
+public partial class FB_QQDaTingRewardProvider
+{
+    private static FB_QQDaTingRewardProvider _Instance;
+    public static FB_QQDaTingRewardProvider Instance {
+        get
+        {
+            if (null == _Instance)
+            {
+                _Instance = new FB_QQDaTingRewardProvider();
+            }
+            return _Instance;
+        }
+    }
+    public string tableRPath = "Public/QQDaTingReward.txt";
+    protected FB_QQDaTingRewardContainer mFBSrcData;
+    private static  Dictionary<int, int> mKeyMapDIct = new Dictionary<int, int>();
+    protected Dictionary<int, FB_QQDaTingReward> mData = new Dictionary<int, FB_QQDaTingReward>();
+    private List<FB_QQDaTingReward> mListData = new List<FB_QQDaTingReward>();
+    public List<FB_QQDaTingReward> ListData
+    {
+        get
+        {
+            var id = this.GetHashCode();
+            if (mListData.Count <= 0)
+            {
+                if (mKeyMapDIct.Count > 0)
+                {
+                    this.Init();
+                }
+                mListData.AddRange(mData.Values);
+            }
+            return mListData;
+        }
+    }
+    public FB_QQDaTingReward GetDataById(int id)
+    {
+        if (mData.ContainsKey(id))
+            return mData[id];
+        if (mKeyMapDIct.ContainsKey(id))
+        {
+            mData[id] = mFBSrcData.GetItems(mKeyMapDIct[id]);
+            return mData[id];
+        }
+        return default(FB_QQDaTingReward);
+    }
+    public Dictionary<int, FB_QQDaTingReward> GetData()
+    {
+        return mData;
+    }
+    public void LoadFromFile(string dataPath)
+    {
+        this.LoadData(new ByteBuffer(File.ReadAllBytes(dataPath)));
+    }
+    public void LoadFromMemory(byte[] dataBytes)
+    {
+        this.LoadData(new ByteBuffer(dataBytes));
+    }
+    public void LoadData(ByteBuffer bb) {
+        if (!FB_QQDaTingRewardContainer.FB_QQDaTingRewardContainerBufferHasIdentifier(bb))
+        {
+            throw new Exception("Identifier test failed, you sure the identifier is identical to the generated schema's one?");
+        }
+        var data = FB_QQDaTingRewardContainer.GetRootAsFB_QQDaTingRewardContainer(bb);
+        mFBSrcData = data;
+        if (mKeyMapDIct.Count <= 0 )
+        {
+            this.Init();
+        }
+    }
+    private void Init()
+    {
+		HashSet<int> set = new HashSet<int>();
+        var iter = mData.GetEnumerator();
+        while (iter.MoveNext())
+        {
+            set.Add(mKeyMapDIct[iter.Current.Key]);
+        }
+        for (int index = 0; index < mFBSrcData.ItemsLength; index++)
+        {
+			if (set.Contains(index))
+                continue;
+            var item = mFBSrcData.GetItems(index);
+            if (!mData.ContainsKey(item.ID))
+            {
+                mData.Add(item.ID, item);
+            }
+        }
+    }
+    public void Clear()
+    {
+        mData.Clear();
+        mListData.Clear();
+    }
+}
+public partial class FB_QQDaWanKaRewardProvider
+{
+    private static FB_QQDaWanKaRewardProvider _Instance;
+    public static FB_QQDaWanKaRewardProvider Instance {
+        get
+        {
+            if (null == _Instance)
+            {
+                _Instance = new FB_QQDaWanKaRewardProvider();
+            }
+            return _Instance;
+        }
+    }
+    public string tableRPath = "Public/QQDaWanKaReward.txt";
+    protected FB_QQDaWanKaRewardContainer mFBSrcData;
+    private static  Dictionary<int, int> mKeyMapDIct = new Dictionary<int, int>();
+    protected Dictionary<int, FB_QQDaWanKaReward> mData = new Dictionary<int, FB_QQDaWanKaReward>();
+    private List<FB_QQDaWanKaReward> mListData = new List<FB_QQDaWanKaReward>();
+    public List<FB_QQDaWanKaReward> ListData
+    {
+        get
+        {
+            var id = this.GetHashCode();
+            if (mListData.Count <= 0)
+            {
+                if (mKeyMapDIct.Count > 0)
+                {
+                    this.Init();
+                }
+                mListData.AddRange(mData.Values);
+            }
+            return mListData;
+        }
+    }
+    public FB_QQDaWanKaReward GetDataById(int id)
+    {
+        if (mData.ContainsKey(id))
+            return mData[id];
+        if (mKeyMapDIct.ContainsKey(id))
+        {
+            mData[id] = mFBSrcData.GetItems(mKeyMapDIct[id]);
+            return mData[id];
+        }
+        return default(FB_QQDaWanKaReward);
+    }
+    public Dictionary<int, FB_QQDaWanKaReward> GetData()
+    {
+        return mData;
+    }
+    public void LoadFromFile(string dataPath)
+    {
+        this.LoadData(new ByteBuffer(File.ReadAllBytes(dataPath)));
+    }
+    public void LoadFromMemory(byte[] dataBytes)
+    {
+        this.LoadData(new ByteBuffer(dataBytes));
+    }
+    public void LoadData(ByteBuffer bb) {
+        if (!FB_QQDaWanKaRewardContainer.FB_QQDaWanKaRewardContainerBufferHasIdentifier(bb))
+        {
+            throw new Exception("Identifier test failed, you sure the identifier is identical to the generated schema's one?");
+        }
+        var data = FB_QQDaWanKaRewardContainer.GetRootAsFB_QQDaWanKaRewardContainer(bb);
         mFBSrcData = data;
         if (mKeyMapDIct.Count <= 0 )
         {

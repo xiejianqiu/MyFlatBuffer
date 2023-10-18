@@ -34,6 +34,7 @@ namespace JsonPaser
                 var csSavePath = mPargmaTypeCheck.GetValue(PargmaType.csSavePath);
                 Consts.FB_PROVIDER_TT = File.ReadAllText(mPargmaTypeCheck.GetValue(PargmaType.FBProviderTT));
                 Consts.FB_PROVIDER_EXPROT_TT = File.ReadAllText(mPargmaTypeCheck.GetValue(PargmaType.FBInitTT));
+                Consts.FB_PROVIDER_LOAD_TT = File.ReadAllText(mPargmaTypeCheck.GetValue(PargmaType.FBLoaderTT));
                 if (Directory.Exists(csSavePath))
                 {
                     Directory.Delete(csSavePath, true);
@@ -43,8 +44,9 @@ namespace JsonPaser
                     Directory.CreateDirectory(csSavePath);
                 }
                 Util.GenFBCsFile(fbSavePath, csSavePath);
-                Util.GenFBProveider(clsDataList, csSavePath + "/Providder");
-                Util.ExportBinaryData(clsDataList, csSavePath + "/Providder");
+                Util.GenFBProveider(clsDataList, csSavePath);
+                Util.ExportBinaryData(clsDataList, csSavePath + "/FBBinaryExport.cs", Consts.FB_PROVIDER_EXPROT_TT);
+                Util.ExportBinaryData(clsDataList, csSavePath + "/FBBinaryLoader.cs", Consts.FB_PROVIDER_LOAD_TT);
             }
 
             if (mPargmaTypeCheck.IsTrue(PargmaType.RelCode))
