@@ -25477,6 +25477,100 @@ public partial class FB_FindRewardClassProvider
         mListData.Clear();
     }
 }
+public partial class FB_FlashDaTingRewardProvider
+{
+    private static FB_FlashDaTingRewardProvider _Instance;
+    public static FB_FlashDaTingRewardProvider Instance {
+        get
+        {
+            if (null == _Instance)
+            {
+                _Instance = new FB_FlashDaTingRewardProvider();
+            }
+            return _Instance;
+        }
+    }
+    public string tableRPath = "Public/FlashDaTingReward.txt";
+    protected FB_FlashDaTingRewardContainer mFBSrcData;
+    private static  Dictionary<int, int> mKeyMapDIct = new Dictionary<int, int>();
+    protected Dictionary<int, FB_FlashDaTingReward> mData = new Dictionary<int, FB_FlashDaTingReward>();
+    private List<FB_FlashDaTingReward> mListData = new List<FB_FlashDaTingReward>();
+    public List<FB_FlashDaTingReward> ListData
+    {
+        get
+        {
+            var id = this.GetHashCode();
+            if (mListData.Count <= 0)
+            {
+                if (mKeyMapDIct.Count > 0)
+                {
+                    this.Init();
+                }
+                mListData.AddRange(mData.Values);
+            }
+            return mListData;
+        }
+    }
+    public FB_FlashDaTingReward GetDataById(int id)
+    {
+        if (mData.ContainsKey(id))
+            return mData[id];
+        if (mKeyMapDIct.ContainsKey(id))
+        {
+            mData[id] = mFBSrcData.GetItems(mKeyMapDIct[id]);
+            return mData[id];
+        }
+        return default(FB_FlashDaTingReward);
+    }
+    public Dictionary<int, FB_FlashDaTingReward> GetData()
+    {
+        return mData;
+    }
+    public void LoadFromFile(string dataPath)
+    {
+        this.LoadData(new ByteBuffer(File.ReadAllBytes(dataPath)));
+    }
+    public void LoadFromMemory(byte[] dataBytes)
+    {
+        this.LoadData(new ByteBuffer(dataBytes));
+    }
+    public void LoadData(ByteBuffer bb) {
+        if (!FB_FlashDaTingRewardContainer.FB_FlashDaTingRewardContainerBufferHasIdentifier(bb))
+        {
+            throw new Exception("Identifier test failed, you sure the identifier is identical to the generated schema's one?");
+        }
+        var data = FB_FlashDaTingRewardContainer.GetRootAsFB_FlashDaTingRewardContainer(bb);
+        mFBSrcData = data;
+        if (mKeyMapDIct.Count <= 0 )
+        {
+            this.Init();
+        }
+    }
+    private void Init()
+    {
+		HashSet<int> set = new HashSet<int>();
+        var iter = mData.GetEnumerator();
+        while (iter.MoveNext())
+        {
+            set.Add(mKeyMapDIct[iter.Current.Key]);
+        }
+        for (int index = 0; index < mFBSrcData.ItemsLength; index++)
+        {
+			if (set.Contains(index))
+                continue;
+            var item = mFBSrcData.GetItems(index);
+            if (!mData.ContainsKey(item.ID))
+            {
+                mData.Add(item.ID, item);
+            }
+        }
+    }
+    public void Clear()
+    {
+        mData.Clear();
+        mListData.Clear();
+    }
+}
 public partial class FB_FuLiDaTingProvider
 {
     private static FB_FuLiDaTingProvider _Instance;

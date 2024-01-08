@@ -6,6 +6,7 @@ table FB_SoulPowerLevelUp {
 	JieLevel:int = -1;
 	AttrIdList:[int];
 	AttrValueList:[int];
+	AttrValueIncList:[int];
 }
 table FB_SoulPowerLevelUpContainer {
 	items:[FB_SoulPowerLevelUp];

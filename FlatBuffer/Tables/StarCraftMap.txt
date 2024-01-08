@@ -12,6 +12,7 @@ table FB_StarCraftMap {
 	Score:int = -1;
 	GateCostNum:int = -1;
 	OccupyRewardList:[int];
+	RewardCountList:[int];
 }
 table FB_StarCraftMapContainer {
 	items:[FB_StarCraftMap];

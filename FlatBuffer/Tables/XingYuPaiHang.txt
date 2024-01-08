@@ -8,6 +8,7 @@ table FB_XingYuPaiHang {
 	RankMin:int = -1;
 	RankMax:int = -1;
 	MailId:int = -1;
+	Group:int = -1;
 }
 table FB_XingYuPaiHangContainer {
 	items:[FB_XingYuPaiHang];

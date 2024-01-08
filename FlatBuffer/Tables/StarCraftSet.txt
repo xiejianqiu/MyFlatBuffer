@@ -10,6 +10,7 @@ table FB_StarCraftSet {
 	Star2Num:int = -1;
 	Star3Num:int = -1;
 	Star4Num:int = -1;
+	Texture:string;
 }
 table FB_StarCraftSetContainer {
 	items:[FB_StarCraftSet];

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\WORK_SPACE\\ob_qq_20230718_fb\\Tools\\JsonPaser\\JsonPaser\\JsonPaser\\JsonPaser.csproj": {}
+    "D:\\WORK_SPACE\\MyFlatBuffer\\JsonPaser\\JsonPaser\\JsonPaser.csproj": {}
   },
   "projects": {
-    "D:\\WORK_SPACE\\ob_qq_20230718_fb\\Tools\\JsonPaser\\JsonPaser\\JsonPaser\\JsonPaser.csproj": {
+    "D:\\WORK_SPACE\\MyFlatBuffer\\JsonPaser\\JsonPaser\\JsonPaser.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\WORK_SPACE\\ob_qq_20230718_fb\\Tools\\JsonPaser\\JsonPaser\\JsonPaser\\JsonPaser.csproj",
+        "projectUniqueName": "D:\\WORK_SPACE\\MyFlatBuffer\\JsonPaser\\JsonPaser\\JsonPaser.csproj",
         "projectName": "JsonPaser",
-        "projectPath": "D:\\WORK_SPACE\\ob_qq_20230718_fb\\Tools\\JsonPaser\\JsonPaser\\JsonPaser\\JsonPaser.csproj",
+        "projectPath": "D:\\WORK_SPACE\\MyFlatBuffer\\JsonPaser\\JsonPaser\\JsonPaser.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\WORK_SPACE\\ob_qq_20230718_fb\\Tools\\JsonPaser\\JsonPaser\\JsonPaser\\obj\\",
+        "outputPath": "D:\\WORK_SPACE\\MyFlatBuffer\\JsonPaser\\JsonPaser\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",

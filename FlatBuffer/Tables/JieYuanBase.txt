@@ -17,6 +17,7 @@ table FB_JieYuanBase {
 	Describe:string;
 	DropModle:string;
 	SystemRemind:int = -1;
+	MaxLevelUp:int = -1;
 }
 table FB_JieYuanBaseContainer {
 	items:[FB_JieYuanBase];

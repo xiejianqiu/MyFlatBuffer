@@ -21,6 +21,7 @@ table FB_UIInfo {
 	MoreInfoTitleIdList:[int];
 	MoreInfoContentIdList:[int];
 	bFullPanel:bool = false;
+	keyCodeCloseUI:int = -1;
 }
 table FB_UIInfoContainer {
 	items:[FB_UIInfo];

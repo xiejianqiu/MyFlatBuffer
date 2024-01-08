@@ -5,6 +5,7 @@ table FB_VipEnjoyGift {
 	RealCost:int = -1;
 	EnjoyGiftIDList:[int];
 	EnjoyGiftNumList:[int];
+	MFid:int = -1;
 }
 table FB_VipEnjoyGiftContainer {
 	items:[FB_VipEnjoyGift];
