@@ -11,4 +11,4 @@ CALL %EXPORT_EXE% %CMD_PARGMA%
 SET hotfixPath=%CUR_PATH%\shengwang\hotfix\
 CD /D %hotfixPath%
 REM dotnet build -c Release
-PAUSE
+REM PAUSE

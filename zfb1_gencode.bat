@@ -48,4 +48,4 @@ xcopy %csSavePath%\FBBinaryLoader.cs %flatBufferPath% /y /q
 xcopy %csSavePath%\FBConfig.cs %flatBufferPath% /y /q
 xcopy %csSavePath%\FBProvider.cs %flatBufferPath% /y /q
 ECHO FINISH!!!!!!!
-PAUSE
+REM PAUSE
